@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Register the Package-Specific Browser Layer. -->
+<layers>
+  <layer name="cckf.theme.customization.layer"
+   interface="cckf.theme.interfaces.ICustomTheme" />
+</layers>

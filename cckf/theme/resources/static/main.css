@@ -1,0 +1,16 @@
+/* Stylesheet for the 'ICustomTheme' Plone browser layer */
+
+body {
+  margin: 0 auto;
+  font: 100% "Verdana", "新細明體", "Arial", "Helvetica", "sans-serif";
+}
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
