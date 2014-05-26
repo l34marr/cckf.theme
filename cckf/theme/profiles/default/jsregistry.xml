@@ -13,7 +13,7 @@
       See registerScript() arguments in ResourceRegistries/tools/JSRegistry.py
       for the latest list of all available keys and default values.
       -->
-  <javascript id="++theme++cckf.theme/static/main.js"
+  <javascript id="++theme++cckf.theme/js/main.js"
     cacheable="False" compression="safe" cookable="False"
     enabled="True" expression="" inline="False" />
 </object>

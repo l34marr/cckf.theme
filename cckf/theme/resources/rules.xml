@@ -7,7 +7,7 @@
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
-  <theme href="index.html" />
+  <theme href="about.html" />
 
   <!-- Replace title with Plone's page title  -->
   <replace css:theme="html head title" css:content="html head title" />
@@ -28,15 +28,11 @@
   <!-- Copy script tags from Plone head to end of body -->
   <after css:theme-children="html body" css:content="html head script" />
 
-  <!-- Move inline scripts in content to end of body -->
-  <drop css:content="body script" />
-  <after css:theme-children="html body" css:content="html body script" method="raw" />
-
   <!-- Pull in the whole Plone layout.
        You'll typically replace this by coping parts of the content
        into particular targets in your theme. -->
   <replace css:theme-children="h1" css:content-children="h1" />
-  <replace css:theme-children="p" css:content-children="#parent-fieldname-description" />
+  <replace css:theme-children="#content-core" css:content-children="#content-core" />
 
   </rules>
 

@@ -20,7 +20,7 @@
       ResourceRegistries/tools/CSSRegistry.py for the latest list of all
       available keys and default values.
       -->
-  <stylesheet id="++theme++cckf.theme/static/main.css"
+  <stylesheet id="++theme++cckf.theme/css/main.css"
     title="CCKF Main Styles"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
