@@ -25,6 +25,17 @@ body {
     /* width: 58em; margin: 1em auto; */
 }
 
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
@@ -103,6 +114,7 @@ sub {
 #portal-header {
     position: relative;
     z-index: 2;
+    background-image: url("++theme++cckf.theme/img/pattern.png");
 }
 
 #portal-logo {

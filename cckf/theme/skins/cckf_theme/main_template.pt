@@ -52,6 +52,8 @@
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
+<img src="++theme++cckf.theme/img/background.jpg" class="bg" />
+
 <div id="visual-portal-wrapper">
 
         <div id="portal-top"
