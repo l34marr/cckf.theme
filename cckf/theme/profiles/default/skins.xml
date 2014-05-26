@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_skins" default_skin="CCKF Theme">
+
+ <object name="cckf_theme"
+    meta_type="Filesystem Directory View"
+    directory="cckf.theme:skins/cckf_theme" />
+
+ <skin-path name="CCKF Theme" based-on="Plone Default">
+    <layer name="cckf_theme" insert-after="custom" />
+ </skin-path>
+
+</object>

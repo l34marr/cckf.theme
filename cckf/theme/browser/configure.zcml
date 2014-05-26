@@ -1,0 +1,20 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="cckf.theme">
+
+  <!-- Zope 3 browser layer -->
+  <interface
+    name="CCKF Theme"
+    interface=".interfaces.IThemeSpecific"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <!-- special view -->
+  <browser:page
+    name="cckfview"
+    for="*"
+    class=".cckfview.CCKFView"
+    permission="zope.Public"
+    allowed_interface=".interfaces.ICCKFView" />
+
+</configure>

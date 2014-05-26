@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.2'
+version = '0.3'
 
 setup(name='cckf.theme',
       version=version,
@@ -15,9 +15,9 @@ setup(name='cckf.theme',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
-      author='',
-      author_email='',
+      keywords='web zope plone theme',
+      author='marr',
+      author_email='marr.tw@gmail.com',
       url='http://github.com/l34marr/cckf.theme/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
@@ -26,6 +26,10 @@ setup(name='cckf.theme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFCore',
+          'plone.theme',
+          'zope.component',
+          'zope.interface',
           'z3c.jbot',
           # -*- Extra requirements: -*-
       ],

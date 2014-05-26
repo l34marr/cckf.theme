@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3dev (unreleased)
+-------------------
+
+- Include Sunburst Theme as Base
+
 0.2dev (unreleased)
 -------------------
 
