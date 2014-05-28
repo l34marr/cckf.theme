@@ -23,55 +23,55 @@
 /* Fix to get bulleted and numbered lists to stay inside the content area */
 #content ol,
 #content ul {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 #portal-globalnav li a {
-    border-right: none;
-    border-left: 0.1em solid white;
+  border-right: none;
+  border-left: 0.1em solid white;
 }
 
 #portal-personaltools {
-    float: left;
-    right: auto;
-    left: 0;
+  float: left;
+  right: auto;
+  left: 0;
 }
 
 /* Navigation and Search */
 
 #portal-languageselector {
-    float: left;
-    right: auto;
-    left: 1px;
+  float: left;
+  right: auto;
+  left: 1px;
 }
 
 #portal-searchbox {
-    padding: 0 0 0 2em;
-    float: left;
-    clear: left;
-    text-align: right;
+  padding: 0 0 0 2em;
+  float: left;
+  clear: left;
+  text-align: right;
 }
 
 /* LiveSearch styles */
 
 #LSResult {
-    margin: -1.5em -7em 0 0;
-    right: auto;
-    left: 0;
+  margin: -1.5em -7em 0 0;
+  right: auto;
+  left: 0;
 }
 
 /* Status messages */
 
 #content dl.portalMessage dt {
-    float: right;
-    margin: 0 0 0 0.5em;
+  float: right;
+  margin: 0 0 0 0.5em;
 }
 
 /* Editing */
 /* Tabs */
 
 #content-views {
-    float: right;
+  float: right;
 }
 
 /* Pulldown menus */
@@ -79,69 +79,69 @@
 /* Personal tools pulldown */
 
 #portal-personaltools dd {
-    right: auto;
-    left: 0;
+  right: auto;
+  left: 0;
 }
 
 dl.actionMenu {
-    margin-left: auto;
-    margin-right: 0.5em;
+  margin-left: auto;
+  margin-right: 0.5em;
 }
 
 /* Content pulldowns */
 
 #contentActionMenus {
-    float: left;
-    margin: auto;
+  float: left;
+  margin: auto;
 }
 
 #contentActionMenus dl.actionMenu.activated dd {
-    right: auto;
+  right: auto;
 }
 
 dl.actionMenu.activated {
-    direction: ltr;
+  direction: ltr;
 }
 dl.actionMenu.activated dt {
-    direction: rtl;
+  direction: rtl;
 }
 dd.actionMenuContent ul {
-    direction: rtl;
+  direction: rtl;
 }
 
 /* Core content type sprites */
 
 .icons-on .contenttype-document {
-    background: no-repeat transparent right 4px url(contenttypes-sprite.png);
+  background: no-repeat transparent right 4px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-event {
-    background: no-repeat transparent right -212px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -212px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-folder {
-    background: no-repeat transparent right -644px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -644px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-link {
-    background: no-repeat transparent right -1076px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -1076px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-news-item {
-    background: no-repeat transparent right -1292px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -1292px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-plone-site {
-    background: no-repeat transparent right -1508px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -1508px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-collection {
-    background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-topic {
-    background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
 }
 
 /* These should only appear in the add menu */
 .icons-on #plone-contentmenu-factories .contenttype-file {
-    background: no-repeat transparent right -428px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -428px url(contenttypes-sprite.png);
 }
 .icons-on #plone-contentmenu-factories .contenttype-image {
-    background: no-repeat transparent right -860px url(contenttypes-sprite.png);
+  background: no-repeat transparent right -860px url(contenttypes-sprite.png);
 }
 
 .icons-on .contenttype-document,
@@ -153,8 +153,8 @@ dd.actionMenuContent ul {
 .icons-on .contenttype-topic,
 .icons-on #plone-contentmenu-factories .contenttype-file,
 .icons-on #plone-contentmenu-factories .contenttype-image {
-    padding-left: auto !important;
-    padding-right: 20px !important;
+  padding-left: auto !important;
+  padding-right: 20px !important;
 }
 
 /* RTL overides of columns.css */
