@@ -46,6 +46,19 @@ img.bg {
   width: 100%;
 }
 
+#portal-top {
+  background-image: url("++theme++cckf.theme/img/pattern.png");
+  background-color: #DDCC9B;
+  color: #222222;
+}
+
+#portal-top > div {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
@@ -124,7 +137,6 @@ sub {
 #portal-header {
     position: relative;
     z-index: 2;
-    background-image: url("++theme++cckf.theme/img/pattern.png");
 }
 
 #portal-logo {

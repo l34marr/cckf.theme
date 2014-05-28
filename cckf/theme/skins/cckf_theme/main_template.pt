@@ -59,10 +59,9 @@
 <div id="visual-portal-wrapper">
 
         <div id="portal-top"
-            class="row"
             i18n:domain="plone"
             tal:condition="not:ajax_load">
-<div class="cell width-full position-0">
+<div>
             <div tal:replace="structure provider:plone.portaltop" />
 </div>
         </div>
