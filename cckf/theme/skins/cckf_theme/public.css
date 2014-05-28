@@ -36,6 +36,16 @@ img.bg {
     z-index: -999;
 }
 
+#top-banner {
+  background: none repeat scroll 0 0 #9D242B;
+  height: 10px;
+}
+
+#visual-portal-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
