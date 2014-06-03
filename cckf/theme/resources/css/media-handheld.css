@@ -136,6 +136,7 @@ div.position-1\:4 {
             margin-top:5px;
        }
 }
+
 @media handheld, only screen and (max-width: 520px) { 
 	.top-info { padding-bottom: 0px }
 	#portal-logo { margin-top: 20px }
@@ -242,11 +243,8 @@ div.position-1\:4 {
             margin-left:0px;
             margin-top:5px;
        }
-       .disgus-img {
-            width: 100%;
-       }
-
 }
+
 @media handheld, only screen and (max-width: 360px) { 
 	.line-space {
 	    width: 100%;
@@ -335,11 +333,8 @@ div.position-1\:4 {
             margin-left:0px;
             margin-top:5px;
        }
-       .disgus-img {
-            width: 100%;
-       }
-
 }
+
 @media handheld, only screen and (max-width: 300px) { 
 	.footer-info {
 	    margin-bottom: 15px;
@@ -370,8 +365,5 @@ div.position-1\:4 {
             padding-left: 17px;
             margin-left:0px;
             margin-top:5px;
-       }
-       .disgus-img {
-            width: 100%;
        }
 }
