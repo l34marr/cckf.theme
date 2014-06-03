@@ -17,4 +17,26 @@
     permission="zope.Public"
     allowed_interface=".interfaces.ICCKFView" />
 
+  <browser:viewletManager
+    name="cckf.navigation"
+    provides=".interfaces.ICustomNavigation"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    permission="zope2.View"
+    layer=".interfaces.IThemeSpecific" />
+
+  <browser:viewlet
+    name="plone.global_sections"
+    manager=".interfaces.ICustomNavigation"
+    template="sections.pt"
+    permission="zope2.View"
+    layer=".interfaces.IThemeSpecific" />
+
+  <browser:viewlet
+    name="plone.logo"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class="plone.app.layout.viewlets.common.LogoViewlet"
+    template="logo.pt"
+    permission="zope2.View"
+    layer=".interfaces.IThemeSpecific" />
+
 </configure>

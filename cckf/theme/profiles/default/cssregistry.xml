@@ -13,4 +13,40 @@
     rel="stylesheet"
     rendering="link" />
 
+  <stylesheet
+    id="++theme++cckf.theme/css/mockup.css"
+    insert-after="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    media="screen"
+    rel="stylesheet"
+    rendering="link" />
+
+  <stylesheet
+    id="++theme++cckf.theme/css/dropdown.css"
+    insert-after="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    media="screen"
+    rel="stylesheet"
+    rendering="link" />
+
+  <stylesheet
+    id="++theme++cckf.theme/css/main.css"
+    insert-after="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    media="screen"
+    rel="stylesheet"
+    rendering="link" />
+
 </object>

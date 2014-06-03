@@ -1,0 +1,105 @@
+<div id="cckmenu">
+  <div id="navbar-wrapper" >
+    <nav id="mainMenu" class="tencol last">
+    <a class="toggleMenu" href="#" style="display: none;">Menu <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
+    <ul class="nav" style="display: block;"
+     tal:define="root context/@@plone_portal_state/navigation_root_url;">
+    <li class="">
+    <a class="rootmenulink parent" href="#"
+     tal:attributes="href string:${root}/about">基金會簡介</a>
+      <ul class="submenu">
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/about/brief">成立背景</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/about/purpose">宗旨</a></li>
+      </ul>
+    </li>
+    <li class="">
+    <a class="rootmenulink parent" href="#"
+     tal:attributes="href string:${root}/structure">組織</a>
+      <ul class="submenu">
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/structure/board">董事會</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/structure/hq">基金會總部</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/structure/am">美洲辦事處</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/structure/ad">諮議委員會</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/structure/rc">海外漢學研究中心</a></li>
+      </ul>
+    </li>
+    <li class=""> <a class="rootmenulink parent" href="#"
+     tal:attributes="href string:${root}/grant">獎助業務</a>
+      <ul class="submenu">
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/domestic">國內地區</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/american">美洲地區</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/european">歐洲地區</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/apac">亞太地區</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/list">歷年獎助名單</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/status">歷年獎助狀況</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/map">獎助地圖</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/grant/guideline">期中及成果報告撰寫格式</a></li>
+      </ul>
+    </li>
+    <li class="">
+    <a class="rootmenulink" href="#"
+     tal:attributes="href string:${root}/sinology">漢學資源</a></li>
+    <li class="">
+    <a class="rootmenulink parent" href="#"
+     tal:attributes="href string:${root}/publication">出版品</a>
+      <ul class="submenu">
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/publication/annual">年報</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/publication/newsletter">簡訊</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#" target="_blank"
+       tal:attributes="href string:${root}/publication/decennial">十周年慶專刊</a></li>
+      </ul>
+    </li>
+    <li class="">
+    <a class="rootmenulink" href="#"
+     tal:attributes="href string:${root}/news">最新消息</a></li>
+    <li class="">
+    <a class="rootmenulink" href="#"
+     tal:attributes="href string:${root}/link">相關連結</a></li>
+    <li class="">
+    <a class="rootmenulink" href="#"
+     tal:attributes="href string:${root}/contact">連絡本會</a></li>
+    <li id="mini-searchbox" class="displayNav">
+    <form action="#/search" name="searchform">
+      <input type="text" class="searchField inputLabel inputLabelActive" title="Search" size="18" name="SearchableText">
+      <button value="label_search" type="submit" class="searchButton"><img alt="Search" src="++theme++cckf.theme/img/search-icon.png"></button>
+    </form>
+    </li>
+    </ul>
+    </nav>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 from zope.interface import Interface
 from plone.theme.interfaces import IDefaultPloneLayer
+from zope.viewlet.interfaces import IViewletManager
 
 
 class IThemeSpecific(IDefaultPloneLayer):
     """Marker interface that defines a Zope browser layer.
     """
-
 
 class ICCKFView(Interface):
     """ """
@@ -17,3 +17,8 @@ class ICCKFView(Interface):
     def getColumnsClasses():
         """Returns all CSS classes based on columns presence.
         """
+
+class ICustomNavigation(IViewletManager):
+    """Custom Viewlet Manager for Navigation.
+    """
+

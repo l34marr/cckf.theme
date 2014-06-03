@@ -64,6 +64,8 @@
     </div>
   </div>
 
+  <div tal:replace="structure provider:cckf.navigation" />
+
   <div id="portal-columns" class="row">
 
     <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
@@ -171,6 +173,7 @@
   </div>
 
 </div>
+<script src="++theme++cckf.theme/js/script.js"></script>
 </body>
 </html>
 
