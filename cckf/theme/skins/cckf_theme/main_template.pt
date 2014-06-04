@@ -168,12 +168,12 @@
 
   </div>
 
-  <div id="portal-footer-wrapper" class="row"
+  <div class="visualClear"><!-- --></div>
+
+  <div id="footer"
    i18n:domain="plone"
    tal:condition="not:ajax_load">
-    <div class="cell width-full position-0">
-      <div tal:replace="structure provider:plone.portalfooter" />
-    </div>
+    <div tal:replace="structure provider:plone.portalfooter" />
   </div>
 
 </div>
