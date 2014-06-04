@@ -1,0 +1,22 @@
+<div id="foot-container" i18n:domain="cckf.theme">
+  <div class="footColumn">
+    <dl class="footSection">
+      <dt class="footSectionHeader"><img src="++theme++cckf.theme/img/title.png"></dt>
+      <dd class="footSectionBody"> 台北市敦化南路二段65號13樓／B </dd>
+      <dd class="footSectionBody"> Copyright © 2014版權所有 </dd>
+    </dl>
+  </div>
+  <div class="footColumn">
+    <dl class="footSection">
+      <dt class="footSectionHeader"></dt>
+      <dd class="footSectionBody"> <a class="external-link" href="#">電話:(02)2704-5333</a> </dd>
+      <dd class="footSectionBody"> <a class="external-link" href="#">傳真:(02)2701-6762</a> </dd>
+      <dd class="footSectionBody"> <a class="external-link" href="#">e-mail: cckf@ms1.hinet.net</a> </dd>
+    </dl>
+  </div>
+  <div class="footColumn-last">
+    <dl class="footSection">
+      <dt class="footSectionHeader"><img src="++theme++cckf.theme/img/qrcode.png"></dt>
+    </dl>
+  </div>
+</div>
