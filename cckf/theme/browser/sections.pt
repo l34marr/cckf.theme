@@ -1,4 +1,4 @@
-<div id="cckmenu">
+<div id="themenu">
   <div id="navbar-wrapper" >
     <nav id="mainMenu" class="tencol last">
     <a class="toggleMenu" href="#" style="display: none;">Menu <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>

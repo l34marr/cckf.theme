@@ -97,10 +97,8 @@ img.bg {
   font-weight: normal;
 }
 
-#cckmenu {
+#themenu {
   background: none repeat scroll 0 0 #9D242B;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
   clear: both;
   line-height: 20px;
   margin: 0 0 6px;
