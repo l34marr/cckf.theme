@@ -59,6 +59,11 @@ img.bg {
   position: relative;
 }
 
+#portal-columns {
+  background: none repeat scroll 0 0 #FDFDF5;
+  border: 1px solid #D4D0C7;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
   font-weight: bold;

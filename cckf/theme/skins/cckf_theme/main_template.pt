@@ -66,6 +66,8 @@
 
   <div tal:replace="structure provider:cckf.navigation" />
 
+  <div style="margin: 0 auto; max-width: 1200px;">
+
   <div id="portal-columns" class="row">
 
     <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
@@ -161,6 +163,8 @@
         </metal:portlets>
       </div>
     </tal:notajax>
+
+  </div>
 
   </div>
 
