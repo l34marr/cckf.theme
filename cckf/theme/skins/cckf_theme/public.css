@@ -372,7 +372,9 @@ dl dt span.summary a {
 #content {
   line-height: 1.5em;
   clear: both;
-  font-size: 80%;
+  font-size: 95%;
+  letter-spacing: 0.12em;
+  line-height: 1.8em;
   margin: 1em 0.25em 2em 0.25em;
 }
 
