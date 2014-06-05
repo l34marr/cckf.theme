@@ -1,0 +1,29 @@
+.section-index_html #portal-columns {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+.section-index_html #themenu, .section-index_html #content {
+  margin: 0;
+}
+
+.section-index_html .collection-item {
+  background-color: #FDFDF5;
+  font-size: 70%;
+  margin-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.section-index_html #content .tile-edge {
+  background-color: #FDFDF5;
+}
+.section-index_html #content .collection-item p {
+  margin-bottom: 0;
+}
+
+.section-index_html .galleria-image {
+  height: 335px !important;
+}
+
