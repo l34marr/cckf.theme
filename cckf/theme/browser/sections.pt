@@ -1,4 +1,4 @@
-<div id="themenu">
+<div id="themenu" i18n:domain="cckf.theme">
   <div id="navbar-wrapper" >
     <nav id="mainMenu" class="tencol last">
     <a class="toggleMenu" href="#" style="display: none;">Menu <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
@@ -6,93 +6,119 @@
      tal:define="root context/@@plone_portal_state/navigation_root_url;">
     <li class="">
     <a class="rootmenulink parent" href="#"
-     tal:attributes="href string:${root}/about">基金會簡介</a>
+     tal:attributes="href string:${root}/about"
+     i18n:translate="">Introduction</a>
       <ul class="submenu">
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/about/brief">成立背景</a></li>
+       tal:attributes="href string:${root}/about/background"
+       i18n:translate="">Background</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/about/purpose">宗旨</a></li>
+       tal:attributes="href string:${root}/about/goal"
+       i18n:translate="">Goals</a></li>
       </ul>
     </li>
     <li class="">
     <a class="rootmenulink parent" href="#"
-     tal:attributes="href string:${root}/structure">組織</a>
+     tal:attributes="href string:${root}/structure"
+     i18n:translate="">Organization</a>
       <ul class="submenu">
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/board">董事會</a></li>
+       tal:attributes="href string:${root}/structure/director"
+       i18n:translate="">Board of Directors</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/hq">基金會總部</a></li>
+       tal:attributes="href string:${root}/structure/hq"
+       i18n:translate="">Taipei Headquarters</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/am">美洲辦事處</a></li>
+       tal:attributes="href string:${root}/structure/am"
+       i18n:translate="">American Regional Office</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/ad">諮議委員會</a></li>
+       tal:attributes="href string:${root}/structure/cm"
+       i18n:translate="">Regional Committees</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/rc">海外漢學研究中心</a></li>
+       tal:attributes="href string:${root}/structure/oc"
+       i18n:translate="">Overseas Centers</a></li>
       </ul>
     </li>
     <li class=""> <a class="rootmenulink parent" href="#"
-     tal:attributes="href string:${root}/grant">獎助業務</a>
+     tal:attributes="href string:${root}/program"
+     i18n:translate="">Programs</a>
       <ul class="submenu">
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/domestic">國內地區</a></li>
+       tal:attributes="href string:${root}/program/domestic"
+       i18n:translate="">The Domestic Region</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/american">美洲地區</a></li>
+       tal:attributes="href string:${root}/program/american"
+       i18n:translate="">The American Region</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/european">歐洲地區</a></li>
+       tal:attributes="href string:${root}/program/european"
+       i18n:translate="">The European Region</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/apac">亞太地區</a></li>
+       tal:attributes="href string:${root}/program/apac"
+       i18n:translate="">The Asia-Pacific Region</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/list">歷年獎助名單</a></li>
+       tal:attributes="href string:${root}/program/list"
+       i18n:translate="">Grant Recipients</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/status">歷年獎助狀況</a></li>
+       tal:attributes="href string:${root}/program/status"
+       i18n:translate="">Grant Allocations</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/map">獎助地圖</a></li>
+       tal:attributes="href string:${root}/program/map"
+       i18n:translate="">Grant Maps</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/grant/guideline">期中及成果報告撰寫格式</a></li>
+       tal:attributes="href string:${root}/program/guideline"
+       i18n:translate="">Guidelines for Reports</a></li>
       </ul>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/sinology">漢學資源</a></li>
+     tal:attributes="href string:${root}/sinology"
+     i18n:translate="">Sinology</a></li>
     <li class="">
     <a class="rootmenulink parent" href="#"
-     tal:attributes="href string:${root}/publication">出版品</a>
+     tal:attributes="href string:${root}/publication"
+     i18n:translate="">Publications</a>
       <ul class="submenu">
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/annual">年報</a></li>
+       tal:attributes="href string:${root}/publication/annual"
+       i18n:translate="">Annual Report</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/newsletter">簡訊</a></li>
+       tal:attributes="href string:${root}/publication/newsletter"
+       i18n:translate="">Newsletter</a></li>
       <li class="menuitem">
       <a class="menulink" href="#" target="_blank"
-       tal:attributes="href string:${root}/publication/decennial">十周年慶專刊</a></li>
+       tal:attributes="href string:${root}/publication/decennial"
+       i18n:translate="">The First Decade</a></li>
       </ul>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/news">最新消息</a></li>
+     tal:attributes="href string:${root}/news"
+     i18n:translate="">News</a></li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/link">相關連結</a></li>
+     tal:attributes="href string:${root}/link"
+     i18n:translate="">Links</a></li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/contact">連絡本會</a></li>
+     tal:attributes="href string:${root}/contact"
+     i18n:translate="">Contact Info</a></li>
     <li id="mini-searchbox" class="displayNav">
     <form action="#/search" name="searchform">
       <input type="text" class="searchField inputLabel inputLabelActive" title="Search" size="18" name="SearchableText">
