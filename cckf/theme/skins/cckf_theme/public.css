@@ -62,6 +62,7 @@ img.bg {
 #portal-columns {
   background: none repeat scroll 0 0 #FDFDF5;
   border: 1px solid #D4D0C7;
+  padding: 15px 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -206,13 +207,13 @@ sub {
 
 #portal-languageselector {
   float: right;
-  background: #e3e3e3;
+  background: none;
   position: relative;
   top: 0;
   right: 1px;
   z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
   padding: 0.25em 0.5em;
-  font-size: 80%;
+  font-size: 100%;
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   -webkit-border-bottom-right-radius: 0.5em;
