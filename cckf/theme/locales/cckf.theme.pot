@@ -1,0 +1,123 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-06-05 17:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: cckf.theme\n"
+
+#: ./browser/sections.pt:36
+msgid "American Regional Office"
+msgstr ""
+
+#: ./browser/sections.pt:97
+msgid "Annual Report"
+msgstr ""
+
+#: ./browser/sections.pt:13
+msgid "Background"
+msgstr ""
+
+#: ./browser/sections.pt:28
+msgid "Board of Directors"
+msgstr ""
+
+#: ./browser/sections.pt:119
+msgid "Contact Info"
+msgstr ""
+
+#: ./browser/sections.pt:17
+msgid "Goals"
+msgstr ""
+
+#: ./browser/sections.pt:74
+msgid "Grant Allocations"
+msgstr ""
+
+#: ./browser/sections.pt:78
+msgid "Grant Maps"
+msgstr ""
+
+#: ./browser/sections.pt:70
+msgid "Grant Recipients"
+msgstr ""
+
+#: ./browser/sections.pt:82
+msgid "Guidelines for Reports"
+msgstr ""
+
+#: ./browser/sections.pt:8
+msgid "Introduction"
+msgstr ""
+
+#: ./browser/sections.pt:115
+msgid "Links"
+msgstr ""
+
+#: ./browser/sections.pt:111
+msgid "News"
+msgstr ""
+
+#: ./browser/sections.pt:101
+msgid "Newsletter"
+msgstr ""
+
+#: ./browser/sections.pt:23
+msgid "Organization"
+msgstr ""
+
+#: ./browser/sections.pt:44
+msgid "Overseas Centers"
+msgstr ""
+
+#: ./browser/sections.pt:49
+msgid "Programs"
+msgstr ""
+
+#: ./browser/sections.pt:92
+msgid "Publications"
+msgstr ""
+
+#: ./browser/sections.pt:40
+msgid "Regional Committees"
+msgstr ""
+
+#: ./browser/sections.pt:88
+msgid "Sinology"
+msgstr ""
+
+#: ./browser/sections.pt:32
+msgid "Taipei Headquarters"
+msgstr ""
+
+#: ./browser/sections.pt:58
+msgid "The American Region"
+msgstr ""
+
+#: ./browser/sections.pt:66
+msgid "The Asia-Pacific Region"
+msgstr ""
+
+#: ./browser/sections.pt:54
+msgid "The Domestic Region"
+msgstr ""
+
+#: ./browser/sections.pt:62
+msgid "The European Region"
+msgstr ""
+
+#: ./browser/sections.pt:105
+msgid "The First Decade"
+msgstr ""
+

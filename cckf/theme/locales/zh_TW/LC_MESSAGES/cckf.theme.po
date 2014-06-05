@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cckf.theme\n"
+"POT-Creation-Date: 2014-06-05 17:38+0000\n"
+"PO-Revision-Date: 2014-06-06 01:50+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: Plone I18N <plone-i18n@lists.sourcegorge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: cckf.theme\n"
+
+#: ./browser/sections.pt:36
+msgid "American Regional Office"
+msgstr "美洲辦事處"
+
+#: ./browser/sections.pt:97
+msgid "Annual Report"
+msgstr "年報"
+
+#: ./browser/sections.pt:13
+msgid "Background"
+msgstr "成立背景"
+
+#: ./browser/sections.pt:28
+msgid "Board of Directors"
+msgstr "董事會"
+
+#: ./browser/sections.pt:119
+msgid "Contact Info"
+msgstr "連絡本會"
+
+#: ./browser/sections.pt:17
+msgid "Goals"
+msgstr "宗旨"
+
+#: ./browser/sections.pt:74
+msgid "Grant Allocations"
+msgstr "歷年獎助狀況"
+
+#: ./browser/sections.pt:78
+msgid "Grant Maps"
+msgstr "獎助地圖"
+
+#: ./browser/sections.pt:70
+msgid "Grant Recipients"
+msgstr "歷年獎助名單"
+
+#: ./browser/sections.pt:82
+msgid "Guidelines for Reports"
+msgstr "期中及成果報告撰寫格式"
+
+#: ./browser/sections.pt:8
+msgid "Introduction"
+msgstr "基金會簡介"
+
+#: ./browser/sections.pt:115
+msgid "Links"
+msgstr "相關連結"
+
+#: ./browser/sections.pt:111
+msgid "News"
+msgstr "最新消息"
+
+#: ./browser/sections.pt:101
+msgid "Newsletter"
+msgstr "簡訊"
+
+#: ./browser/sections.pt:23
+msgid "Organization"
+msgstr "組織"
+
+#: ./browser/sections.pt:44
+msgid "Overseas Centers"
+msgstr "海外漢學研究中心"
+
+#: ./browser/sections.pt:49
+msgid "Programs"
+msgstr "獎助業務"
+
+#: ./browser/sections.pt:92
+msgid "Publications"
+msgstr "出版品"
+
+#: ./browser/sections.pt:40
+msgid "Regional Committees"
+msgstr "諮議委員會"
+
+#: ./browser/sections.pt:88
+msgid "Sinology"
+msgstr "漢學資源"
+
+#: ./browser/sections.pt:32
+msgid "Taipei Headquarters"
+msgstr "基金會總部"
+
+#: ./browser/sections.pt:58
+msgid "The American Region"
+msgstr "美洲地區"
+
+#: ./browser/sections.pt:66
+msgid "The Asia-Pacific Region"
+msgstr "亞太地區"
+
+#: ./browser/sections.pt:54
+msgid "The Domestic Region"
+msgstr "國內地區"
+
+#: ./browser/sections.pt:62
+msgid "The European Region"
+msgstr "歐洲地區"
+
+#: ./browser/sections.pt:105
+msgid "The First Decade"
+msgstr "十周年慶專刊"
+
