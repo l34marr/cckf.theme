@@ -23,6 +23,11 @@
   margin-bottom: 0;
 }
 
+.section-index_html .galleria-container {
+  background-color: #FDFDF5;
+  border: 1px solid #CCCCCC;
+  height: 385px !important;
+}
 .section-index_html .galleria-image {
   height: 335px !important;
 }
