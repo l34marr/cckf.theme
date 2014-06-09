@@ -30,19 +30,19 @@
        i18n:translate="">Board of Directors</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/hq"
+       tal:attributes="href string:${root}/structure/headquarter"
        i18n:translate="">Taipei Headquarters</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/am"
+       tal:attributes="href string:${root}/structure/american"
        i18n:translate="">American Regional Office</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/cm"
+       tal:attributes="href string:${root}/structure/committees"
        i18n:translate="">Regional Committees</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/oc"
+       tal:attributes="href string:${root}/structure/overseas"
        i18n:translate="">Overseas Centers</a></li>
       </ul>
     </li>
