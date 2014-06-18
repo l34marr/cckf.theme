@@ -13,7 +13,7 @@
   margin-left: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .section-index_html #content .tile-edge {
@@ -25,7 +25,7 @@
 
 .section-index_html .galleria-container {
   background-color: #FDFDF5;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #C3C3C0;
   height: 385px !important;
 }
 .section-index_html .galleria-image {
