@@ -18,6 +18,8 @@
 
 .section-index_html #content .tile-edge {
   background-color: #FDFDF5;
+  border: 1px solid #C3C3C0;
+  height: 250px !important;
 }
 .section-index_html #content .collection-item p {
   margin-bottom: 0;
