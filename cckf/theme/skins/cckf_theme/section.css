@@ -34,3 +34,7 @@
   height: 335px !important;
 }
 
+/* disable Lead Image display */
+.section-about .leadImage {
+  display: none;
+}
