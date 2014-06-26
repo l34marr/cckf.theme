@@ -40,10 +40,45 @@
     <link rel="stylesheet" href="++theme++cckf.theme/css/accordionpro.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="++theme++cckf.theme/js/jquery.accordionpro.min.js"></script>
+    <script src="++theme++cckf.theme/js/isotope.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
     <meta name="generator" content="Plone - http://plone.org" />
   </tal:notajax>
+<script type="text/javascript">
+$(document).ready(function(){
+  //isotope
+  var $container = $('#bcontent');
+
+  $container.imagesLoaded( function(){
+    $container.isotope({
+      transformsEnabled: true,
+      visibleStyle: { opacity: 1 },
+      hiddenStyle: { opacity: 0 },
+      itemSelector:'.box',
+      filter: '*',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false, }
+    });
+  });
+  $('#sort-nav a').click(function(){
+    $('#sort-nav .current').removeClass('current');
+    $(this).addClass('current');
+    var selector = $(this).attr('data-filter');
+      $container.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false,
+        }
+      });
+    return false;
+  });
+});
+</script>
 </head>
 
 <body tal:define="isRTL portal_state/is_rtl;
@@ -121,6 +156,7 @@
                tal:content="structure provider:plone.abovecontentbody"
                tal:condition="not:ajax_load" />
 
+<div class="container">
 <div id="one">
   <ol>
     <li>
@@ -139,8 +175,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" />
-        <figcaption class="ap-caption">資源選介</figcaption>
+        <figure><a class="internal-link" href="01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">資源選介-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -166,8 +202,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" />
-        <figcaption class="ap-caption">聯合目錄檢索</figcaption>
+        <figure><a class="internal-link" href="02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">聯合目錄檢索-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -202,8 +238,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" />
-        <figcaption class="ap-caption">數位圖書館、資料庫</figcaption>
+        <figure><a class="internal-link" href="03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">數位圖書館、資料庫-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -223,8 +259,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" />
-        <figcaption class="ap-caption">古籍文獻</figcaption>
+        <figure><a class="internal-link" href="04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">古籍文獻-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -238,8 +274,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" />
-        <figcaption class="ap-caption">宗教</figcaption>
+        <figure><a class="internal-link" href="05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">宗教-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -259,8 +295,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" />
-        <figcaption class="ap-caption">家譜族譜</figcaption>
+        <figure><a class="internal-link" href="06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">家譜族譜-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -280,8 +316,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" />
-        <figcaption class="ap-caption">人物傳記</figcaption>
+        <figure><a class="internal-link" href="07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">人物傳記-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -301,8 +337,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" />
-        <figcaption class="ap-caption">期刊論文</figcaption>
+        <figure><a class="internal-link" href="08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">期刊論文-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -322,8 +358,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" />
-        <figcaption class="ap-caption">學位論文</figcaption>
+        <figure><a class="internal-link" href="09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">學位論文-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -343,8 +379,8 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" />
-        <figcaption class="ap-caption">報刊索引</figcaption>
+        <figure><a class="internal-link" href="10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">報刊索引-簡短說明</figcaption>
         </figure>
       </div>
     </li>
@@ -376,13 +412,166 @@
       </div>
         </span></font>
       <div>
-        <figure><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" />
-        <figcaption class="ap-caption">網路數位圖書資源</figcaption>
+        <figure><a class="internal-link" href="11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">網路數位圖書資源-簡短說明</figcaption>
         </figure>
       </div>
     </li>
   </ol>
 </div>
+</div>
+
+<p>當代國際關係網絡之中，一個國家形象的維持已不單是靠政治、經濟與外交的方法可以完全達到目的，其間學術文化的交流，也是不可或缺的管道。一九七二年日本政府以相當於二百億台幣的雄厚基金成立「日本國際交流基金會」(Japan Foundation)，以鉅額經費補助歐美重要大學與學術機構，鼓勵從事日本文化語文的學術研究。自此以後，日本研究就逐漸成為歐美大學內東亞研究機構的主流，而實際上是東亞文化基礎的漢學反而漸被忽視。</p>
+
+<!-- 漢學資源 動態磚 內容開始 -->
+<div id="sort-nav">
+  <ul>
+    <li class="menu"><a href="#" data-filter="*" onClick="return false;">全部</a></li>
+    <li class="menu"><a href="" data-filter=".01">資源選介</a></li>
+    <li class="menu"><a href="" data-filter=".02">聯合目錄檢索</a></li>
+    <li class="menu"><a href="" data-filter=".03">數位圖書館、資料庫</a></li>
+    <li class="menu"><a href="" data-filter=".04">古籍文獻</a></li>
+    <li class="menu"><a href="" data-filter=".05">宗教</a></li>
+    <li class="menu"><a href="" data-filter=".06">家譜族譜</a></li>
+    <li class="menu"><a href="" data-filter=".07">人物傳記</a></li>
+    <li class="menu"><a href="" data-filter=".08">期刊論文</a></li>
+    <li class="menu"><a href="" data-filter=".09">學位論文</a></li>
+    <li class="menu"><a href="" data-filter=".10">報刊索引</a></li>
+    <li class="menu"><a href="" data-filter=".11">網路數位圖書資源</a></li>
+  </ul>
+</div>
+<div class="visualClear"></div>
+<div  id="bcontent">
+  <div class="box 01">
+    <div class="box-img"><a href="01/ccs"><img src="++theme++cckf.theme/img/sinology-album/01/ncl.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="01/ccs">漢學研究資訊中心 </a></div>
+  </div>
+  <div class="box 01">
+   <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/ccs2010.jpg" /></a></div>
+   <div class="box-info"><a href="#">國際漢學研究數位資源選介</a></div>
+  </div>
+  <div class="box 01">
+   <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/tair.jpg" /></a></div>
+   <div class="box-info"><a href="#">國家圖書館臺灣學術主題資料庫</a></div>
+  </div>
+  <div class="box 01">
+    <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/npm.jpg" /></a></div>
+    <div class="box-info"><a href="#">國立故宮博物院</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/nbinet3.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">全國圖書書目資料網</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/opac.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中國國家圖書館聯合圖書目錄</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/uhtbin.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">北京大學圖書館</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/duxiu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">讀秀</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/chaoxing.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">超星</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/eastasianlib.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">普林斯頓大學葛思德東亞圖書館</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/hathitrust.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">Hathi Trust Digital Library</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/tianyige.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">天一閣博物館古籍數字資料庫</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/applyonline.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中央研究院數位資源暨藏品圖像</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/hanji.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中研院電子漢籍文獻</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/skqs.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">【寒泉】古典文獻全文檢索資料庫</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/rarebookdl.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">古漢籍善本數位化資料庫檢索系統</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/ccbs.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">佛學數位圖書館及博物館</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/sutrapearls.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">電子佛教辭典</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/byscrj.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中華傳統道家道教文化資料下載</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/ddbc.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">佛學規範資料庫</a></div>
+  </div>
+  <div class="box 06">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/06/jiapu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">上海圖書館家譜數據庫</a></div>
+  </div>
+  <div class="box 06">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/06/chinajiapu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中國家譜網</a></div>
+  </div>
+  <div class="box 07">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/07/people.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">明清檔案人名權威資料</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/readopac.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣期刊論文索引系統</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/tci.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣人文及社會科學引文索引資料庫</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/airitilibrary.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">華藝線上圖書網</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/cinii.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">CiNii Articles</a></div>
+  </div>
+  <div class="box 09">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/09/ndltd.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣博碩士論文知識加值統</a></div>
+  </div>
+  <div class="box 10">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/10/cnbksy.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">全國報刊索引</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/gxsd.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">國學數典</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/er07.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">愛如生論壇</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/sina.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">新浪愛問</a></div>
+  </div>
+</div>
+<!-- 漢學資源 動態磚 內容結束 -->
 
               <div id="viewlet-below-content-body"
                tal:content="structure provider:plone.belowcontentbody"
@@ -451,7 +640,6 @@
       }
     });
   }
-
   $('#one').accordionPro({
     autoPlay : true,
     onSlideOpen : callback,
