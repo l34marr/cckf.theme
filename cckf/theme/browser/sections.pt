@@ -1,7 +1,7 @@
 <div id="themenu" i18n:domain="cckf.theme">
   <div id="navbar-wrapper" >
     <nav id="mainMenu" class="tencol last">
-    <a class="toggleMenu" href="#" style="display: none;">Menu <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
+    <a class="toggleMenu" href="#" style="display: none;">Menu<span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
     <ul class="nav" style="display: block;"
      tal:define="root context/@@plone_portal_state/navigation_root_url;">
     <li class="">
@@ -102,9 +102,13 @@
        tal:attributes="href string:${root}/publication/newsletter"
        i18n:translate="">Newsletter</a></li>
       <li class="menuitem">
-      <a class="menulink" href="#" target="_blank"
+      <a class="menulink" href="#"
        tal:attributes="href string:${root}/publication/decennial"
        i18n:translate="">The First Decade</a></li>
+      <li class="menuitem">
+      <a class="menulink" href="#"
+       tal:attributes="href string:${root}/publication/video"
+       i18n:translate="">Video</a></li>
       </ul>
     </li>
     <li class="">
