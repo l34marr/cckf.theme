@@ -113,8 +113,8 @@
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/news"
-     i18n:translate="">News</a></li>
+     tal:attributes="href string:${root}/bulletin"
+     i18n:translate="">Bulletin</a></li>
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/link"
