@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-06-05 17:38+0000\n"
+"POT-Creation-Date: 2014-06-27 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: cckf.theme\n"
+
+#: ./browser/footer.pt:5
+msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
+msgstr ""
 
 #: ./browser/sections.pt:36
 msgid "American Regional Office"
@@ -33,8 +37,20 @@ msgstr ""
 msgid "Board of Directors"
 msgstr ""
 
-#: ./browser/sections.pt:119
+#: ./browser/sections.pt:115
+msgid "Bulletin"
+msgstr ""
+
+#: ./browser/sections.pt:123
 msgid "Contact Info"
+msgstr ""
+
+#: ./browser/footer.pt:6
+msgid "Copyright &copy; 2014"
+msgstr ""
+
+#: ./browser/footer.pt:13
+msgid "Fax"
 msgstr ""
 
 #: ./browser/sections.pt:17
@@ -61,12 +77,8 @@ msgstr ""
 msgid "Introduction"
 msgstr ""
 
-#: ./browser/sections.pt:115
+#: ./browser/sections.pt:119
 msgid "Links"
-msgstr ""
-
-#: ./browser/sections.pt:111
-msgid "News"
 msgstr ""
 
 #: ./browser/sections.pt:101
@@ -101,6 +113,10 @@ msgstr ""
 msgid "Taipei Headquarters"
 msgstr ""
 
+#: ./browser/footer.pt:12
+msgid "Tel"
+msgstr ""
+
 #: ./browser/sections.pt:58
 msgid "The American Region"
 msgstr ""
@@ -119,5 +135,19 @@ msgstr ""
 
 #: ./browser/sections.pt:105
 msgid "The First Decade"
+msgstr ""
+
+#: ./browser/sections.pt:109
+msgid "Video"
+msgstr ""
+
+#. Default: "last modified"
+#: ./skins/cckf_theme/folder_compact_view.pt:51
+msgid "box_last_modified"
+msgstr ""
+
+#. Default: "by ${author}"
+#: ./skins/cckf_theme/folder_compact_view.pt:40
+msgid "label_by_author"
 msgstr ""
 
