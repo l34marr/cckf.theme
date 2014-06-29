@@ -618,7 +618,7 @@ $(document).ready(function(){
 
   <div class="visualClear"><!-- --></div>
 
-  <div id="footer"
+  <div id="portal-footer"
    i18n:domain="plone"
    tal:condition="not:ajax_load">
     <div tal:replace="structure provider:plone.portalfooter" />
