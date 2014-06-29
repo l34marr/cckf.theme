@@ -12,6 +12,7 @@ div.row {
   width: 100%;
   display: block;
   position: relative;
+  /* margin-bottom: 20px; marr */
 }
 div.cell {
   position: relative;

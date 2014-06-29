@@ -8,8 +8,8 @@
   border: 0.3em solid #ddd;
 }
 #edit-bar {
-  background-color: #75ad0a;
-  border: 0.25em solid #75ad0a;
+  background-color: #0294ae;
+  border: 0.25em solid #0294ae;
   font-size: 80%;
   min-height: 2em;
   margin-bottom: 1em;
@@ -17,7 +17,7 @@
 }
 #content-views {
   float: left;
-  background-color: #75ad0a;
+  background-color: #0294ae;
 }
 /* fix shift on content views list under ie6 */
 /* .ie6 is set on <html> by Modernizr library */
@@ -35,12 +35,12 @@
   display: block;
   border-style: solid solid none solid;
   margin-left: 0;
-  border-top-right-radius: 0.5em;
-  border-top-left-radius: 0.5em;
-  -webkit-border-top-right-radius: 0.5em;
-  -webkit-border-top-left-radius: 0.5em;
-  -moz-border-radius-topleft: 0.5em;
-  -moz-border-radius-topright: 0.5em;
+  border-top-right-radius: 0em;
+  border-top-left-radius: 0em;
+  -webkit-border-top-right-radius: 0em;
+  -webkit-border-top-left-radius: 0em;
+  -moz-border-radius-topleft: 0em;
+  -moz-border-radius-topright: 0em;
 }
 #content li.formTab,
 #content-core li.formTab {
@@ -143,12 +143,12 @@ div.field span.required:after {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-  background-color: #75ad0a;
+  background-color: #0294ae;
   color: White;
   z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-  border-bottom: 0.5em solid #75ad0a;
+  border-bottom: 0.5em solid #0294ae;
   right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
@@ -171,17 +171,17 @@ div.field span.required:after {
 
 #contentActionMenus {
   float: right;
-  background: #75ad0a;
+  background: #0294ae;
   margin: 0;
   position: relative;
   top: -0.23em;
   right:-0.24em;
   padding: 0.1em 0.24em 0 0;
-  border-radius: 0.5em;
+  border-radius: 0em;
   border-top-left-radius: 0;
-  -webkit-border-radius: 0.5em;
+  -webkit-border-radius: 0em;
   -webkit-border-top-left-radius: 0;
-  -moz-border-radius: 0.5em;
+  -moz-border-radius: 0em;
   -moz-border-radius-topleft: 0;
 }
 
