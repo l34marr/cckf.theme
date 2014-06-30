@@ -55,4 +55,14 @@
     permission="zope2.View"
     layer=".interfaces.IThemeSpecific" />
 
+  <browser:page
+    name="compact_view"
+    for="plone.app.contenttypes.interfaces.IFolder"
+    class=".compact_view.CompactView"
+    template="compact_view.pt"
+    permission="zope2.View"
+    menu="plone_displayviews"
+    title="Compact"
+    layer=".interfaces.IThemeSpecific" />
+
 </configure>
