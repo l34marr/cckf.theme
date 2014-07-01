@@ -29,16 +29,18 @@
 
   <tal:albumsvideos tal:condition="python:albums or videos">
     <tal:videos tal:condition="batch" tal:repeat="video batch">
-      <div class="photoAlbumEntry">
+      <div class="compactTile" tal:condition="video/image">
         <a tal:define="id python:int(b_start)+int(repeat['video'].number()-1);
                        scale video/@@images;
-                       img_tag python:scale.scale('image', scale='thumb').tag()"
+                       img_tag python:scale.scale('image', scale='compact').tag()"
          tal:attributes="href string:${video/absolute_url}/view;
                          title video/Description">
-          <span class="photoAlbumEntryWrapper">
-            <img src="" alt="" tal:replace="structure img_tag" />
-          </span>
-          <span class="photoAlbumEntryTitle" tal:content="video/pretty_title_or_id">
+          <img src="" alt="" tal:replace="structure img_tag" />
+          <span class="play"></span>
+          <p style="margin-bottom: 0; font-weight: normal"
+           tal:content="python: video.Date()[0:7]">Date</p>
+          <span style="font-size: 13px; font-weight: bold; letter-spacing: 1px"
+           tal:content="video/pretty_title_or_id">
             Title
           </span>
         </a>
