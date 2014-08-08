@@ -76,12 +76,13 @@
        i18n:translate="">Grant Allocations</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/map"
-       i18n:translate="">Grant Maps</a></li>
+       tal:attributes="href string:${root}/program/facet"
+       i18n:translate="">Faceted Query</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/guideline"
-       i18n:translate="">Guidelines for Reports</a></li>
+       tal:attributes="href string:${root}/program/map"
+       i18n:translate="">Grant Maps</a></li>
+
       </ul>
     </li>
     <li class="">
