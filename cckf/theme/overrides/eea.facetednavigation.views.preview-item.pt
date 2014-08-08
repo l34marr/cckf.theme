@@ -1,0 +1,26 @@
+<div id="bcontent"
+ tal:define="portal_type context/portal_type;
+             useViewTypes context/portal_properties/site_properties/typesUseViewActionInListings;
+             useView python:portal_type in useViewTypes;">
+<div class="box 01"
+ tal:define="title context/pretty_title_or_id|string:;
+      description context/Description|string:;
+      desc_or_title python:description or title;
+      url context/absolute_url|string:#;
+      view_url python:(url and useView and url + '/view') or url">
+  <div class="box-img"
+   tal:define="scale context/@@images;
+               img_tag python:scale.scale('image', scale='compact').tag()">
+  <a tal:attributes="href view_url;
+                     title description">
+    <img src="" alt=""
+     tal:replace="structure img_tag" />
+  </a>
+  </div>
+  <a tal:attributes="href view_url;
+                     title description">
+    <span class="box-info"
+     tal:content="context/pretty_title_or_id|string:">Title</span>
+  </a>
+</div>
+</div>
