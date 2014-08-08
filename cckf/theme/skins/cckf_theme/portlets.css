@@ -2,15 +2,23 @@
 
 dl.portlet {
   margin: 0 0 1em;
-  font-size: 80%;
+  font-size: 15px;
+      letter-spacing: 0.1em;
+    line-height: 1.5em;
 }
 dl.portletError {
   background-color: #FFA500;
 }
 
 dl.portlet dt {
-  padding: 0.42em 1em;
-  background: #ddd;
+  background: url("++theme++cckf.theme/img/porlet-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-position: 2px;
+  color: #444;
+  padding: 0.42em 1em 0.42em 2.6em;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+ /* background-image: url("++theme++cckf.theme/img/pattern.jpg");*/
+  /*background: #ddd;*/
   line-height: normal;
 }
 dl.portlet dt.hiddenStructure {
@@ -20,7 +28,7 @@ dl.portlet dt.hiddenStructure {
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
 dl.portlet dt a:hover {
-  color: black;
+  color: #222;
   display: block;
   border: none;
 }
@@ -28,7 +36,8 @@ dl.portlet dt a:hover {
 dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
-  padding: 1em;
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 13px;
 }
 
 .blockedPortlet .portletHeader {
@@ -47,10 +56,13 @@ dl.portletError dd {
 }
 
 .portletItemDetails {
+border-bottom: 1px dotted #bbb;
+    color: #888;
   font-size: 85%;
   padding-top: .5em;
+  padding-bottom: .5em;
   line-height: 1.5em;
-  margin-left: 1em;
+  margin-left: 0em;
   display: block;
 }
 
@@ -89,10 +101,11 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-  background-color: #ddd;
-  border-left: 1em solid #ddd;
-  margin-left: -1em;
-  margin-right: -1em;
+  /*background-color: #ddd;
+  border-left: 1em solid #ddd;*/
+  font-weight: bold;
+  /* margin-left: -1em;
+  margin-right: -1em;*/
 }
 
 /* @end */

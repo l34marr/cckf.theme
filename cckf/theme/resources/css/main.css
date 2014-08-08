@@ -30,6 +30,7 @@ img.bg {
   background: url("../img/cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   padding-bottom: 10px;
   padding-left: 45px;
+
 }
 div.managePortletsLink, a.managePortletsFallback {
   background: none repeat scroll 0 0 #0294AE;
@@ -37,6 +38,9 @@ div.managePortletsLink, a.managePortletsFallback {
   color: #FFFFFF;
   font-size:100%;
   padding: 0.45em 1.5em;
+}
+.galleria-image {
+  margin-top: -2px;
 }
 #active_img {
   display: block;
@@ -65,16 +69,11 @@ div.managePortletsLink, a.managePortletsFallback {
 .tile-footer {
   background: url("../img/more.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
   font-size: 12px;
-  margin-left: 20px;
+  margin-left: 8px;
   padding-left: 20px;
   float: left;
 }
-#eab6b25764774be59145af41f13477d3 {
-  margin-top: 20px;
-}
-#bc1859a1b89d4bf3bbb79d405593df26 {
-  margin-top: 20px;
-}
+
 #e427f25e4f584bdcbbd9b26fc0c1c1f3 {
   margin-top: 20px;
 }
@@ -135,13 +134,7 @@ div.managePortletsLink, a.managePortletsFallback {
   width: 235px;
 }
 
-#searchGadget {
-  border: 1px solid #BBBBBB;
-  font-family: arial,STHeiti,pmingliu,sans-serif;
-  font-size: 14px;
-  height: 20px;
-  width: 14em;
-}
+
 
 .LSBox button {
   background-color: rgba(0, 0, 0, 0);
@@ -169,6 +162,25 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 * li {
   display: inline;
+}
+/* right side define ============================================================================*/
+
+#sidebar {
+    font-size: 90%;
+}
+#sidebar h3.title {
+    color: #333333;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+#sidebar .sideblock {
+    background: url("../img/porlet-point.png") no-repeat scroll -3px 2px transparent;
+	border-bottom: 1px dotted #cecece;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 17px;
 }
 
 /* content define ============================================================================*/
@@ -198,24 +210,36 @@ div.managePortletsLink, a.managePortletsFallback {
   padding-left: 20px;
 }
 
+.tileHeadline {
+    font-size: 1.1em;
+}
 .tileItem {
   border-bottom: 2px dotted #BBBBBB;
   margin-bottom: 10px;
 }
 .event.summary {
-  border-bottom: 2px #ccc solid;
-  width: 100%;
+  background-color: #ebe7de;
+
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
 }  
+.event dt {
+    color: #916d4d;
+}
 #content dt {
   margin-right: 10px;
 }  
+.leadImage {
+  display: none;
+}
 /* nav menu define ============================================================================*/
 
 #navbar-wrapper {
   background-color: #9D242B;
   height: 40px;
   margin: 0 auto;
-  width: 1165px;
+  max-width: 1160px;
 }
 
 #mini-searchbox {
@@ -245,7 +269,9 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 #footer-container .footColumn {
   text-align: left;
-  margin-right: 230px;
+  margin-right: 200px;
+  margin-left: 14px;
+  margin-top: 6px;
   float: left;
 }
 #footer-container .footColumn-last {
@@ -259,18 +285,37 @@ div.managePortletsLink, a.managePortletsFallback {
   color: #333333;
   font-family: "open_sansbold",Arial,Helvetica,sans-serif;
   font-size: 2em;
-  padding-left: 0.6em;
+  padding-right: 0.3em;
 }
 
 #footer-container dd {
   font-family: "open_sansregular",Arial,Helvetica,sans-serif;
-  padding: 0.5em 1.2em 0;
+  letter-spacing: 0.1em;
+  padding: 0.5em 0 0;
 }
 
 #footer-container dl dd {
   margin-left: 0;
+  width: 300px;
+  line-height: 1.5em;
 }
 
+#portletmanager-plone-leftcolumn {
+    margin-left: 30px;
+}
+dl.portletCalendar dt {
+    background: none repeat scroll 0 0 #bbb;
+    border-bottom: medium none;
+    font-weight: normal;
+    line-height: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f63636b662f62756c6c6574696e0a63616c656e646172 {
+    padding-left: 15px;
+}
 /* 董事名單 photo ============================================================================*/
 
 #photo {
@@ -284,7 +329,7 @@ div.managePortletsLink, a.managePortletsFallback {
 #photo ul li {
   float: left;
   line-height: 1.5em;
-  margin: 2px 0.6em 20px 0;
+  margin: 2px 4px 20px 0;
   padding: 0;
   width: 160px;
   height: 250px;
@@ -346,8 +391,8 @@ table {
   font-family: "Open Sans", "微軟正黑體", sans-serif;
   font-size: 14px;
   margin-bottom: 8px;
-  margin-right: 1px;
-  padding: 4px 7px;
+  margin-right: 0px;
+  padding: 4px 5px;
   text-decoration: none;
 }
 #sort-nav ul li a:hover {
@@ -384,8 +429,9 @@ table {
   margin-bottom: 5px;
   margin-top: 0px;
   margin-left: 15px;
-  width: 270px;
+  width: 264px;
 }
+
 .box-img {
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
@@ -400,7 +446,7 @@ table {
   -ms-box-shadow: 1px 1px 4px 0 #CCCCCC;
 }
 .box-img  img {
-  width: 258px;
+  width: 253px;
 }
 .box-date {
   color: #bbb;
@@ -422,6 +468,7 @@ table {
   padding-right: 10px;
 }
 .box-info {
+  display: block;
   background: url("../img/link.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
   color: #444444;
   font-family: "Open Sans","微軟正黑體",sans-serif;
@@ -440,6 +487,108 @@ table {
   border: 1px solid #BBBBBB;
   width: 100%;
 }
+.head-line {
+    background: url("++theme++cckf.theme/img/cloud.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
+    font-weight: bold;
+    padding-left: 50px;
+}
+/*  EEA Module setting ============================================================================*/
+.photoAlbumEntry img {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.photoAlbumEntry {
+    background-image: none;
+    margin: 5px;
+    padding: 6px;
+    width: 136px;
+}
+.photoAlbumEntry a {
+    width: 136px;
+}
+.photoAlbumEntryWrapper {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 4px 0 #cccccc;
+    display: block;
+    height: auto;
+    margin-bottom: 7px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 130px;
+}
+.photoAlbumEntryTitle {
+    color: #222;
+    font-size: 13px;
+    width: 100%;
+}
+
+/*  漢學資源 獎助名單 ============================================================================*/
+.award-region {
+    background-color: #8f8f8b;
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 20px;
+	margin-bottom: 10px;
+    padding-top: 2px;
+
+}
+.area {
+    float: left;
+    margin-left: 10px;
+}
+.dollor {
+    float: right;
+    margin-right: 10px;
+	font-weight: normal;
+}
+
+.award-catagory > h2 {
+    border-bottom: 2px solid #666;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.award-project {
+    border-bottom: 2px dotted #bbb;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+	font-size: 15px;
+	letter-spacing: 0.05em;
+	font-weight: normal;
+}
+.award-item {
+    padding-bottom: 4px;
+}
+.award-item h5 {
+    background-color: #999;
+    color: #ffffff;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 3px;
+    text-align: center;
+    width: 80px;
+}
+.award-content {
+    float: left;
+    margin-left: 20px;
+    width: 700px;
+}
+
+.clearfix {
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
 /*  出版品 setting ============================================================================*/
 .photo-container {
   position: relative;
@@ -498,84 +647,485 @@ table {
   height: 100%;
 }
 .banner-box {
+  margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 #compact {
    margin-top: 10px;
 }   
-.compact_info{
-    border-bottom: 1px dashed #aaa;
-    color: #666666;
-    display: inline-block;
-    float: left;
-    font-weight: bold;
-    margin: 0 15px 30px 0;
-    min-height: 260px;
-    padding-bottom: 5px;
-    width: 258px;
+.compactTile {
+  border-bottom: 1px dashed #aaa;
+  color: #666666;
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  margin: 0 20px 30px 0;
+  min-height: 25px;
+  padding-bottom: 5px;
+  width: 258px;
 }
 .compact-img {
 }
 .compact-img img{
-    width: 258px;
+  width: 258px;
 }
 .compact-title{
-    color: #222;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 0.08em;
+  color: #222;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
 }
 .compact-date{
-    font: 10px;
-    font-weight: normal;
+  font: 10px;
+  font-weight: normal;
 }
 .item { width: 125px; height: 80px; }	
 .compact-img a { text-decoration: none; display:block; }
 
-.compact-img a span.play { display:none; background: url('++theme++cckf.theme/img/video-play.png') center center no-repeat; margin: -180px 10px 0 0; height: 180px; position: relative; z-index: 100; opacity: 0.8; }
-.compact-img a:hover span.play { display:block; }
+a span.play { display: none; background: url('++theme++cckf.theme/img/video-play.png') center center no-repeat; margin: -180px 10px 0 0; height: 180px; position: relative; z-index: 100; opacity: 0.8; }
+a:hover span.play { display: block; }
 .clear { clear: both;}	
 
 .listbox {
-    border-top: 1px solid #e7e7e7;
-    float: left;
-    margin-bottom: 6px;
-    padding-top: 12px;
-	width: 100%;
+  border-top: 1px solid #e7e7e7;
+  float: left;
+  margin-bottom: 6px;
+  padding-top: 12px;
+  width: 100%;
 }
-.listbox  .img {
-    float: left;
-    height: auto !important;
-    margin: 0 15px 0 0;
-
-    overflow: hidden;
-    border: 1px solid #ddd;
+.listbox .img {
+  float: left;
+  height: auto !important;
+  margin: 0 15px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 #content ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 .listbox ul.filelist {
-    clear: none;
-    float: left;
-    list-style: none outside none;
-    margin: 1em 0 0;
-
+  clear: none;
+  float: left;
+  list-style: none outside none;
+  margin: 1em 0 0;
 }
 .listbox h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: -1.1em 0 0 114px;
-    position: relative;
-    top: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: -1.1em 0 0 114px;
+  position: relative;
+  top: 1.1em;
 }
 .listbox ul.filelist li {
-    padding: 0.1em 0;
+  padding: 0.1em 0;
 }
 .listbox ul.filelist li a {
-    padding-left: 38px;
+  padding-left: 38px;
 }
 
 .pdf a {
-    background: url("++theme++cckf.theme/img/pdf-icon.png") no-repeat scroll 0 30% transparent;
+  background: url("++theme++cckf.theme/img/pdf-icon.png") no-repeat scroll 0 30% transparent;
 }
+
+/*  expanding search bar setting ============================================================================*/
+#portal-languageselector {
+  float: right;
+  margin-top: 35px;
+}
+#portal-languageselector li{
+  float: right;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.cck-container {
+  position: relative;
+  width: 100%;
+}
+.cck-inner{
+  padding: 0px 20px;
+  position: relative;
+  max-width: 1243px;
+  margin: 0 auto;
+}
+.cck-header {
+  background: #0099cc;
+  position: relative;
+  z-index: 999;
+  padding: 30px 0;
+}
+.cck-header-items-right {
+  float: right;
+  width: 200px;
+}
+.cck-search {
+  background: url("../cckf/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  position: relative;
+  float: right;
+  width: 34px;
+  height: 34px;
+  margin: 16px 0 0 0;
+  z-index: 100000;
+}
+.cck-search-input-wrap {
+  position: absolute;
+  right: 34px;
+  height: 34px;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 200ms;
+  -moz-transition: width 200ms;
+  transition: width 200ms;
+}
+.cck-search.cck-search-open .cck-search-input-wrap {
+  width: 240px;
+}
+
+.cck-icon-search,
+input[type="submit"].cck-search-submit  {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+.cck-icon-search {
+  color: #9d242b;
+  z-index: 90;
+}
+.cck-search.cck-search-open .cck-icon-search{
+  background: #9d242b;
+  color: #fff;
+  z-index: 1;
+  pointer-events: none;
+}
+input[type="submit"].cck-search-submit {
+  background: url("../cckf/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  /*background: transparent;*/
+  color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  z-index: -1;
+}
+.cck-search.cck-search-open input[type="submit"].cck-search-submit {
+  z-index: 90;
+}
+input[type="text"].cck-search-input {
+  border: none;
+  outline: none;
+  opacity: 0;
+  background: #fff;
+  width: 265px;
+  height: 34px;
+  margin: 0;
+  padding: 2px 7px;
+}
+.cck-search.cck-search-open input[type="text"].cck-search-input {
+  opacity: 1;
+}
+::-webkit-input-placeholder {
+  color: #666;
+}
+:-moz-placeholder {
+  color: #666;
+}
+::-moz-placeholder {
+  color: #666;
+}
+:-ms-input-placeholder {
+  color: #666;
+}
+
+/* Dexterity Content Types */
+#content label.fieldHead {
+  display: inline-block;
+  background-color: #b8b8b4;
+  color: White;
+  font-weight: normal;
+  text-align: left;
+  padding-left:10px;
+  margin: 3px;
+  width: 100px;
+
+}
+.forText {
+  display: none;
+}
+
+
+/*  擴展搜尋bar setting ============================================================================*/
+
+.ct-container {
+  position: relative;
+  width: 100%;
+}
+.ct-inner{
+  padding: 0px 20px;
+  position: relative;
+  max-width: 1243px;
+  margin: 0 auto;
+}
+.ct-header {
+  background: #0099cc;
+  position: relative;
+  z-index: 999;
+  padding: 30px 0;
+}
+.ct-header-items-right {
+  float: right;
+  width: 320px;
+}
+.ct-search {
+  background: url("../img/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 40px;
+  z-index: 100000;
+}
+.ct-search-input-wrap {
+  position: absolute;
+  right: 0px;
+  height: 30px;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 200ms;
+  -moz-transition: width 200ms;
+  transition: width 200ms;
+}
+.ct-search.ct-search-open .ct-search-input-wrap {
+  width: 235px;
+}
+
+.ct-icon-search,
+input[type="submit"].ct-search-submit  {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.ct-icon-search {
+  color: #bb9157;
+  z-index: 90;
+}
+.ct-search.ct-search-open .ct-icon-search{
+  background: url("../img/search-icon-active.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-color: #bb9157;
+  color: #fff;
+  z-index: 1;
+  pointer-events: none;
+}
+input[type="submit"].ct-search-submit {
+  background: transparent;
+  color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  z-index: -1;
+}
+.ct-search.ct-search-open input[type="submit"].ct-search-submit {
+  z-index: 90;
+}
+input[type="text"].ct-search-input {
+  border: none;
+  outline: none;
+  opacity: 0;
+  background: #fff;
+  width: 202px;
+  height: 30px;
+  font-size: 15px;
+  margin: 0;
+  padding-left: 2px;
+  /*padding: 2px 7px;*/
+}
+.ct-search.ct-search-open input[type="text"].ct-search-input {
+  opacity: 1;
+}
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+:-moz-placeholder {
+  color: #ddd;
+}
+::-moz-placeholder {
+  color: #ddd;
+}
+:-ms-input-placeholder {
+  color: #ddd;
+}
+
+.ploneCalendar td.today {
+  background-color: #bb9157;
+  border-color: #fff;
+  color: #fff;
+}
+.portletCalendar dt {
+  background-color: #bb9157;
+  color: #fff;
+}
+.ploneCalendar td {
+  border: 1px solid #fff;
+}
+
+/*  歷年獎助名單 dropdown list setting ============================================================================*/
+
+.container {
+  width: 240px;
+  
+}
+
+.container > .dropdown {
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 100%;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 13px;
+  color: #222;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+  z-index: 999;
+  width: 100%;
+  color: #555;
+  outline: 2px solid #49aff2;
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.dropdown-select > option {
+  margin: 3px;
+  padding-top: 3px 4px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}
+
+.dropdown-dark {
+  background: #444;
+  border-color: #111111 #0a0a0a black;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-dark:before {
+  border-bottom-color: #aaa;
+}
+
+.dropdown-dark:after {
+  border-top-color: #aaa;
+}
+
+.dropdown-dark .dropdown-select {
+  color: #aaa;
+  text-shadow: 0 1px black;
+  background: #444;  /* Fallback for IE 8 */
+}
+
+.dropdown-dark .dropdown-select:focus {
+  color: #ccc;
+}
+
+.dropdown-dark .dropdown-select > option {
+  background: #444;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+

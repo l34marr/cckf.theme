@@ -12,7 +12,7 @@
   border: 0.25em solid #0294ae;
   font-size: 80%;
   min-height: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   padding-top: 0.05em;
 }
 #content-views {
@@ -129,11 +129,11 @@ div.field span.required:after {
   padding-bottom: 0.5em;
 }
 #portal-personaltools dd a {
-  line-height: 2em;
+  line-height: 1.7em;
   padding: 0 0.75em;
 }
 #portal-personaltools dd a:hover {
-  background: #205c90;
+  background: #9d242b;
   color: White;
 }
 

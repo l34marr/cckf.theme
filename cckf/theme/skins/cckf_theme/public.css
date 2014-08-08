@@ -12,7 +12,7 @@
 
 /* workflow state color "published". Other definitions in member.css */
 .state-published {
-  color: #436976 !important;
+  color: #222222 !important;
 }
 
 
@@ -50,11 +50,12 @@ img.bg {
   background-image: url("++theme++cckf.theme/img/pattern.png");
   background-color: #DDCC9B;
   color: #222222;
+  z-index: 999;
 }
 
 #portal-top > div {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1160px;
   overflow: hidden;
   position: relative;
 }
@@ -63,13 +64,14 @@ img.bg {
   background: none repeat scroll 0 0 #FDFDF5;
   border: 1px solid #D4D0C7;
   padding: 15px 0 0;
-  width: 99.6%;
+  margin-left: 3px;
+  width: 99.3%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
   font-weight: bold;
-  color: Black;
+  color: #222;
   line-height: 1.5em;
 }
 h1, h2 {
@@ -186,10 +188,11 @@ sub {
 }
 
 #portal-personaltools {
+ 
   float: right;
   background: #e3e3e3;
   position: relative;
-  z-index: 3; /* personaltools should be above #portal-header (with z-index: 2) */
+  z-index: 999; /* personaltools should be above #portal-header (with z-index: 2) */
   top: 0;
   right: 0;
   padding: 0.25em 0.5em;
@@ -241,13 +244,14 @@ sub {
 }
 
 #searchGadget {
-  width: 13em;
+
 }
 #searchGadget,
 .LSBox input.searchButton {
 }
 
 .LSBox .searchSection {
+  display: none;
 }
 
 #content input.searchField {
@@ -317,7 +321,7 @@ input.searchField {
   color:#666666;
   font-size: 80%;
   margin-bottom: 1em;
-  margin-left: 0.25em;
+  margin-left: 2em;
   padding-left: 18px; 
 }
 #portal-breadcrumbs a {
@@ -380,7 +384,7 @@ dl dt span.summary a {
   font-size: 95%;
   letter-spacing: 0.12em;
   line-height: 1.8em;
-  margin: 1em 0.25em 2em 1.3em;
+  margin: 1em 1em 1.5em 1.5em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -394,6 +398,7 @@ body#content {
 
 #content h1.documentFirstHeading {
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 #content p,
@@ -423,7 +428,8 @@ dl.portlet a:visited {
 #content a:hover,
 dl.portlet a:hover {
   color: #b61e28 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
-}
+  text-decoration: underline;
+  }
 #content a:target {
   background-color: #ffb;
 }
@@ -437,6 +443,8 @@ dl.portlet a:hover {
   margin-bottom: 1em;
   color: #666;
   text-align: right;
+  float: left;
+  margin-top: 20px;
 }
 
 #category a.link-category, span.selectedTag {
@@ -448,9 +456,9 @@ dl.portlet a:hover {
   -moz-border-radius: 0.5em;
 }
 #category a.link-category:hover {
-  background: #205c90;
+  background: #ccc;
   color: White;
-  border-color: #205c90;
+  border-color: #fff;
 }
 #category .separator {
   display: none;
@@ -458,8 +466,10 @@ dl.portlet a:hover {
 
 #content dt {
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-right: 0;
+  border-bottom: 1px dotted #fff;
+
 }
 #content-core dd {
   margin: 0 0 1em 2em;
@@ -493,7 +503,8 @@ dl.portlet a:hover {
 #content #description {
   color: #666;
   margin-left: 0;
-  font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
+  margin-bottom: 15px;
+  font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
 
 #content div.newsImageContainer a {

@@ -61,7 +61,8 @@ div.portletStaticText li {
 #content img.tileImage,
 #content div.newsImageContainer {
   float: right;
-  margin: 0 1em 0.5em 1em;
+  margin: 0 1em 0.5em 0;
+  display: none;
 }
 
 .eventDetails {
@@ -604,6 +605,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
 }
 .image-inline {
   float: none;
+
 }
 
 /* @end */
@@ -956,13 +958,13 @@ a.historyComparePrevious span {
 */
 
 .icons-on .contenttype-document {
-  background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
+  background: no-repeat transparent 0px 6px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-event {
   background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-folder {
-  background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+  background: no-repeat transparent 0px -641px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-link {
   background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
