@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cckf.theme\n"
-"POT-Creation-Date: 2014-06-27 11:35+0000\n"
-"PO-Revision-Date: 2014-06-27 13:52+0800\n"
+"POT-Creation-Date: 2014-08-08 12:25+0000\n"
+"PO-Revision-Date: 2014-08-08 20:26+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourcegorge.net>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr "台北市敦化南路二段65號13樓／B"
 msgid "American Regional Office"
 msgstr "美洲辦事處"
 
-#: ./browser/sections.pt:97
+#: ./browser/sections.pt:98
 msgid "Annual Report"
 msgstr "年報"
 
@@ -34,17 +34,21 @@ msgstr "成立背景"
 msgid "Board of Directors"
 msgstr "董事會"
 
-#: ./browser/sections.pt:115
+#: ./browser/sections.pt:116
 msgid "Bulletin"
 msgstr "最新動態"
 
-#: ./browser/sections.pt:123
+#: ./browser/sections.pt:124
 msgid "Contact Info"
 msgstr "連絡本會"
 
 #: ./browser/footer.pt:6
 msgid "Copyright &copy; 2014"
 msgstr "Copyright &copy; 2014 版權所有"
+
+#: ./browser/sections.pt:78
+msgid "Faceted Query"
+msgstr "互動查詢"
 
 #: ./browser/footer.pt:13
 msgid "Fax"
@@ -58,7 +62,7 @@ msgstr "宗旨"
 msgid "Grant Allocations"
 msgstr "歷年獎助狀況"
 
-#: ./browser/sections.pt:78
+#: ./browser/sections.pt:82
 msgid "Grant Maps"
 msgstr "獎助地圖"
 
@@ -66,19 +70,15 @@ msgstr "獎助地圖"
 msgid "Grant Recipients"
 msgstr "歷年獎助名單"
 
-#: ./browser/sections.pt:82
-msgid "Guidelines for Reports"
-msgstr "期中及成果報告撰寫格式"
-
 #: ./browser/sections.pt:8
 msgid "Introduction"
 msgstr "基金會簡介"
 
-#: ./browser/sections.pt:119
+#: ./browser/sections.pt:120
 msgid "Links"
 msgstr "相關連結"
 
-#: ./browser/sections.pt:101
+#: ./browser/sections.pt:102
 msgid "Newsletter"
 msgstr "簡訊"
 
@@ -94,7 +94,7 @@ msgstr "海外漢學研究中心"
 msgid "Programs"
 msgstr "獎助業務"
 
-#: ./browser/sections.pt:92
+#: ./browser/sections.pt:93
 msgid "Publications"
 msgstr "出版品"
 
@@ -102,7 +102,7 @@ msgstr "出版品"
 msgid "Regional Committees"
 msgstr "諮議委員會"
 
-#: ./browser/sections.pt:88
+#: ./browser/sections.pt:89
 msgid "Sinology"
 msgstr "漢學資源"
 
@@ -130,21 +130,11 @@ msgstr "國內地區"
 msgid "The European Region"
 msgstr "歐洲地區"
 
-#: ./browser/sections.pt:105
+#: ./browser/sections.pt:106
 msgid "The First Decade"
 msgstr "十周年慶專刊"
 
-#: ./browser/sections.pt:109
+#: ./browser/sections.pt:110
 msgid "Video"
 msgstr "影音"
-
-#. Default: "last modified"
-#: ./skins/cckf_theme/folder_compact_view.pt:51
-msgid "box_last_modified"
-msgstr ""
-
-#. Default: "by ${author}"
-#: ./skins/cckf_theme/folder_compact_view.pt:40
-msgid "label_by_author"
-msgstr ""
 
