@@ -1,0 +1,655 @@
+<metal:page define-macro="master">
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+ tal:define="portal_state context/@@plone_portal_state;
+    context_state context/@@plone_context_state;
+    plone_view context/@@plone;
+    lang portal_state/language;
+    view nocall:view | nocall: plone_view;
+    dummy python: plone_view.mark_view(view);
+    portal_url portal_state/portal_url;
+    checkPermission nocall: context/portal_membership/checkPermission;
+    site_properties nocall:context/portal_properties/site_properties;
+    ajax_load request/ajax_load | nothing;
+    ajax_include_head request/ajax_include_head | nothing;
+    dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge,chrome=1');"
+ tal:attributes="lang lang;">
+
+  <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
+  Get the global cache headers located in global_cache_settings.
+  </metal:cache>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <metal:baseslot define-slot="base">
+    <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+  </metal:baseslot>
+
+  <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
+    <div tal:replace="structure provider:plone.htmlhead" />
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <tal:comment replace="nothing">
+      Various slots where you can insert elements in the header from a template.
+    </tal:comment>
+    <metal:topslot define-slot="top_slot" />
+    <metal:headslot define-slot="head_slot" />
+    <metal:styleslot define-slot="style_slot" />
+    <link rel="stylesheet" href="++theme++cckf.theme/css/accordionpro.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="++theme++cckf.theme/js/jquery.accordionpro.min.js"></script>
+    <script src="++theme++cckf.theme/js/isotope.js"></script>
+    <script src="++theme++cckf.theme/js/search.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
+    <meta name="generator" content="Plone - http://plone.org" />
+  </tal:notajax>
+<script type="text/javascript">
+$(document).ready(function(){
+  //isotope
+  var $container = $('#bcontent');
+
+  $container.imagesLoaded( function(){
+    $container.isotope({
+      transformsEnabled: true,
+      visibleStyle: { opacity: 1 },
+      hiddenStyle: { opacity: 0 },
+      itemSelector:'.box',
+      filter: '*',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false, }
+    });
+  });
+  $('#sort-nav a').click(function(){
+    $('#sort-nav .current').removeClass('current');
+    $(this).addClass('current');
+    var selector = $(this).attr('data-filter');
+      $container.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false,
+        }
+      });
+    return false;
+  });
+});
+</script>
+</head>
+
+<body tal:define="isRTL portal_state/is_rtl;
+    sl python:plone_view.have_portlets('plone.leftcolumn', view);
+    sr python:plone_view.have_portlets('plone.rightcolumn', view);
+    body_class python:plone_view.bodyClass(template, view);
+    classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view)"
+ tal:attributes="class body_class;
+    dir python:isRTL and 'rtl' or 'ltr'">
+
+<img src="++theme++cckf.theme/img/background.jpg" class="bg" />
+
+<div id="visual-portal-wrapper">
+
+  <div id="portal-top"
+   i18n:domain="plone"
+   tal:condition="not:ajax_load">
+    <div>
+      <div tal:replace="structure provider:plone.portaltop" />
+    </div>
+  </div>
+
+  <div tal:replace="structure provider:cckf.navigation" />
+
+  <div style="margin: 0 auto; max-width: 1180px;">
+
+  <div id="portal-columns" class="row">
+
+    <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
+
+      <div id="viewlet-above-content"
+       tal:content="structure provider:plone.abovecontent"
+       tal:condition="not:ajax_load" />
+
+      <metal:block define-slot="content">
+        <div metal:define-macro="content"
+         tal:define="show_border context/@@plone/showEditableBorder;
+                     show_border python:show_border and not ajax_load"
+         tal:attributes="class python:show_border and 'documentEditable' or ''">
+          <div id="edit-bar"
+           tal:condition="show_border"
+           tal:content="structure provider:plone.contentviews" />
+          <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+            Status message
+          </div>
+          <metal:slot define-slot="body">
+            <div id="content">
+            <metal:header define-slot="header" tal:content="nothing">
+              Visual Header
+            </metal:header>
+            <metal:bodytext define-slot="main">
+              <div id="viewlet-above-content-title"
+               tal:content="structure provider:plone.abovecontenttitle"
+               tal:condition="not:ajax_load" />
+              <metal:title define-slot="content-title">
+                <metal:comment tal:content="nothing">
+                  If you write a custom title always use
+                  <h1 class="documentFirstHeading"></h1> for it
+                </metal:comment>
+                <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+                  Generic KSS Title. Is rendered with class="documentFirstHeading".
+                </h1>
+              </metal:title>
+
+              <metal:description define-slot="content-description">
+                <metal:comment tal:content="nothing">
+                  If you write a custom description always use
+                  <div class="documentDescription"></div> for it
+                </metal:comment>
+                <div metal:use-macro="context/kss_generic_macros/macros/generic_description_view">
+                  Generic KSS Description. Is rendered with class="documentDescription".
+                </div>
+              </metal:description>
+              <div id="viewlet-above-content-body"
+               tal:content="structure provider:plone.abovecontentbody"
+               tal:condition="not:ajax_load" />
+
+<div class="container">
+<div id="one">
+  <ol>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">介</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">選</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">源</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">資</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">資源選介-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">索</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">檢</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">錄</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">目</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">合</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">聯</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">聯合目錄檢索-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">庫</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">料</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">資</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">、</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">館</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">書</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">圖</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">位</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">數</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">數位圖書館、資料庫-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">獻</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">文</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">籍</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">古</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">古籍文獻-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">教</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">宗</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">宗教-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">譜</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">族</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">譜</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">家</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">家譜族譜-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">記</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">傳</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">物</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">人</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">人物傳記-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">文</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">論</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">刊</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">期</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">期刊論文-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">文</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">論</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">位</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">學</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">學位論文-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">引</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">索</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">刊</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">報</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">報刊索引-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">源</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">資</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">書</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">圖</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">位</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">數</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">路</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">網</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
+        <figcaption class="ap-caption">網路數位圖書資源-簡短說明</figcaption>
+        </figure>
+      </div>
+    </li>
+  </ol>
+</div>
+</div>
+
+<div class="head-line">最新漢學資源</div>
+
+<!-- 漢學資源 動態磚 內容開始 -->
+<div id="sort-nav">
+  <ul>
+    <li class="menu"><a href="#" data-filter="*" onClick="return false;">全部</a></li>
+    <li class="menu"><a href="" data-filter=".01">資源選介</a></li>
+    <li class="menu"><a href="" data-filter=".02">聯合目錄檢索</a></li>
+    <li class="menu"><a href="" data-filter=".03">數位圖書館、資料庫</a></li>
+    <li class="menu"><a href="" data-filter=".04">古籍文獻</a></li>
+    <li class="menu"><a href="" data-filter=".05">宗教</a></li>
+    <li class="menu"><a href="" data-filter=".06">家譜族譜</a></li>
+    <li class="menu"><a href="" data-filter=".07">人物傳記</a></li>
+    <li class="menu"><a href="" data-filter=".08">期刊論文</a></li>
+    <li class="menu"><a href="" data-filter=".09">學位論文</a></li>
+    <li class="menu"><a href="" data-filter=".10">報刊索引</a></li>
+    <li class="menu"><a href="" data-filter=".11">網路數位圖書資源</a></li>
+  </ul>
+</div>
+<div class="visualClear"></div>
+<div  id="bcontent">
+  <div class="box 01">
+    <div class="box-img"><a href="00001"><img src="++theme++cckf.theme/img/sinology-album/01/ncl.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="00001">漢學研究資訊中心 </a></div>
+  </div>
+  <div class="box 01">
+   <div class="box-img"><a href="00002"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/ccs2010.jpg" /></a></div>
+   <div class="box-info"><a href="00002">國際漢學研究數位資源選介</a></div>
+  </div>
+  <div class="box 01">
+   <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/tair.jpg" /></a></div>
+   <div class="box-info"><a href="#">國家圖書館臺灣學術主題資料庫</a></div>
+  </div>
+  <div class="box 01">
+    <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/npm.jpg" /></a></div>
+    <div class="box-info"><a href="#">國立故宮博物院</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/nbinet3.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">全國圖書書目資料網</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/opac.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中國國家圖書館聯合圖書目錄</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/uhtbin.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">北京大學圖書館</a></div>
+  </div>
+  <div class="box 02">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/02/duxiu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">讀秀</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/chaoxing.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">超星</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/eastasianlib.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">普林斯頓大學葛思德東亞圖書館</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/hathitrust.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">Hathi Trust Digital Library</a></div>
+  </div>
+  <div class="box 03">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/03/tianyige.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">天一閣博物館古籍數字資料庫</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/applyonline.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中央研究院數位資源暨藏品圖像</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/hanji.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中研院電子漢籍文獻</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/skqs.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">【寒泉】古典文獻全文檢索資料庫</a></div>
+  </div>
+  <div class="box 04">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/04/rarebookdl.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">古漢籍善本數位化資料庫檢索系統</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/ccbs.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">佛學數位圖書館及博物館</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/sutrapearls.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">電子佛教辭典</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/byscrj.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中華傳統道家道教文化資料下載</a></div>
+  </div>
+  <div class="box 05">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/05/ddbc.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">佛學規範資料庫</a></div>
+  </div>
+  <div class="box 06">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/06/jiapu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">上海圖書館家譜數據庫</a></div>
+  </div>
+  <div class="box 06">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/06/chinajiapu.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">中國家譜網</a></div>
+  </div>
+  <div class="box 07">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/07/people.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">明清檔案人名權威資料</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/readopac.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣期刊論文索引系統</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/tci.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣人文及社會科學引文索引資料庫</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/airitilibrary.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">華藝線上圖書網</a></div>
+  </div>
+  <div class="box 08">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/08/cinii.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">CiNii Articles</a></div>
+  </div>
+  <div class="box 09">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/09/ndltd.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">臺灣博碩士論文知識加值統</a></div>
+  </div>
+  <div class="box 10">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/10/cnbksy.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">全國報刊索引</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/gxsd.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">國學數典</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/er07.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">愛如生論壇</a></div>
+  </div>
+  <div class="box 11">
+    <div class="box-img"><a href="#"><img src="++theme++cckf.theme/img/sinology-album/11/sina.jpg" alt="" /></a></div>
+    <div class="box-info"><a href="#">新浪愛問</a></div>
+  </div>
+</div>
+<!-- 漢學資源 動態磚 內容結束 -->
+
+              <div id="viewlet-below-content-body"
+               tal:content="structure provider:plone.belowcontentbody"
+               tal:condition="not:ajax_load" />
+            </metal:bodytext>
+            </div>
+          </metal:slot>
+
+          <metal:sub define-slot="sub" tal:content="nothing">
+            This slot is here for backwards compatibility only.
+            Don't use it in your custom templates.
+          </metal:sub>
+        </div>
+      </metal:block>
+
+      <div id="viewlet-below-content"
+       tal:content="structure provider:plone.belowcontent"
+       tal:condition="not:ajax_load" />
+
+    </div>
+
+    <tal:notajax tal:condition="not:ajax_load">
+      <div id="portal-column-one" class="cell width-1:4 position-0"
+       metal:define-slot="column_one_slot"
+       tal:condition="sl"
+       tal:attributes="class classes/one">
+        <metal:portlets define-slot="portlets_one_slot">
+          <tal:block replace="structure provider:plone.leftcolumn" />
+        </metal:portlets>
+      </div>
+      <div id="portal-column-two" class="cell width-1:4 position-3:4"
+       metal:define-slot="column_two_slot"
+       tal:condition="sr"
+       tal:attributes="class classes/two">
+        <metal:portlets define-slot="portlets_two_slot">
+          <tal:block replace="structure provider:plone.rightcolumn" />
+        </metal:portlets>
+      </div>
+    </tal:notajax>
+
+  </div>
+
+  </div>
+
+  <div class="visualClear"><!-- --></div>
+
+  <div id="portal-footer"
+   i18n:domain="plone"
+   tal:condition="not:ajax_load">
+    <div tal:replace="structure provider:plone.portalfooter" />
+  </div>
+
+</div>
+
+<script src="++theme++cckf.theme/js/script.js"></script>
+<noscript>
+  <p>Please enable JavaScript to get the full experience.</p>
+</noscript>
+<script>
+  function callback() {
+    $('#one').find('.ap-caption').each(function() {
+      if (!$(this).parents('.slide').hasClass('selected')) {
+        $(this).fadeOut();
+      } else {
+        if (!$(this).is(':visible')) $(this).fadeIn();
+      }
+    });
+  }
+  $('#one').accordionPro({
+    autoPlay : true,
+    onSlideOpen : callback,
+    onSlideClose : callback,
+    theme : 'stitch',
+    rounded : true
+  }).find('.ap-caption:first').show();
+</script>
+
+</body>
+</html>
+
+</metal:page>
