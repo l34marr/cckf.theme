@@ -11,18 +11,19 @@
   background-color: #FDFDF5;
   font-size: 70%;
   margin-left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+  padding: 8px 8px 0;
 }
 
 .section-index_html #content .tile-edge {
   background-color: #FDFDF5;
-  border: 1px solid #C3C3C0;
+  border: 1px solid #CCCCCC;
   height: 250px !important;
+  border-radius: 0px;
 }
 .section-index_html #content .collection-item p {
   margin-bottom: 0;
+  color: #888;
+  font-size: 13px;
 }
 
 .section-index_html .galleria-container {
@@ -35,6 +36,26 @@
 }
 
 /* disable Lead Image display */
-.section-about .leadImage {
+.section-about .leadImage,
+.section-publication .leadImage {
   display: none;
+}
+
+/* Faceted View */
+.subsection-facet #c1_widget,
+.subsection-facet span.documentByLine {
+  display: none !important;
+}
+.subsection-facet #right-area,
+.subsection-facet #left-area {
+  width: 22% !important;
+}
+.subsection-facet .left-area-js {
+  margin-left: 17em !important;
+}
+.subsection-facet .right-area-js {
+  margin-right: 17em !important;
+}
+.subsection-facet input#c6 {
+  width: 80% !important;
 }
