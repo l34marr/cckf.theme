@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-08-08 12:25+0000\n"
+"POT-Creation-Date: 2014-09-05 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgstr ""
 
 #: ./browser/sections.pt:13
 msgid "Background"
+msgstr ""
+
+#: ./browser/footer.pt:23
+msgid "Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution"
 msgstr ""
 
 #: ./browser/sections.pt:28
@@ -73,6 +77,10 @@ msgstr ""
 msgid "Grant Recipients"
 msgstr ""
 
+#: ./overrides/eea.facetednavigation.views.preview-item.pt:35
+msgid "Institute"
+msgstr ""
+
 #: ./browser/sections.pt:8
 msgid "Introduction"
 msgstr ""
@@ -95,6 +103,10 @@ msgstr ""
 
 #: ./browser/sections.pt:49
 msgid "Programs"
+msgstr ""
+
+#: ./overrides/eea.facetednavigation.views.preview-item.pt:30
+msgid "Project"
 msgstr ""
 
 #: ./browser/sections.pt:93

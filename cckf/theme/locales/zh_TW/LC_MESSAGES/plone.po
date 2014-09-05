@@ -18,3 +18,9 @@ msgstr ""
 msgid "portal_title"
 msgstr "蔣經國基金會"
 
+msgid "Classify"
+msgstr "分類"
+
+msgid "Text Search"
+msgstr "全文搜尋"
+
