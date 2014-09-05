@@ -19,4 +19,7 @@
       <dt class="footSectionHeader"><img src="++theme++cckf.theme/img/qrcode.png"></dt>
     </dl>
   </div>
+  <div class="browser-info">
+      <span class="suggest-info" i18n:translate="">Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution</span>
+  </div>
 </div>
