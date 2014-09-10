@@ -68,11 +68,11 @@
        i18n:translate="">The Asia-Pacific Region</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/list"
+       tal:attributes="href string:${root}/program/recipient"
        i18n:translate="">Grant Recipients</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/status"
+       tal:attributes="href string:${root}/program/allocation"
        i18n:translate="">Grant Allocations</a></li>
       <li class="menuitem">
       <a class="menulink" href="#"
