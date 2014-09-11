@@ -317,7 +317,7 @@ input.searchField {
 /* @group Path indicator (breadcrumbs) */
 
 #portal-breadcrumbs {
-  background: url("++theme++cckf.theme/img/index_icon.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/icon-index.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
   color:#666666;
   font-size: 15px;
   letter-spacing: 0.04em;
