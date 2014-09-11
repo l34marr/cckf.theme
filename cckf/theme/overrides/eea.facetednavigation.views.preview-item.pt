@@ -1,16 +1,18 @@
 <div id="bcontent"
+ i18n:domain="cckf.theme"
  tal:define="portal_type context/portal_type;
              useViewTypes context/portal_properties/site_properties/typesUseViewActionInListings;
-             useView python:portal_type in useViewTypes;">
-<div class="box 01"
- tal:define="title context/pretty_title_or_id|string:;
+             useView python:portal_type in useViewTypes;
+title context/pretty_title_or_id|string:;
       description context/Description|string:;
       desc_or_title python:description or title;
       url context/absolute_url|string:#;
-      view_url python:(url and useView and url + '/view') or url">
+      view_url python:(url and useView and url + '/view') or url;
+      scale context/@@images|nothing"
+ tal:attributes="id python:portal_type=='sinology' and 'bcontent' or ''">
+<div class="box 01" tal:condition="python:portal_type=='sinology' and scale">
   <div class="box-img"
-   tal:define="scale context/@@images;
-               img_tag python:scale.scale('image', scale='compact').tag()">
+   tal:define="img_tag python:scale.scale('image', scale='compact').tag()">
   <a tal:attributes="href view_url;
                      title description">
     <img src="" alt=""
@@ -22,5 +24,17 @@
     <span class="box-info"
      tal:content="context/pretty_title_or_id|string:">Title</span>
   </a>
+</div>
+<div class="award-project" tal:condition="python:portal_type=='grant'">
+<div>
+<label class="fieldHead" i18n:translate="">Project</label>
+<span class="forText">:</span>
+<span tal:replace="context/pretty_title_or_id|string:" />
+</div>
+<div tal:condition="description">
+<label class="fieldHead" i18n:translate="">Institute</label>
+<span class="forText">:</span>
+<span tal:replace="description" />
+</div>
 </div>
 </div>
