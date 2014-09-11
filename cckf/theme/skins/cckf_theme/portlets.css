@@ -11,7 +11,7 @@ dl.portletError {
 }
 
 dl.portlet dt {
-  background: url("++theme++cckf.theme/img/porlet-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/icon-cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   background-position: 2px;
   color: #444;
   padding: 0.42em 1em 0.42em 2.6em;
