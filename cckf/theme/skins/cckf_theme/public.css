@@ -19,9 +19,9 @@
 /* @group Basics */
 
 body {
-  font: 100% Arial, FreeSans, sans-serif;
-  background: #ebe7de;
-  color: Black;
+  font: 100% "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
+  background: #f5f6f1;
+  color: #222;
   /* width: 58em; margin: 1em auto; */
 }
 
@@ -69,7 +69,7 @@ img.bg {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+  font-family: "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
   font-weight: bold;
   color: #222;
   line-height: 1.5em;
@@ -115,7 +115,7 @@ dt {
   font-weight: bold;
 }
 input {
-  font-family: "Lucida Grande", Arial, FreeSans;
+  font-family: "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
 }
 
 q {
@@ -188,7 +188,7 @@ sub {
 }
 
 #portal-personaltools {
- 
+
   float: right;
   background: #e3e3e3;
   position: relative;
@@ -217,7 +217,7 @@ sub {
   right: 1px;
   z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
   padding: 0.25em 0.5em;
-  font-size: 100%;
+  font-size: 15px;
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   -webkit-border-bottom-right-radius: 0.5em;
@@ -317,11 +317,12 @@ input.searchField {
 /* @group Path indicator (breadcrumbs) */
 
 #portal-breadcrumbs {
-  background: url("++theme++cckf.theme/img/index_icon.png") no-repeat scroll 0 3px rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/index_icon.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
   color:#666666;
-  font-size: 80%;
+  font-size: 15px;
+  letter-spacing: 0.04em;
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 1.8em;
   padding-left: 18px; 
 }
 #portal-breadcrumbs a {
@@ -382,9 +383,9 @@ dl dt span.summary a {
   line-height: 1.5em;
   clear: both;
   font-size: 95%;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   line-height: 1.8em;
-  margin: 1em 1em 1.5em 1.5em;
+  margin: 1em 1em 1.5em 1.8em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -416,14 +417,14 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-  color: #444444;
+  color: black;
   border-bottom: 0em solid #ccc;
 }
 
 #content a:visited,
 dl.portlet a:visited {
   color: #444444;
-  border-bottom: 0.1em solid #ccc;
+  border-bottom: 0em solid #ccc;
 }
 #content a:hover,
 dl.portlet a:hover {
@@ -456,7 +457,7 @@ dl.portlet a:hover {
   -moz-border-radius: 0.5em;
 }
 #category a.link-category:hover {
-  background: #ccc;
+  background-color: #f0f0f0;
   color: White;
   border-color: #fff;
 }
@@ -478,7 +479,7 @@ dl.portlet a:hover {
 #content pre {
   background-color: #222;
   color: White;
-  font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-family: "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
   padding: 1em;
   overflow-x: auto;
   font-size: 90%;
@@ -490,7 +491,7 @@ dl.portlet a:hover {
 }
 
 #content code {
-  font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-family: "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
 }
 
 #content table {
@@ -504,7 +505,7 @@ dl.portlet a:hover {
   color: #666;
   margin-left: 0;
   margin-bottom: 15px;
-  font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif;
+  font: bold 1em "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
 }
 
 #content div.newsImageContainer a {

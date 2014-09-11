@@ -95,7 +95,7 @@ table.listing th {
 }
 table.plain th,
 table.plain td {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 table.plain th {
   text-align: left;
@@ -186,6 +186,7 @@ table.grid th {
 
 div.listingBar {
   font-size: 80%;
+  letter-spacing: 0.04em;
   margin: 2em 0 2em 1.3em;
 }
 
@@ -205,9 +206,10 @@ div.listingBar a {
 }
 
 div.listingBar a:hover {
+  clear: all;
   color: White;
   background-color: #bb9157;
-  border-color: #bb9157
+  border-color: #bb9157;
 }
 
 /* @end */
