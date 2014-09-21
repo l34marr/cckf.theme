@@ -29,7 +29,9 @@ title context/pretty_title_or_id|string:;
 <div>
 <label class="fieldHead" i18n:translate="">Project</label>
 <span class="forText">:</span>
+<a tal:attributes="href context/absolute_url">
 <span tal:replace="context/pretty_title_or_id|string:" />
+</a>
 </div>
 <div tal:condition="description">
 <label class="fieldHead" i18n:translate="">Institute</label>
