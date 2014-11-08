@@ -27,7 +27,7 @@ img.bg {
   margin-top: 20px;
 }
 .tile-header {
-  background: url("../img/cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   padding-bottom: 10px;
   padding-left: 45px;
 }
@@ -59,7 +59,7 @@ div.managePortletsLink, a.managePortletsFallback {
 	margin-top: 10px;
 }
 .more_info {
-	background: url("../img/icon-more.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/icon-more.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
 	font-size: 12px;
 	padding-left: 18px;
 }
@@ -72,6 +72,16 @@ div.managePortletsLink, a.managePortletsFallback {
 #f8ac16821aa24f1b8a38e28ff28ee224 {
 	margin-top: 20px;
 }
+#ce3e0d4a7fe04b4b843e387e0fbdf1b6 {
+    margin-top: 20px;
+}
+#a88b66a4e9284e6fb6cfbd6d5f70bb73 {
+    margin-top: 20px;
+}
+#ceab7be45ab84e6bb8aa129be5832b99 {
+    margin-top: 20px;
+}
+
 /* header define ============================================================================*/
 
 #header {
@@ -138,6 +148,7 @@ div.managePortletsLink, a.managePortletsFallback {
 	max-width: 100% !important;
 	height: 40px;
 }
+
 * ul, ol {
 	list-style: none outside none;
 }
@@ -157,7 +168,7 @@ div.managePortletsLink, a.managePortletsFallback {
 	margin-top: 3px;
 }
 #sidebar .sideblock {
-	background: url("../img/icon-point.png") no-repeat scroll -3px 2px transparent;
+	background: url("++theme++cckf.theme/img/icon-point.png") no-repeat scroll -3px 2px transparent;
 	border-bottom: 1px dotted #cecece;
 	margin-top: 5px;
 	padding-bottom: 5px;
@@ -221,6 +232,7 @@ div.managePortletsLink, a.managePortletsFallback {
 .plain {
 	width: 100%;
 }
+
 /* nav menu define ============================================================================*/
 
 #navbar-wrapper {
@@ -290,7 +302,7 @@ div.managePortletsLink, a.managePortletsFallback {
 	font-size: 11px;
 }
 .tile-footer {
-	background: url("../img/icon-more.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/icon-more.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
 	font-size: 12px;
 	margin-left: 8px;
 	padding-left: 20px;
@@ -497,6 +509,9 @@ table {
 	font-weight: bold;
 	padding-left: 50px;
 }
+#one ol {
+    margin-left: 0;
+}
 /*  EEA Module setting ============================================================================*/
 .photoAlbumEntry img {
 	border: 1px solid #ccc;
@@ -676,10 +691,7 @@ table {
 	font: 10px;
 	font-weight: normal;
 }
-.item {
-	width: 125px;
-	height: 80px;
-}
+
 .compact-img a {
 	text-decoration: none;
 	display: block;
@@ -716,6 +728,8 @@ a:hover span.play {
 #content ul {
 	list-style-type: none;
 }
+
+
 .listbox ul.filelist {
 	clear: none;
 	float: left;
@@ -770,7 +784,7 @@ a:hover span.play {
 	width: 200px;
 }
 .cck-search {
-	background: url("../cckf/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	position: relative;
 	float: right;
 	width: 34px;
@@ -813,7 +827,7 @@ a:hover span.play {
 	pointer-events: none;
 }
 input[type="submit"].cck-search-submit {
-	background: url("../cckf/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	/*background: transparent;*/
 	color: transparent;
 	box-shadow: none;
@@ -890,7 +904,7 @@ input[type="text"].cck-search-input {
 	width: 320px;
 }
 .ct-search {
-	background: url("../img/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	position: relative;
 	float: right;
 	width: 30px;
@@ -925,7 +939,7 @@ input[type="text"].cck-search-input {
 	z-index: 90;
 }
 .ct-search.ct-search-open .ct-icon-search {
-	background: url("../img/search-icon-a.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("++theme++cckf.theme/img/search-icon-a.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	background-color: #bb9157;
 	color: #fff;
 	z-index: 1;
@@ -978,14 +992,19 @@ input[type="text"].ct-search-input {
     letter-spacing: 0.05em;
     color: #888;
 }
+
 .ploneCalendar td.today {
 	background-color: #bb9157;
 	border-color: #fff;
 	color: #fff;
 }
 .portletCalendar dt {
+    margin-left: 12px;
 	background-color: #bb9157;
 	color: #fff;
+}
+.portletCalendar dd {
+    margin-left: 12px;
 }
 .ploneCalendar td {
 	border: 1px solid #fff;
@@ -1040,6 +1059,7 @@ input[type="text"].ct-search-input {
   border-bottom: none;
 }
 .dropdown-select {
+  font: 100% "Verdana","新細明體","PMingLiU","Arial","Helvetica","sans-serif";
   position: relative;
   width: 130%;
   margin: 0;
