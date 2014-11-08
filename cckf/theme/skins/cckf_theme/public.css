@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5em;
 }
 h1, h2 {
-  letter-spacing: 0.1em;
+  /*letter-spacing: 0.05em;*/
 }
 h1 {
   font-size: 1.6em;
@@ -93,6 +93,7 @@ h5 {
   font-size: 1em;
 }
 h6 {
+  margin-top: 0.3em;
   font-size: 0.8em;
 }
 h2, h3, h4, h5, h6 {
@@ -383,7 +384,7 @@ dl dt span.summary a {
   line-height: 1.5em;
   clear: both;
   font-size: 95%;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   line-height: 1.8em;
   margin: 1em 1em 1.5em 1.8em;
 }

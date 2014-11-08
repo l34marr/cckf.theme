@@ -34,6 +34,9 @@
 .section-index_html .galleria-image {
   height: 335px !important;
 }
+.section-index_html #portal-breadcrumbs {
+  display: none;
+}
 
 /* disable Lead Image display */
 .section-about .leadImage,

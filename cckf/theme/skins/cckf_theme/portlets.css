@@ -3,8 +3,8 @@
 dl.portlet {
   margin: 0 0 1em;
   font-size: 15px;
-      letter-spacing: 0.1em;
-    line-height: 1.5em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
 }
 dl.portletError {
   background-color: #FFA500;
@@ -16,7 +16,7 @@ dl.portlet dt {
   color: #444;
   padding: 0.42em 1em 0.42em 2.6em;
   font-size: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.07em;
  /* background-image: url("++theme++cckf.theme/img/pattern.jpg");*/
   /*background: #ddd;*/
   line-height: normal;

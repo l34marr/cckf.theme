@@ -10,7 +10,7 @@
 dl.portlet ol,
 div.portletStaticText ol {
   list-style-type: decimal;
-  /*margin-left: 2em;*/
+  margin-left: 1.8em;
 }
 
 #content li,
@@ -202,7 +202,7 @@ div.listingBar .previous {
 div.listingBar a {
   display: inline-block;
   padding: 0.25em 0.5em;
-
+  margin-bottom: 15px;
 }
 
 div.listingBar a:hover {
