@@ -26,16 +26,22 @@ title context/pretty_title_or_id|string:;
   </a>
 </div>
 <div class="award-project" tal:condition="python:portal_type=='grant'">
-<div>
+<div style="display:inline-block; width:86px; vertical-align:top;">
 <label class="fieldHead" i18n:translate="">Project</label>
 <span class="forText">:</span>
+</div>
+<div style="display:inline-block; width:80%;">
 <a tal:attributes="href context/absolute_url">
 <span tal:replace="context/pretty_title_or_id|string:" />
 </a>
 </div>
-<div tal:condition="description">
+<div style="display:inline-block; width:86px; vertical-align:top;"
+ tal:condition="description">
 <label class="fieldHead" i18n:translate="">Institute</label>
 <span class="forText">:</span>
+</div>
+<div style="display:inline-block; width:80%;"
+ tal:condition="description">
 <span tal:replace="description" />
 </div>
 </div>
