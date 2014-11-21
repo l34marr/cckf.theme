@@ -14,35 +14,22 @@
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/structure"
-     i18n:translate="">Organization</a>
-    </li>
-    <li class="">
-    <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/program"
      i18n:translate="">Programs</a>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/sinology"
-     i18n:translate="">Sinology</a></li>
+     tal:attributes="href string:${root}/resource"
+     i18n:translate="">Resources</a></li>
+    <li class="">
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/publication"
-     i18n:translate="">Publications</a>
-    </li>
-    <li class="">
-    <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/bulletin"
-     i18n:translate="">Bulletin</a></li>
-    <li class="">
-    <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/link"
-     i18n:translate="">Links</a></li>
+     tal:attributes="href string:${root}/news"
+     i18n:translate="">News</a></li>
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/contact"
-     i18n:translate="">Contact Info</a></li>
+     i18n:translate="">Contact</a></li>
     <li id="mini-searchbox" class="displayNav">
     <form action="#/search" name="searchform">
       <input type="text" class="searchField inputLabel inputLabelActive" title="Search" size="18" name="SearchableText">
