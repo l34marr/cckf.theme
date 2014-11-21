@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cckf.theme\n"
-"POT-Creation-Date: 2014-09-05 08:39+0000\n"
-"PO-Revision-Date: 2014-09-05 16:40+0800\n"
+"POT-Creation-Date: 2014-11-21 13:54+0000\n"
+"PO-Revision-Date: 2014-11-21 21:55+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourcegorge.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,87 +18,35 @@ msgstr ""
 msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
 msgstr "台北市敦化南路二段65號13樓／B"
 
-#: ./browser/sections.pt:36
-msgid "American Regional Office"
-msgstr "美洲辦事處"
-
-#: ./browser/sections.pt:98
-msgid "Annual Report"
-msgstr "年報"
-
-#: ./browser/sections.pt:13
-msgid "Background"
-msgstr "成立背景"
-
 #: ./browser/footer.pt:23
 msgid "Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution"
 msgstr "建議使用 IE 9.0 以上或新版 FireFox、Chrome 瀏覽器，最佳顯示解析度 1024x768 以上。"
 
-#: ./browser/sections.pt:28
-msgid "Board of Directors"
-msgstr "董事會"
-
-#: ./browser/sections.pt:116
-msgid "Bulletin"
-msgstr "最新動態"
-
-#: ./browser/sections.pt:124
-msgid "Contact Info"
+#: ./browser/sections.pt:30
+msgid "Contact"
 msgstr "連絡本會"
 
 #: ./browser/footer.pt:6
 msgid "Copyright &copy; 2014"
 msgstr "Copyright &copy; 2014 版權所有"
 
-#: ./browser/sections.pt:78
-msgid "Faceted Query"
-msgstr "互動查詢"
-
 #: ./browser/footer.pt:13
 msgid "Fax"
 msgstr "傳真"
 
-#: ./browser/sections.pt:17
-msgid "Goals"
-msgstr "宗旨"
-
-#: ./browser/sections.pt:74
-msgid "Grant Allocations"
-msgstr "歷年獎助狀況"
-
-#: ./browser/sections.pt:82
-msgid "Grant Maps"
-msgstr "獎助地圖"
-
-#: ./browser/sections.pt:70
-msgid "Grant Recipients"
-msgstr "歷年獎助名單"
-
-#: ./overrides/eea.facetednavigation.views.preview-item.pt:35
+#: ./overrides/eea.facetednavigation.views.preview-item.pt:40
 msgid "Institute"
 msgstr "機構"
 
-#: ./browser/sections.pt:8
+#: ./browser/sections.pt:11
 msgid "Introduction"
 msgstr "基金會簡介"
 
-#: ./browser/sections.pt:120
-msgid "Links"
-msgstr "相關連結"
+#: ./browser/sections.pt:26
+msgid "News"
+msgstr "最新動態"
 
-#: ./browser/sections.pt:102
-msgid "Newsletter"
-msgstr "簡訊"
-
-#: ./browser/sections.pt:23
-msgid "Organization"
-msgstr "組織"
-
-#: ./browser/sections.pt:44
-msgid "Overseas Centers"
-msgstr "海外漢學研究中心"
-
-#: ./browser/sections.pt:49
+#: ./browser/sections.pt:16
 msgid "Programs"
 msgstr "獎助業務"
 
@@ -106,47 +54,16 @@ msgstr "獎助業務"
 msgid "Project"
 msgstr "計畫"
 
-#: ./browser/sections.pt:93
-msgid "Publications"
-msgstr "出版品"
-
-#: ./browser/sections.pt:40
-msgid "Regional Committees"
-msgstr "諮議委員會"
-
-#: ./browser/sections.pt:89
-msgid "Sinology"
+#: ./browser/sections.pt:21
+msgid "Resources"
 msgstr "漢學資源"
-
-#: ./browser/sections.pt:32
-msgid "Taipei Headquarters"
-msgstr "基金會總部"
 
 #: ./browser/footer.pt:12
 msgid "Tel"
 msgstr "電話"
 
-#: ./browser/sections.pt:58
-msgid "The American Region"
-msgstr "美洲地區"
-
-#: ./browser/sections.pt:66
-msgid "The Asia-Pacific Region"
-msgstr "亞太地區"
-
-#: ./browser/sections.pt:54
-msgid "The Domestic Region"
-msgstr "國內地區"
-
-#: ./browser/sections.pt:62
-msgid "The European Region"
-msgstr "歐洲地區"
-
-#: ./browser/sections.pt:106
-msgid "The First Decade"
-msgstr "十周年慶專刊"
-
-#: ./browser/sections.pt:110
-msgid "Video"
-msgstr "影音"
+#. Default: "Menu <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
+#: ./browser/sections.pt:4
+msgid "toggle_menu"
+msgstr "選單 <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
 
