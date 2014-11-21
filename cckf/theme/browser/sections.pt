@@ -1,116 +1,35 @@
 <div id="themenu" i18n:domain="cckf.theme">
   <div id="navbar-wrapper" >
     <nav id="mainMenu" class="tencol last">
-    <a class="toggleMenu" href="#" style="display: none;">Menu<span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
+    <a class="toggleMenu" style="display: none;"
+     href="#"
+     i18n:translate="toggle_menu">Menu
+    <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
     <ul class="nav" style="display: block;"
      tal:define="root context/@@plone_portal_state/navigation_root_url;">
     <li class="">
-    <a class="rootmenulink parent" href="#"
+    <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/about"
      i18n:translate="">Introduction</a>
-      <ul class="submenu">
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/about/background"
-       i18n:translate="">Background</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/about/goal"
-       i18n:translate="">Goals</a></li>
-      </ul>
     </li>
     <li class="">
-    <a class="rootmenulink parent" href="#"
+    <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/structure"
      i18n:translate="">Organization</a>
-      <ul class="submenu">
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/director"
-       i18n:translate="">Board of Directors</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/headquarter"
-       i18n:translate="">Taipei Headquarters</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/american"
-       i18n:translate="">American Regional Office</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/committees"
-       i18n:translate="">Regional Committees</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/structure/overseas"
-       i18n:translate="">Overseas Centers</a></li>
-      </ul>
     </li>
-    <li class=""> <a class="rootmenulink parent" href="#"
+    <li class="">
+    <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/program"
      i18n:translate="">Programs</a>
-      <ul class="submenu">
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/domestic"
-       i18n:translate="">The Domestic Region</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/american"
-       i18n:translate="">The American Region</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/european"
-       i18n:translate="">The European Region</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/apac"
-       i18n:translate="">The Asia-Pacific Region</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/recipient"
-       i18n:translate="">Grant Recipients</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/allocation"
-       i18n:translate="">Grant Allocations</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/facet"
-       i18n:translate="">Faceted Query</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/program/map"
-       i18n:translate="">Grant Maps</a></li>
-
-      </ul>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/sinology"
      i18n:translate="">Sinology</a></li>
     <li class="">
-    <a class="rootmenulink parent" href="#"
+    <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/publication"
      i18n:translate="">Publications</a>
-      <ul class="submenu">
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/annual"
-       i18n:translate="">Annual Report</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/newsletter"
-       i18n:translate="">Newsletter</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/decennial"
-       i18n:translate="">The First Decade</a></li>
-      <li class="menuitem">
-      <a class="menulink" href="#"
-       tal:attributes="href string:${root}/publication/video"
-       i18n:translate="">Video</a></li>
-      </ul>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
