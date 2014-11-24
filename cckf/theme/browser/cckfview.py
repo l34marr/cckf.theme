@@ -1,4 +1,5 @@
 from Products.Five import BrowserView
+from Products.CMFCore.utils import getToolByName
 from zope.component import getMultiAdapter
 from zope.interface import implements
 
@@ -72,4 +73,29 @@ class CCKFView(BrowserView):
            marked as deprecated in future."""
 
         return self.getColumnsClasses(view).get('content')
+
+    def getNews(self, lang='zh', limit=3):
+        """Get Items for FrontPage News
+        """
+        catalog = getToolByName(self.context, 'portal_catalog')
+        path = '/cckf/' + lang + '/news'
+        return catalog(portal_type='News Item',
+                       review_state='published',
+                       path=path,
+                       sort_on='created',
+                       sort_order='descending',
+                       sort_limit=limit)[:limit]
+
+    def getSinology(self, lang='zh', classify='01'):
+        """Get Items for Sinology HomePage
+        """
+        catalog = getToolByName(self.context, 'portal_catalog')
+        path = '/cckf/' + lang + '/resource'
+        return catalog(portal_type='sinology',
+                       review_state='published',
+                       path=path,
+                       classify=classify,
+                       sort_on='modified',
+                       sort_order='descending',
+                       sort_limit=4)[:4]
 

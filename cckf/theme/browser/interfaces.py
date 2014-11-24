@@ -18,6 +18,14 @@ class ICCKFView(Interface):
         """Returns all CSS classes based on columns presence.
         """
 
+    def getNews():
+        """Returns Specific Items for Template.
+        """
+
+    def getSinology():
+        """Returns Specific Items for Template.
+        """
+
 class ICustomNavigation(IViewletManager):
     """Custom Viewlet Manager for Navigation.
     """
