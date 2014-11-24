@@ -52,7 +52,9 @@
     sl python:plone_view.have_portlets('plone.leftcolumn', view);
     sr python:plone_view.have_portlets('plone.rightcolumn', view);
     body_class python:plone_view.bodyClass(template, view);
-    classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view)"
+    classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view);
+    cckfview python:context.restrictedTraverse('@@cckfview');
+    c01 python:cckfview.getNews()"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -186,33 +188,24 @@
 <div class="cover-collection-tile tile-content">
  <div class="tile-header"><h4>最新消息</h4></div>
  <div class="tile tile-edge ui-droppable" style="height: 250px;">
-  <div class="collection-item">
+
+  <div class="collection-item"
+   tal:repeat="item c01">
+   <tal:item define="obj python:item.getObject()">
    <h4>
-    <a href="http://140.109.160.133:8090/cckf/zh/bulletin/2014051901">上海交通大學”明清契約文書”研究生國際暑期學校</a>
+    <a href="#"
+     tal:attributes="href obj/absolute_url"
+     tal:content="obj/Title">Title</a>
    </h4>
-    <p class="description"></p>
-    <p class="">2014年05月19日</p>
+    <p class=""
+     tal:content="python:str(obj.created())[:10]">Date</p>
        <div class="visualClear"><!-- --></div>
+   </tal:item>
   </div>
-  <div class="collection-item">
-   <h4>
-    <a href="http://140.109.160.133:8090/cckf/zh/bulletin/2013122301">公佈一百零二年度第一期獎助名單</a>
-   </h4>
-    <p class="description"></p>
-    <p class="">2013年12月23日</p>
-       <div class="visualClear"><!-- --></div>
-  </div>
-  <div class="collection-item">
-   <h4>
-    <a href="http://140.109.160.133:8090/cckf/en/bulletin/2013121001">Turkey Is Included in the European Region</a>
-   </h4>
-    <p class="">2013年12月10日</p>
-       <div class="visualClear"><!-- --></div>
-  </div>
+
   <div class="tile-footer">
     <a href="http://140.109.160.133:8090/cckf/zh/bulletin/news">更多消息</a>
   </div>
-
  </div><!-- tile tile-edge -->
 
  <div class="visualClear"><!-- --></div>
