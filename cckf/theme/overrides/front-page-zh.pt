@@ -165,15 +165,15 @@
  <div class="tile-header"><h4>近期活動</h4></div>
  <div class="tile tile-edge ui-droppable">
   <div id="active_img">
-   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" href="/zh/bulletin/2012121401" class="internal-link"><img src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" data-mce-src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" height="235" width="325"></a><br data-mce-bogus="1">
+   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" href="/zh/news/2012121401" class="internal-link"><img src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" data-mce-src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" height="235" width="325"></a><br data-mce-bogus="1">
   </div>
   <div id="active_header">
-   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" class="internal-link" href="http://140.109.160.133:8090/cckf/zh/bulletin/2012121401" target="_self" title="">「民國風雅：現代中國的古典詩學與文人傳統」學術研習營報名訊息</a><br data-mce-bogus="1">
+   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" class="internal-link" href="http://140.109.160.133:8090/cckf/zh/news/2012121401" target="_self" title="">「民國風雅：現代中國的古典詩學與文人傳統」學術研習營報名訊息</a><br data-mce-bogus="1">
   </div>
   <div id="active_text">
-  五四時期以來，以白話文為主導性的現代文學史幾乎遮蔽了20世紀的傳統詩詞寫作。隨著文學革命的發展，古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構...&lt;<a href="http://140.109.160.133:8090/cckf/zh/bulletin/2012121401" data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" title="" class="internal-link" target="_self">閱讀全文</a>&gt;
+  五四時期以來，以白話文為主導性的現代文學史幾乎遮蔽了20世紀的傳統詩詞寫作。隨著文學革命的發展，古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構...&lt;<a href="http://140.109.160.133:8090/cckf/zh/news/2012121401" data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" title="" class="internal-link" target="_self">閱讀全文</a>&gt;
   </div>
-  <p><span class="more_info"><a data-mce-href="bulletin/events" href="http://140.109.160.133:8090/cckf/zh/bulletin/events" class="internal-link">更多活動</a></span></p>
+  <p><span class="more_info"><a data-mce-href="news/events" href="/cckf/zh/news/events" class="internal-link">更多活動</a></span></p>
  </div>
 </div><!-- cover-richtext-tile -->
  
@@ -204,7 +204,7 @@
   </div>
 
   <div class="tile-footer">
-    <a href="http://140.109.160.133:8090/cckf/zh/bulletin/news">更多消息</a>
+    <a href="http://140.109.160.133:8090/cckf/zh/news/news">更多消息</a>
   </div>
  </div><!-- tile tile-edge -->
 
