@@ -31,8 +31,8 @@
     <div tal:replace="structure provider:plone.htmlhead" />
     <link tal:replace="structure provider:plone.htmlhead.links" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">	
+    <link rel="stylesheet" href="++theme++cckf.theme/css/screen.css">
 <script src="++theme++cckf.theme/js/search.js"></script>
-
 <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
 	
     <tal:comment replace="nothing">
@@ -72,75 +72,98 @@
 
   <div tal:replace="structure provider:cckf.navigation" />
  
-<!-- Start cssSlider.com -->
-<!--[if IE]><link rel="stylesheet" href="++theme++cckf.theme/css/ie.css"><![endif]-->
-<!--[if lte IE 9]><script type="text/javascript" src="++theme++cckf.theme/js/ie.js"></script><![endif]-->
+<!-- Start SLEEKER SLIDE -->
 
-<div class='csslider1 autoplay '>
-<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
-<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
-<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
-<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+<!-- SVG Arrows -->
+<div class="svg-wrap">
+<svg width="64" height="64" viewBox="0 0 64 64">
+<path id="arrow-left" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+</svg>
+<svg width="64" height="64" viewBox="0 0 64 64">
+<path id="arrow-right" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+</svg>
+</div>
+
+<div class="sleekslider">
+<!-- Slider Pages -->
+<div class="slide active bg-1">
+<div class="slide-container">
+<div class="slide-content">
+<h1>蔣經國國際學術交流基金會</h1>
+</div>
+</div>
+</div>
+<div class="slide bg-2">
+<div class="slide-container">
+<div class="slide-content">
+<h1>基金會宗旨</h1>
+</div>
+</div>
+</div>
+<div class="slide bg-3">
+<div class="slide-container">
+<div class="slide-content">
+<h1>漢學資源</h1>
+</div>
+</div>
+</div>
+<div class="slide bg-4">
+<div class="slide-container">
+<div class="slide-content">
+<h1>蔣經國圖書館籌畫</h1>
+</div>
+</div>
+</div>
+<div class="slide bg-5">
+<div class="slide-container">
+<div class="slide-content">
+<h1>基金會20周年慶</h1>
+</div>
+</div>
+</div>
+
+<!-- Navigation Arrows with Thumbnails -->
+<nav class="nav-split">
+<a class="prev" href="">
+<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-left" /></svg></span>
+<div>
+<h3>test</h3>
+<img alt="Previous thumb"/>
+</div>
+</a>
+<a class="next" href="">
+<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-right" /></svg></span>
+<div>
+<h3>test</h3>
+<img alt="Next thumb"/>
+</div>
+</a>
+</nav>
+
+<!-- Pagination -->
+<nav class="pagination">
+<span class="current"></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</nav>
+
+<!-- Navigation Tabs -->
+<nav class="tabs">
+<div class="tab-container">
 <ul>
-<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-<img src="++theme++cckf.theme/img/data1/images/pic1.jpg" style="width: 100%;">
-</div>
-<li class='num0 img'>
-<img src='++theme++cckf.theme/img/data1/images/pic1.jpg' alt=' 財團法人蔣經國國際學術交流基金會' title=' 財團法人蔣經國國際學術交流基金會' />
-</li>
-<li class='num1 img'>
-<img src='++theme++cckf.theme/img/data1/images/pic2.jpg' alt='基金會宗旨' title='基金會宗旨' />
-</li>
-<li class='num2 img'>
-<img src='++theme++cckf.theme/img/data1/images/pic3.jpg' alt='漢學資源' title='漢學資源' />
-</li>
+<li class="current"><a href="#">基金會</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide1-thumb.jpg"></li>
+<li><a href="#">宗旨</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide2-thumb.jpg"></li>
+<li><a href="#">漢學資源</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide3-thumb.jpg"></li>
+<li><a href="#">圖書館籌畫</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide4-thumb.jpg"></li>
+<li><a href="#">20周年</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide5-thumb.jpg"></li>
 </ul>
-<a class="cs_lnk" href="http://cssslider.com">image slider</a>
-<div class='cs_description'>
-<label class='num0'>
-<span class="cs_title"><span class="cs_wrapper">財團法人蔣經國國際學術交流基金會</span></span>
-<br/><span class="cs_descr"><span class="cs_wrapper">基金會成立於民國七十八年（1989），以紀念故總統蔣經國先生對中華民國的卓越貢獻。本會之基金由中華民國政府與民間企業共同捐助，每年以孳息所得推行業務。
-</span></span>
-</label>
-<label class='num1'>
-<span class="cs_title"><span class="cs_wrapper">基金會宗旨</span></span>
-<br/><span class="cs_descr"><span class="cs_wrapper">本會之宗旨在以嚴謹的學術立場，獎勵支持世界各國學術機構與學者對中華文化之研究，並促進國內外學術機構進行交流合作。</span></span>
-</label>
-<label class='num2'>
-<span class="cs_title"><span class="cs_wrapper">漢學資源</span></span>
-<br/><span class="cs_descr"><span class="cs_wrapper">漢學資源中心選擇國外重點大學或研究機構設置，加強與各國漢學研究單位合作，推動海內外漢學學術交流，傳布臺灣漢學學術成果，共同建置全球漢學研究資源與訊息平臺，促進中西文化交流的廣度與深度。</span></span>
-</label>
+</div>
+</nav>
 </div>
 
-<div class='cs_arrowprev'>
-<label class='num0' for='cs_slide1_0'></label>
-<label class='num1' for='cs_slide1_1'></label>
-<label class='num2' for='cs_slide1_2'></label>
-</div>
-<div class='cs_arrownext'>
-<label class='num0' for='cs_slide1_0'></label>
-<label class='num1' for='cs_slide1_1'></label>
-<label class='num2' for='cs_slide1_2'></label>
-</div>
-
-<div class='cs_bullets'>
-<label class='num0' for='cs_slide1_0'>
-<span class='cs_point'></span>
-<span class='cs_thumb'><img src='++theme++cckf.theme/img/data1/tooltips/pic1.jpg' alt='財團法人蔣經國國際學術交流基金會' title='財團法人蔣經國國際學術交流基金會' /></span>
-</label>
-<label class='num1' for='cs_slide1_1'>
-<span class='cs_point'></span>
-<span class='cs_thumb'><img src='++theme++cckf.theme/img/data1/tooltips/pic2.jpg' alt='基金會宗旨' title='基金會宗旨' /></span>
-</label>
-<label class='num2' for='cs_slide1_2'>
-<span class='cs_point'></span>
-<span class='cs_thumb'><img src='++theme++cckf.theme/img/data1/tooltips/pic3.jpg' alt='漢學資源' title='漢學資源' /></span>
-</label>
-</div>
-
-</div>
-<!-- End cssSlider.com -->
+<!-- End SLEEKER SLIDE -->
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
@@ -311,7 +334,10 @@
   </div>
 
 </div>
-<script src="++theme++cckf.theme/js/script.js"></script>
+<script type="text/javascript" src="++theme++cckf.theme/js/sleekslider.min.js"></script>
+<script type="text/javascript" src="++theme++cckf.theme/js/app.js"></script>
+<script type="text/javascript" src="++theme++cckf.theme/js/script.js"></script>
+<script type="text/javascript" src="++theme++cckf.theme/js/sticky.js"></script>
 </body>
 </html>
 
