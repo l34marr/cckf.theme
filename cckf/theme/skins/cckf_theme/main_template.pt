@@ -30,7 +30,7 @@
   <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
     <div tal:replace="structure provider:plone.htmlhead" />
     <link tal:replace="structure provider:plone.htmlhead.links" />
-	
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">
 <script src="++theme++cckf.theme/js/search.js"></script>
 
 <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
