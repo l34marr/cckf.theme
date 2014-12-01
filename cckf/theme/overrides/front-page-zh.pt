@@ -70,8 +70,6 @@
     </div>
   </div>
 
-  <div tal:replace="structure provider:cckf.navigation" />
- 
 <!-- Start SLEEKER SLIDE -->
 
 <!-- SVG Arrows -->

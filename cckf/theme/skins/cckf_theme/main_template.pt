@@ -68,8 +68,6 @@
     </div>
   </div>
 
-  <div tal:replace="structure provider:cckf.navigation" />
-
   <div id="banner" />
 
   <div style="margin: 0 auto; max-width: 1180px;">
