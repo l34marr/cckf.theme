@@ -29,7 +29,13 @@ div.width-11 {
 #bc1859a1b89d4bf3bbb79d405593df26 {
 	clear: both;
 	margin-left: -233%;
-	margin-top: 330px;
+	margin-top: 320px;
+}
+
+#eb739d1ff3854d7b9f7fc07a5483bedb {
+    clear: both;
+    margin-left: -233%;
+    margin-top: 320px;
 }
 #active_img img {
 	/*display: none;*/
@@ -59,7 +65,7 @@ div.position-1\:4 {
 .toggleMenu {
 	border-bottom: 2px solid #b03c29;
 	background-color: #9D242B;
-	width: 92%;
+	width: 100%;
 	padding: 10px 4%;
 }
 .toggleMenu span {
@@ -181,7 +187,10 @@ div.position-1\:4 {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-
+.grid li {
+    float: left;
+    width: 50%;
+}
 /* home 近期活動 最新消息 area*/	
 #e7ba1c64e5eb44a58e8cf97507ca0a73 {
 	display: block;
@@ -260,10 +269,14 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 
 /* Landscape phone to portrait tablet */
 @media only screen and (max-width: 767px) {
+.grid li {
+    float: left;
+    width: 50%;
+}
 #portal-logo {
 	margin: 1em 0 1em 6px;
 }
-#web-image img {
+#attachment img {
 	height: auto;
 	width: 100%;
 }
@@ -310,6 +323,46 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 
 /* Landscape phones and down */
 @media only screen and (max-width: 480px) {
+.column {
+    border-bottom: 2px #fff solid;
+    width: 100%;
+}	
+.section-index_html #content .tile-edge {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-index_html .collection-item {
+    padding: 8px 0 0;
+}
+.wrapping {
+  width: 63%;
+}
+.tile-footer {
+    margin-left: 0px;
+}
+#portal-breadcrumbs {
+    margin-left: 0.8em;
+}		
+#content {
+    margin: 1em 1em 1.5em 0.8em;
+}
+.banner-box img {
+    width: 98%;
+}
+.box {
+    width: 95%;
+}	
+#parent-fieldname-text {
+    width: 100%;
+}
+#active_img {
+    display: none;
+}	
+.grid li {
+    float: left;
+    width: 100%;
+}
 #page {
 	width: 100%;
 }
@@ -319,9 +372,9 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 #portal-columns {
 	width: 98%;
 }
-#web-image img {
+#attachment img {
 	height: auto;
-	width: 100%;
+	width: 97%;
 }
 .subsection-facet #right-area, .subsection-facet #left-area {
 	clear: both;

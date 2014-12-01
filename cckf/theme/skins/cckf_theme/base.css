@@ -10,7 +10,7 @@
 dl.portlet ol,
 div.portletStaticText ol {
   list-style-type: decimal;
-  margin-left: 1.8em;
+  /*margin-left: 1.8em;*/
 }
 
 #content li,
@@ -149,7 +149,7 @@ table.listing td {
 }
 table.listing a {
   border: none;
-  display: inline-block;
+  /*display: inline-block;*/
   border-bottom: none !important;
 }
 
@@ -505,7 +505,8 @@ fieldset#search-field {
   text-align: center;
 }
 input.searchPage {
-  font-size:200% !important;
+  font-size: 100% !important;
+  padding: 5px;
 }
 #rss-subscription {
   float: left;

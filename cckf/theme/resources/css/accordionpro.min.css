@@ -11,7 +11,7 @@
 	text-align: left;
 	font-size: 16px;
 	line-height: 24px;
-	font: "Verdana", "新細明體", "PMingLiU","Arial", "Helvetica", "sans-serif";
+	font: "Open Sans","微軟正黑體",sans-serif;
 	-webkit-transform-origin: left top;
 	-moz-transform-origin: left top;
 	-ms-transform-origin: left top;
@@ -627,7 +627,7 @@ figure {
 	margin: 0
 }
 div#vertical {
-	/*font-family: '教育部標準楷書', '全字庫正楷體', '標楷體', 'BiauKai', 'STKaiti', Kai, serif;*/
+	/*font-family: "Open Sans","微軟正黑體",sans-serif;*/
 	font-size: 16px;
 	padding-top: 6px;
 	position: relative;

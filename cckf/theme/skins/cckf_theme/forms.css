@@ -11,19 +11,19 @@ fieldset,
 /* Emulates the styling from the h1 tag */
 #content .field input[type="text"][name$=".title"],
 #archetypes-fieldname-title input {
-  font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
   line-height: 125%;
   color: Black;
   letter-spacing: -0.05em;
   margin: inherit -0.05em;
-  font-size: 2em; /* 26px equiv */
-  font-weight: bold;
+  font-size: 1.5em; /* 26px equiv */
+  font-weight: normal;
 }
 
 /* Emulates styling from the description's view */
 #content .field textarea[name$=".description"],
 #archetypes-fieldname-description textarea#description {
-  font-family: Arial,FreeSans,sans-serif;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
   color:#666666;
   font-size:1.25em;
   font-weight: bold;
@@ -40,7 +40,7 @@ textarea:focus {
 }
 
 #content textarea {
-  font: 100% Monaco, "Courier New", Courier, monospace;
+  font: 100% Monaco, "Open Sans","微軟正黑體",sans-serif;
   width: 100%;
 }
 #content select {

@@ -70,6 +70,8 @@
 
   <div tal:replace="structure provider:cckf.navigation" />
 
+  <div id="banner" />
+
   <div style="margin: 0 auto; max-width: 1180px;">
 
   <div id="portal-columns" class="row">
@@ -182,6 +184,7 @@
 
 </div>
 <script src="++theme++cckf.theme/js/script.js"></script>
+<script src="++theme++cckf.theme/js/sticky.js"></script>
 </body>
 </html>
 

@@ -62,3 +62,31 @@
 .subsection-facet input#c6 {
   width: 80% !important;
 }
+.section-about #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+}
+.section-program #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+}
+.section-news #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+}
+.section-contact #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+}
