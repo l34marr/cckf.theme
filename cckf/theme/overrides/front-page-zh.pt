@@ -165,160 +165,140 @@
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
-  <div id="portal-columns" class="row">
-
-    <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
-
-        <div
-         tal:define="show_border context/@@plone/showEditableBorder;
-                     show_border python:show_border and not ajax_load"
-         tal:attributes="class python:show_border and 'documentEditable' or ''">
-
-<div id="content">
-
- <div data-layout-type="row" class="row">
-
-<div class="cell width-11 position-0 " data-panel="">
-
-<!-- div data-tile="@@collective.cover.richtext/ea" class="tile tile-default ui-droppable" id="ea" -->
-
-<div class="cover-richtext-tile tile-content">
- <div class="tile-header"><h4>近期活動</h4></div>
- <div class="tile tile-edge ui-droppable">
-  <div id="active_img">
-   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" href="/zh/news/2012121401" class="internal-link"><img src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" data-mce-src="https://dl.dropboxusercontent.com/u/16566489/demo-active.jpg" height="235" width="325"></a><br data-mce-bogus="1">
-  </div>
-  <div id="active_header">
-   <a data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" class="internal-link" href="http://140.109.160.133:8090/cckf/zh/news/2012121401" target="_self" title="">「民國風雅：現代中國的古典詩學與文人傳統」學術研習營報名訊息</a><br data-mce-bogus="1">
-  </div>
-  <div id="active_text">
-  五四時期以來，以白話文為主導性的現代文學史幾乎遮蔽了20世紀的傳統詩詞寫作。隨著文學革命的發展，古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構古典詩詞被推向邊緣化，文學的變異衝擊文化傳統，也改變文人的生活感覺結構...&lt;<a href="http://140.109.160.133:8090/cckf/zh/news/2012121401" data-mce-href="resolveuid/957e600c5bfb4849a39a365aaeb120ca" title="" class="internal-link" target="_self">閱讀全文</a>&gt;
-  </div>
-  <p><span class="more_info"><a data-mce-href="news/events" href="/cckf/zh/news/events" class="internal-link">更多活動</a></span></p>
- </div>
-</div><!-- cover-richtext-tile -->
- 
-<!-- /div --><!-- data-tile -->
-
-</div><!-- width-11 -->
-
-<div class="cell width-5 position-11 " data-panel="">
-
-<!-- div data-tile="@@collective.cover.collection/bc1859a1b89d4bf3bbb79d405593df26" class="tile tile-default ui-droppable" id="bc1859a1b89d4bf3bbb79d405593df26" -->
- 
-<div class="cover-collection-tile tile-content">
- <div class="tile-header"><h4>最新消息</h4></div>
- <div class="tile tile-edge ui-droppable" style="height: 250px;">
-
-  <div class="collection-item"
-   tal:repeat="item c01">
-   <tal:item define="obj python:item.getObject()">
-   <h4>
-    <a href="#"
-     tal:attributes="href obj/absolute_url"
-     tal:content="obj/Title">Title</a>
-   </h4>
-    <p class=""
-     tal:content="python:str(obj.created())[:10]">Date</p>
-       <div class="visualClear"><!-- --></div>
-   </tal:item>
-  </div>
-
-  <div class="tile-footer">
-    <a href="http://140.109.160.133:8090/cckf/zh/news/news">More News</a>
-  </div>
- </div><!-- tile tile-edge -->
-
- <div class="visualClear"><!-- --></div>
-    
-</div><!-- cover-collection-tile -->
-
-<!-- /div --><!-- data-tile -->
-
-</div><!-- width-5 -->
-
-</div><!-- data-layout-type="row" -->
-    
-<div data-layout-type="row" class="row">
-
-<div class="cell width-5 position-0 " data-panel="">
-
-<!-- div data-tile="@@collective.cover.richtext/e427f25e4f584bdcbbd9b26fc0c1c1f3" class="tile tile-default ui-droppable" id="e427f25e4f584bdcbbd9b26fc0c1c1f3" -->
-
-<div class="cover-richtext-tile tile-content">
-
-  <p><a data-mce-href="sinology" href="http://140.109.160.133:8090/cckf/zh/sinology"><img src="/++theme++cckf.theme/img/sinology.jpg" width="100%" data-mce-src="../++theme++cckf.theme/img/sinology.jpg"></a></p>
-            
-</div>
-    
-<!-- /div --><!-- data-tile -->
-
-</div><!-- width-5 -->
-
-<div class="cell width-6 position-5 " data-panel="">
-
-<!-- div data-tile="@@collective.cover.richtext/bd3435551d1a4e80a8c043a26a08e602" class="tile tile-default ui-droppable" id="bd3435551d1a4e80a8c043a26a08e602" -->
-        
-<div class="cover-richtext-tile tile-content">
-            
-  <div>
-   <a href="#" data-mce-href="#"><img src="++theme++cckf.theme/img/library.png" data-mce-src="++theme++cckf.theme/img/library.png" width="100%"></a><br data-mce-bogus="1">
-  </div>
-  <div class="s-banner">
-   <a href="http://www.cckf.org.tw/20/index2.html" target="_blank" data-mce-href="http://www.cckf.org.tw/20/index2.html"><img src="++theme++cckf.theme/img/20th.png" data-mce-src="++theme++cckf.theme/img/20th.png" width="100%"></a><br data-mce-bogus="1">
-  </div>
-
-</div><!-- cover-richtext-tile -->
-    
-<!-- /div --><!-- data-tile -->
-
-</div><!-- width-6 -->
-            
-<div class="cell width-5 position-11 " data-panel="">
-
-<!-- div data-tile="@@collective.cover.richtext/f8ac16821aa24f1b8a38e28ff28ee224" class="tile tile-default ui-droppable" id="f8ac16821aa24f1b8a38e28ff28ee224" -->
-    
-<div class="cover-richtext-tile tile-content">
-        
-   <p><a data-mce-href="program/map" href="http://140.109.160.133:8090/cckf/zh/program/map"><img src="++theme++cckf.theme/img/map.jpg" width="100%" data-mce-src="++theme++cckf.theme/img/map.jpg"></a></p>
-
-</div>
-    
-<!-- /div --><!-- data-tile -->
-
-</div><!-- width-5 -->
-
-</div><!-- data-layout-type="row" -->
-
-</div><!-- id="content" -->
-
-        </div>
-
-      <div id="viewlet-below-content"
-       tal:content="structure provider:plone.belowcontent"
-       tal:condition="not:ajax_load" />
-
+  <!-- Start News -->
+  <div class="row">
+   <div id="news"  class="column span-2-3 ">
+    <div class="head-container">
+     <h3 class="small">最新消息</h3>
+     <div class="hide-small topright text-right"> <a class="disclosure small" href="#">更多消息</a> </div>
     </div>
-
-    <tal:notajax tal:condition="not:ajax_load">
-      <div id="portal-column-one" class="cell width-1:4 position-0"
-       metal:define-slot="column_one_slot"
-       tal:condition="sl"
-       tal:attributes="class classes/one">
-        <metal:portlets define-slot="portlets_one_slot">
-          <tal:block replace="structure provider:plone.leftcolumn" />
-        </metal:portlets>
-      </div>
-      <div id="portal-column-two" class="cell width-1:4 position-3:4"
-       metal:define-slot="column_two_slot"
-       tal:condition="sr"
-       tal:attributes="class classes/two">
-        <metal:portlets define-slot="portlets_two_slot">
-          <tal:block replace="structure provider:plone.rightcolumn" />
-        </metal:portlets>
-      </div>
-    </tal:notajax>
-
+    <hr data-class-small="inverse" class="skinny">
+    <ul class="ruled links links-hilite no-arrows">
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/Hsiao-chun_Hung.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">洪曉純博士和Mike Carson博士榮獲2014年總督人文獎(研究及出版類)</h4>
+            <time class="author">103年10月27日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/eacs.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">第二十屆「歐洲漢學學會」雙年會事件</h4>
+            <time class="author">103年7月30日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">獎助辦法更新通知</h4>
+            <time class="author">103年6月20日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+    </ul>
+   </div>
+   <!-- End News --> 
+   
+   <!-- Start Activate -->
+   <div id="news"  class="column span-2-3 ">
+    <div class="head-container">
+     <h3 class="small">近期活動</h3>
+     <div class="hide-small topright text-right"> <a class="disclosure small" href="#">更多活動</a> </div>
+    </div>
+    <hr data-class-small="inverse" class="skinny">
+    <ul class="ruled links links-hilite no-arrows">
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">第二屆社會科學暑期高級講習班：「海峽兩岸公共治理中的國家與社會關係」報名訊息</h4>
+            <time class="author">102年6月3日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/camp.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">「民國風雅：現代中國的古典詩學與文人傳統」學術研習營報名訊息</h4>
+            <time class="author">101年11月22日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+     <li> <a href="#">
+      <article class="new-teaser">
+       <table>
+        <tbody>
+         <tr>
+          <td><div class="thumbnail image">
+            <div> <img width="60" height="60" src="++theme++cckf.theme/img/e-study.jpg"> </div>
+           </div></td>
+          <td><header>
+            <h4 class="title">2012「e-考據與文史研究」研修班</h4>
+            <time class="author">101年8月20日</time>
+           </header></td>
+         </tr>
+        </tbody>
+       </table>
+      </article>
+      </a> </li>
+    </ul>
+   </div>
+   <!-- End Activate --> 
+  
+   <div id="portal-columns" class="row">
+    <div class="cell width-full position-0" id="portal-column-content">
+     <div id="viewlet-below-content">
+      <div class="row"> <a href="http://140.109.160.133:8091/cckf/zh/@@manage-portlets" class="managePortletsFallback">管理資訊方框</a> </div>
+     </div>
+    </div>
+   </div>
   </div>
 
   </div>
