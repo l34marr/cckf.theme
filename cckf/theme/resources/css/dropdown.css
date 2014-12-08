@@ -5,7 +5,7 @@
   width: 100%;
 }
 .last {
-  margin-left: -7px;
+  margin-left: 0px;
 }
 .toggleMenu {
   background: none repeat scroll 0% 0% #666;
@@ -29,7 +29,7 @@ nav {
   overflow: visible !important;
 }
 .nav {
-  background-color: #9e242c;
+  /*background-color: #ccc;*/
   list-style: none outside none;
 }
 .nav:before, .nav:after {
@@ -47,19 +47,17 @@ nav {
   width: 16em;
 }
 .nav a {
-  color: #fbf4e1;
-  font-family: "Open Sans","微軟正黑體",sans-serif;
+  color: #222;
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
   line-height: 2.6em;
   font-size: 15px;
   font-weight: bold;
-  letter-spacing: 0.1em;
-  margin-right: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
+  letter-spacing: 0.06em;
+  margin-left: 2em;
+  margin-right: 5px;
 }
 .nav a:hover, .nav li:hover > a {
-  background-color: #bb9157;
-  color: #fff;
+  color: #9d242b;
   text-decoration: none;
 }
 .nav li {
@@ -98,7 +96,7 @@ nav {
   padding-left: 15px;
   padding-top: 6px;
   position: relative;
-  *z-index: 99;
+ *z-index: 99;
   font-weight: normal;
   color: #f4efdc;
 }
