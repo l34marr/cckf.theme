@@ -70,98 +70,7 @@
     </div>
   </div>
 
-<!-- Start SLEEKER SLIDE -->
 
-<!-- SVG Arrows -->
-<div class="svg-wrap">
-<svg width="64" height="64" viewBox="0 0 64 64">
-<path id="arrow-left" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
-</svg>
-<svg width="64" height="64" viewBox="0 0 64 64">
-<path id="arrow-right" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
-</svg>
-</div>
-
-<div class="sleekslider">
-<!-- Slider Pages -->
-<div class="slide active bg-1">
-<div class="slide-container">
-<div class="slide-content">
-<h1>蔣經國國際學術交流基金會</h1>
-</div>
-</div>
-</div>
-<div class="slide bg-2">
-<div class="slide-container">
-<div class="slide-content">
-<h1>基金會宗旨</h1>
-</div>
-</div>
-</div>
-<div class="slide bg-3">
-<div class="slide-container">
-<div class="slide-content">
-<h1>漢學資源</h1>
-</div>
-</div>
-</div>
-<div class="slide bg-4">
-<div class="slide-container">
-<div class="slide-content">
-<h1>蔣經國圖書館籌畫</h1>
-</div>
-</div>
-</div>
-<div class="slide bg-5">
-<div class="slide-container">
-<div class="slide-content">
-<h1>基金會20周年慶</h1>
-</div>
-</div>
-</div>
-
-<!-- Navigation Arrows with Thumbnails -->
-<nav class="nav-split">
-<a class="prev" href="">
-<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-left" /></svg></span>
-<div>
-<h3>test</h3>
-<img alt="Previous thumb"/>
-</div>
-</a>
-<a class="next" href="">
-<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-right" /></svg></span>
-<div>
-<h3>test</h3>
-<img alt="Next thumb"/>
-</div>
-</a>
-</nav>
-
-<!-- Pagination -->
-<nav class="pagination">
-<span class="current"></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</nav>
-
-<!-- Navigation Tabs -->
-<nav class="tabs">
-<div class="tab-container">
-<ul>
-<li class="current"><a href="#">基金會</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide1-thumb.jpg"></li>
-<li><a href="#">宗旨</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide2-thumb.jpg"></li>
-<li><a href="#">漢學資源</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide3-thumb.jpg"></li>
-<li><a href="#">圖書館籌畫</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide4-thumb.jpg"></li>
-<li><a href="#">20周年</a><img alt="Next thumb" src="++theme++cckf.theme/img/slide/slide5-thumb.jpg"></li>
-</ul>
-</div>
-</nav>
-</div>
-
-<!-- End SLEEKER SLIDE -->
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
@@ -383,8 +292,7 @@
   </div>
 
 </div>
-<script type="text/javascript" src="++theme++cckf.theme/js/sleekslider.min.js"></script>
-<script type="text/javascript" src="++theme++cckf.theme/js/app.js"></script>
+
 <script type="text/javascript" src="++theme++cckf.theme/js/script.js"></script>
 
 </body>
