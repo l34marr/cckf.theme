@@ -31,10 +31,9 @@
     <div tal:replace="structure provider:plone.htmlhead" />
     <link tal:replace="structure provider:plone.htmlhead.links" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">
-<script src="++theme++cckf.theme/js/search.js"></script>
+    <script src="++theme++cckf.theme/js/search.js"></script>
+    <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
 
-<script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
-	
     <tal:comment replace="nothing">
       Various slots where you can insert elements in the header from a template.
     </tal:comment>
@@ -182,7 +181,6 @@
 
 </div>
 <script src="++theme++cckf.theme/js/script.js"></script>
-<script src="++theme++cckf.theme/js/sticky.js"></script>
 </body>
 </html>
 
