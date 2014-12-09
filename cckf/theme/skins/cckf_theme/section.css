@@ -63,30 +63,60 @@
   width: 80% !important;
 }
 .section-about #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 300px;
+
+  height: 228px;
+}
+.section-structure #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  height: 228px;
+}
+.section-publication #banner {
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  height: 228px;
 }
 .section-program #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 300px;
+
+  height: 228px;
 }
+.section-cckf #resource {
+  height: 80px;
+}  
+
+.section-resource #banner {
+  /*height: 80px;*/
+} 
 .section-news #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-active.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 300px;
+ 
+  height: 228px;
 }
 .section-contact #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-resource.jpg");
+  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 300px;
+  
+  height: 228px;
 }
+.site-cckf #banner {
+  height: 80px;
+}  

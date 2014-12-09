@@ -567,8 +567,8 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
   z-index: 1;
   float: left;
   width: 100%;
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   padding: 1em 0;
 }
 #search-results-bar dl.actionMenu {

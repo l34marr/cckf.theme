@@ -48,9 +48,10 @@ img.bg {
 
 #portal-top {
   /*background-image: url("++theme++cckf.theme/img/pattern.png");*/
-  background-color: #DDCC9B;
+  background-color: rgba(100%, 100%, 100%, 0.95);
+  border-bottom: 1px solid #e6e6e6;
   color: #222222;
-  z-index: 999;
+  /*z-index: 999;*/
 }
 
 #portal-top > div {
@@ -58,6 +59,7 @@ img.bg {
   max-width: 1160px;
   overflow: hidden;
   position: relative;
+  z-index: 10000;
 }
 
 #portal-columns {
@@ -144,11 +146,12 @@ sub {
 
 #portal-header {
   position: relative;
+
   z-index: 1;
 }
 
 #portal-logo {
-  display: inline-block;
+  float: left;
   margin: 1em 0;
 }
 /* removes extra space above logo in IE6 and IE7 */
@@ -218,7 +221,7 @@ sub {
   right: 1px;
   z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
   padding: 0.25em 0.5em;
-  font-size: 15px;
+  font-size: 14px;
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   -webkit-border-bottom-right-radius: 0.5em;
