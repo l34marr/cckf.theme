@@ -105,11 +105,11 @@
     
     <!-- slide images -->   
     <ul class="allinone_thumbnailsBanner_list">
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="http://codecanyon.net/user/LambertGroup" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1" data-link="about" data-target="_self"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="about/goal" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3" data-link="resource" data-target="_self"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4" data-link="#" data-target="_self"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="http://www.cckf.org/20/index.html" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
     </ul>
     
     <!-- slide 1 text -->
@@ -136,7 +136,7 @@
     </div>
     <!-- slide 5 text -->	
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement51_cool_FullWidth" data-initial-left="30" data-initial-top="150" data-final-left="100" data-final-top="150" data-duration="0.5" data-fade-start="0" data-delay="0"><a href="#" target="_blank">基金會20周年慶</a></div>
+     <div class="allinone_thumbnailsBanner_text_line textElement51_cool_FullWidth" data-initial-left="30" data-initial-top="150" data-final-left="100" data-final-top="150" data-duration="0.5" data-fade-start="0" data-delay="0"><a href="http://www.cckf.org/20/index.html" target="_blank">基金會20周年慶</a></div>
     </div>
  
    </div>
