@@ -1,15 +1,11 @@
 
-@media only screen and (min-width: 1000px) {
-#page {
-	width: 45%;
-}
-}
-
 @media only screen and (max-width: 1000px) {
 #page {
 	width: 100%;
 }
-
+.topspace {
+  margin-top: 0px;
+}
 .s-banner {
     margin-top: 10px;
 }
@@ -191,6 +187,9 @@ div.position-1\:4 {
     float: left;
     width: 50%;
 }
+.topspace {
+  margin-top: 0px;
+}
 /* home 近期活動 最新消息 area*/	
 #e7ba1c64e5eb44a58e8cf97507ca0a73 {
 	display: block;
@@ -280,6 +279,9 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 	height: auto;
 	width: 100%;
 }
+.topspace {
+  margin-top: 0px;
+}
 .subsection-facet #right-area, .subsection-facet #left-area {
 	width: 52% !important;
 }
@@ -323,10 +325,15 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 
 /* Landscape phones and down */
 @media only screen and (max-width: 480px) {
-.column {
-    border-bottom: 2px #fff solid;
+.news-column {
     width: 100%;
 }	
+.r-column {
+    width: 100%;
+}
+.topspace {
+  margin-top: -50px;
+}
 .section-index_html #content .tile-edge {
     padding-left: 20px;
     padding-right: 20px;

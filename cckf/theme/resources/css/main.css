@@ -1120,6 +1120,9 @@ input[type="text"].ct-search-input {
 .row:after {
   clear: both;
 }
+.topspace {
+  margin-top: 40px;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
