@@ -85,7 +85,10 @@ $(document).ready(function(){
     sl python:plone_view.have_portlets('plone.leftcolumn', view);
     sr python:plone_view.have_portlets('plone.rightcolumn', view);
     body_class python:plone_view.bodyClass(template, view);
-    classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view)"
+    cckfview python:context.restrictedTraverse('@@cckfview');
+    classes python:cckfview.getColumnsClasses(view);
+    c01 python:cckfview.getSinology(classify='01');
+    c02 python:cckfview.getSinology(classify='02');"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -100,8 +103,6 @@ $(document).ready(function(){
       <div tal:replace="structure provider:plone.portaltop" />
     </div>
   </div>
-
-  <div tal:replace="structure provider:cckf.navigation" />
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
@@ -442,13 +443,33 @@ $(document).ready(function(){
 </div>
 <div class="visualClear"></div>
 <div  id="bcontent">
-  <div class="box 01">
-    <div class="box-img"><a href="00001"><img src="++theme++cckf.theme/img/sinology-album/01/ncl.jpg" alt="" /></a></div>
-    <div class="box-info"><a href="00001">漢學研究資訊中心 </a></div>
+  <div class="box 01"
+   tal:define="tile python: c01[0].getObject()">
+    <div class="box-img">
+    <a href="#"
+     tal:attributes="href tile/absolute_url">
+    <img src="" alt=""
+     tal:attributes="src string:${tile/absolute_url}/@@download/image;
+                     width string:253" /></a></div>
+    <div class="box-info">
+    <a href="#"
+     tal:attributes="href tile/absolute_url"
+     tal:content="tile/Title">
+    Tile Title</a></div>
   </div>
-  <div class="box 01">
-   <div class="box-img"><a href="00002"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/ccs2010.jpg" /></a></div>
-   <div class="box-info"><a href="00002">國際漢學研究數位資源選介</a></div>
+  <div class="box 01"
+   tal:define="tile python: c01[1].getObject()">
+   <div class="box-img">
+   <a href="#"
+    tal:attributes="href tile/absolute_url">
+   <img src="" alt=""
+    tal:attributes="src string:${tile/absolute_url}/@@download/image;
+                    width string:253" /></a></div>
+   <div class="box-info">
+   <a href="#"
+    tal:attributes="href tile/absolute_url"
+    tal:content="tile/Title">
+   Tile Title</a></div>
   </div>
   <div class="box 01">
    <div class="box-img"><a href="#"><img alt="" src="++theme++cckf.theme/img/sinology-album/01/tair.jpg" /></a></div>
