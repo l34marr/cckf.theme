@@ -100,6 +100,7 @@
   </div>
 
   <!-- Start allinone_Banner -->
+  <div style="margin-bottom: 60px">
    <div id="allinone_thumbnailsBanner_cool" style="display:none;">
     
     <!-- slide images -->   
@@ -137,9 +138,10 @@
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement51_cool_FullWidth" data-initial-left="30" data-initial-top="150" data-final-left="100" data-final-top="150" data-duration="0.5" data-fade-start="0" data-delay="0"><a href="#" target="_blank">基金會20周年慶</a></div>
     </div>
-  
+ 
    </div>
-   <!-- End allinone_Banner -->
+  </div><!-- margin-bottom: 60px -->
+  <!-- End allinone_Banner -->
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
