@@ -210,7 +210,7 @@
    <!-- End News --> 
    
    <!-- Start Activate -->
-   <div id="news"  class="news-column span-2-3 ">
+   <div id="activate"  class="news-column span-2-3 ">
     <div class="head-container">
      <h3 class="small">近期活動</h3>
      <div class="hide-small topright text-right"> <a class="disclosure small" href="#">更多活動</a> </div>
