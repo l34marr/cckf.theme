@@ -14,6 +14,7 @@
   padding: 10px 15px;
 }
 a.toggleMenu, .nav a {
+  font-size: 15px;
   color: #f4efdc;
   text-decoration: none;
 }
@@ -49,15 +50,15 @@ nav {
 .nav a {
   color: #222;
   font-family: "Open Sans", "微軟正黑體", sans-serif;
-  line-height: 2.6em;
-  font-size: 15px;
-  font-weight: bold;
+  line-height: 2.4em;
+  font-size: 16px;
   letter-spacing: 0.06em;
   margin-left: 2em;
   margin-right: 5px;
 }
 .nav a:hover, .nav li:hover > a {
   color: #9d242b;
+  border-bottom: 2px #9d242b solid;
   text-decoration: none;
 }
 .nav li {

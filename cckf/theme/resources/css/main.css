@@ -183,7 +183,7 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 #sidebar .sideblock {
   background: url("++theme++cckf.theme/img/icon-point.png") no-repeat scroll -3px 2px transparent;
-  border-bottom: 1px dotted #cecece;
+  border-bottom: 1px dotted #b6b3a7;
   margin-top: 5px;
   padding-bottom: 5px;
   padding-left: 17px;
@@ -1240,13 +1240,14 @@ ul.links-hilite > li > a {
   padding-left: 0.4em;
 }
 ul.links-hilite > li > a:hover {
-  background-color: rgba(52%, 47%, 30%, 0.1);
+  background-color: rgba(255%, 255%, 255%, 0.5);
 }
 ul.links > li > a {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRv%0AYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0%0AdHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0%2BDTwhRE9DVFlQ%0ARSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3Jn%0AL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI%2BDTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2Ul%0AMjAxIiB2aWV3Qm94PSIwIDAgMjcgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYw%0AMCIgdmVyc2lvbj0iMS4xIg0JeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxu%0Aczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2%0AZSINCXg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjdweCIgaGVpZ2h0PSIxNHB4Ig0%2BDQk8ZyBpZD0i%0ATGF5ZXIlMjAxIj4NCQk8cGF0aCBkPSJNIDExIDIgTCAxNiA3IEwgMTEgMTIgIiBzdHJva2U9IiM3%0ANjc2NzYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPg0JPC9nPg08L3N2Zz4%3D%0A") no-repeat scroll right 47% transparent;
 }
 ul.links.no-arrows > li > a {
   background-image: none;
+  border-bottom: 1px dotted #ccc;
 }
 ul.links > li > a > .summary {
   margin: 0;
@@ -1372,11 +1373,7 @@ html.no-js .list__item img {
   border-bottom: 1px solid #cfd7db;
 }
 
-@media screen and ( max-width: 64em ) /* 1024 */ {
-body {
-  padding: 2.5rem 0; /* 40 */
-}
-}
+
 
 @media screen and ( max-width: 50em ) /* 800 */ {
 .list__item {
