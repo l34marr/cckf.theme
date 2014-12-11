@@ -11,33 +11,6 @@
 header .sprite {
   background-position: left 120px
 }
-/* home 近期活動 最新消息 area*/	
-#d1ce1741f819410f85410a34db3f3436 {
-  margin-left: -237%;
-  margin-top: 120%;
-}
-#3e7ba1c64e5eb44a58e8cf97507ca0a73 {
-}
-div.width-11 {
-  width: 100%;
-}
-#bc1859a1b89d4bf3bbb79d405593df26 {
-  clear: both;
-  margin-left: -233%;
-  margin-top: 320px;
-}
-#eb739d1ff3854d7b9f7fc07a5483bedb {
-  clear: both;
-  margin-left: -233%;
-  margin-top: 320px;
-}
-#active_img img {
-  /*display: none;*/
-  width: 200px;
-  height: auto;
-}
-/* end */	
-
 /* Top Header logo and navigation menu */
 #portal-languageselector {
   margin-top: 32px;
@@ -224,22 +197,6 @@ div.position-1\:4 {
   width: 100%;
 }
 /* end */
-/* home 近期活動 最新消息 area*/	
-#e7ba1c64e5eb44a58e8cf97507ca0a73 {
-  display: block;
-  float: left;
-}
-#active_text {
-  font-size: 12px;
-  margin-top: 10px;
-}
-#d1ce1741f819410f85410a34db3f3436 {
-  display: block;
-  margin-left: -237%;
-  margin-top: 155%;
-}
-/* end */	
-
 .top-info {
   padding-bottom: 0px
 }
@@ -327,23 +284,6 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 .subsection-facet #right-area, .subsection-facet #left-area {
   width: 52% !important;
 }
-/* home 近期活動 最新消息 area*/	
-#e7ba1c64e5eb44a58e8cf97507ca0a73 {
-  display: block;
-  float: left;
-}
-#active_text {
-  font-size: 12px;
-  margin-top: 10px;
-}
-#d1ce1741f819410f85410a34db3f3436 {
-  display: block;
-  margin-left: -237%;
-  margin-top: 235%;
-}
-/* end */	
-
-
 .tileHeadline {
   font-weight: bold;
   margin-top: 10px;
