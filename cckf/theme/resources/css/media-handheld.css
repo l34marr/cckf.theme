@@ -1,218 +1,220 @@
-
 @media only screen and (max-width: 1000px) {
 #page {
-	width: 100%;
+  width: 100%;
 }
 .topspace {
   margin-top: 0px;
 }
 .s-banner {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 header .sprite {
-	background-position: left 120px
+  background-position: left 120px
 }
-
 /* home 近期活動 最新消息 area*/	
 #d1ce1741f819410f85410a34db3f3436 {
-	margin-left: -237%;
-	margin-top: 120%;
+  margin-left: -237%;
+  margin-top: 120%;
 }
 #3e7ba1c64e5eb44a58e8cf97507ca0a73 {
 }
 div.width-11 {
-	width: 100%;
+  width: 100%;
 }
 #bc1859a1b89d4bf3bbb79d405593df26 {
-	clear: both;
-	margin-left: -233%;
-	margin-top: 320px;
+  clear: both;
+  margin-left: -233%;
+  margin-top: 320px;
 }
-
 #eb739d1ff3854d7b9f7fc07a5483bedb {
-    clear: both;
-    margin-left: -233%;
-    margin-top: 320px;
+  clear: both;
+  margin-left: -233%;
+  margin-top: 320px;
 }
 #active_img img {
-	/*display: none;*/
-	width: 200px;
-	height: auto;
+  /*display: none;*/
+  width: 200px;
+  height: auto;
 }
 /* end */	
 
 /* Top Header logo and navigation menu */
 #portal-languageselector {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 .ct-search {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 #navbar-wrapper {
-	background-color: #9D242B;
-	height: 40px;
-	margin: 0 auto;
-	width: 100%;
-}
-div.position-1\:4 {
-	margin-left: -95.875%;
+  background-color: #9D242B;
+  height: 40px;
+  margin: 0 auto;
+  width: 100%;
 }
 .last {
-	margin-left: 0px;
+  margin-left: 0px;
 }
 .active {
-	display: block
+  display: block
 }
 #mainMenu {
-	clear: left;
-	width: 100%;
+  clear: left;
+  width: 100%;
 }
 .toggleMenu {
-	border-bottom: 2px solid #b03c29;
-	background-color: #9D242B;
-	width: 100%;
-	padding: 10px 4%;
+  border-bottom: 2px solid #b03c29;
+  background-color: #9D242B;
+  width: 100%;
+  padding: 10px 4%;
 }
 .toggleMenu span {
-	color: #fff;
-	display: block;
-	width: auto;
-	float: right;
-	font-size: 100%;
-	font-weight: bold;
+  color: #fff;
+  display: block;
+  width: auto;
+  float: right;
+  font-size: 100%;
+  font-weight: bold;
 }
 .nav a {
-    margin-left: 0em;
+  margin-left: 0em;
 }
 .nav a, .nav li li a {
-	/*background-color: #84181f;*/
-	line-height: 2.5em;
-	padding: 0px 1.5em;
-	margin-right: 0;
+  /*background-color: #84181f;*/
+  line-height: 2.5em;
+  padding: 0px 1.5em;
+  margin-right: 0;
 }
 .nav a:hover, .nav li:hover > a {
-    border-bottom: 1px solid #fff;
-    color: #9d242b;
-    text-decoration: none;
-    background: #f5f4f2;
+  border-bottom: 1px solid #fff;
+  color: #9d242b;
+  text-decoration: none;
+  background: #f5f4f2;
 }
 .nav > li {
-	float: none
+  float: none
 }
 .nav > li > .rootmenulink {
-    background-color: #d9d8d5;
-    border-bottom: 1px solid #ececea;
+  background-color: #d9d8d5;
+  border-bottom: 1px solid #ececea;
 }
 .nav > li > .parent {
-	background: url("../img/downArrow.png") no-repeat scroll 95% 50% rgba(0, 0, 0, 0);
-	border-bottom: 1px solid #b03c29;
+  background: url("../img/downArrow.png") no-repeat scroll 95% 50% rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #b03c29;
 }
 .nav li li .parent {
-	background: url("../img/downArrow.png") no-repeat scroll 99% 6px rgba(0, 0, 0, 0);
-	background-repeat: no-repeat;
-	background-position: 95% 50%;
+  background: url("../img/downArrow.png") no-repeat scroll 99% 6px rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 .nav ul {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 .nav > li.hover > ul, .nav li li.hover ul {
-	position: static
+  position: static
 }
+/* end */
 /* search bar */
 #portal-searchbox {
-	clear: right;
-	float: right;
-	font-family: "Open Sans","微軟正黑體",sans-serif;
-	font-size: 80%;
-	margin: 1.2em 0;
-	text-align: left;
-	display: none;
+  clear: right;
+  float: right;
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-size: 80%;
+  margin: 1.2em 0;
+  text-align: left;
+  display: none;
 }
 #mini-searchbox {
-	display: none;
-	padding: 8px 0 15px 15px;
+  display: none;
+  padding: 8px 0 15px 15px;
 }
 #mini-searchbox .searchField {
-	font-size: 16px;
-	height: 25px;
-	width: 85%;
+  font-size: 16px;
+  height: 25px;
+  width: 85%;
 }
 #mini-searchbox img {
-	position: relative;
-	top: 5px;
+  position: relative;
+  top: 5px;
 }
 #mini-searchbox .searchButton {
-	font-size: 16px;
+  font-size: 16px;
 }
 #portal-searchbox .searchButton, #mini-searchbox .searchButton {
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-top-colors: none;
-	background: none repeat scroll 0 0 transparent;
-	border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #ebeae7;
-	border-image: none;
-	border-radius: 0;
-	border-style: none none none solid;
-	border-width: medium medium medium 0px;
-	color: #ebeae7;
-	cursor: pointer;
-	padding-left: 10px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 transparent;
+  border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #ebeae7;
+  border-image: none;
+  border-radius: 0;
+  border-style: none none none solid;
+  border-width: medium medium medium 0px;
+  color: #ebeae7;
+  cursor: pointer;
+  padding-left: 10px;
 }
 #sort-nav {
-	float: left;
-	line-height: 17px;
-	margin-bottom: 15px;
-	margin-left: 0;
-	margin-top: 10px;
-	padding-right: 10px;
-	position: relative;
+  float: left;
+  line-height: 17px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-top: 10px;
+  padding-right: 10px;
+  position: relative;
 }
 #portal-column-one, #portal-column-two, #portal-column-content {
-	clear: both;
-	margin-left: -98.875%;
-	width: 97.75%;
+  clear: both;
+  margin-left: -98.875%;
+  width: 97.75%;
 }
 .leadImageContainer {
-	display: none;
-	float: right;
-	margin-bottom: 10px;
-	margin-left: 5px;
-	margin-top: -58px;
+  display: none;
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-top: -58px;
 }
 #content h1.documentFirstHeading {
-	clear: both;
-	font-size: 1.5em;
-	margin-top: 0;
-	padding-top: 0px;
+  clear: both;
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 0px;
 }
 .suggest-info {
-	display: none;
-	color: #888888;
-	font-family: "Open Sans","微軟正黑體",sans-serif;
-	font-size: 11px;
+  display: none;
+  color: #888888;
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-size: 11px;
 }
 .tileItem {
-	border-bottom: 1px dotted #666666;
-	margin-top: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
+  border-bottom: 1px dotted #666666;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
-
+div.position-1\:4 {
+  margin-left: -95.875%;
+}
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 .grid li {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 .topspace {
   margin-top: 0px;
 }
+/* Top Header logo and navigation menu */
+#portal-logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
 #portal-logo > img {
-    position: relative;
+  position: relative;
 }
 #navbar-wrapper {
   float: none;
@@ -221,80 +223,76 @@ div.position-1\:4 {
   float: none;
   width: 100%;
 }
+/* end */
 /* home 近期活動 最新消息 area*/	
 #e7ba1c64e5eb44a58e8cf97507ca0a73 {
-	display: block;
-	float: left;
+  display: block;
+  float: left;
 }
 #active_text {
-	font-size: 12px;
-	margin-top: 10px;
+  font-size: 12px;
+  margin-top: 10px;
 }
 #d1ce1741f819410f85410a34db3f3436 {
-	display: block;
-	margin-left: -237%;
-	margin-top: 155%;
+  display: block;
+  margin-left: -237%;
+  margin-top: 155%;
 }
 /* end */	
 
 .top-info {
-	padding-bottom: 0px
-}
-#portal-logo {
-	margin-top: 20px;
-	margin-left: 10px;
+  padding-bottom: 0px
 }
 .tileItem {
-	border-bottom: 1px dotted #666666;
-	margin-top: 10px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+  border-bottom: 1px dotted #666666;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-
 .tileHeadline {
-	clear: right;
-	font-weight: bold;
-	margin-top: 0px;
-	margin-bottom: 5px;
+  clear: right;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 .suggest-info {
-	display: none;
-	color: #888888;
-	font-family: "Open Sans","微軟正黑體",sans-serif;
-	font-size: 11px;
+  display: none;
+  color: #888888;
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-size: 11px;
 }
 #mini-searchbox {
-	display: none;
-	padding: 8px 0 15px 15px;
+  display: none;
+  padding: 8px 0 15px 15px;
 }
 .box {
-	color: #212121;
-	float: left;
-	margin-bottom: 12px;
-	margin-left: 12px;
+  color: #212121;
+  float: left;
+  margin-bottom: 12px;
+  margin-left: 12px;
 }
 .box img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 ul.listing-columns li {
-	background-color: transparent;
-	border-bottom: 0 none;
-	float: left;
-	height: auto;
-	margin-right: 1.3em;
-	padding: 0;
-	width: 100%;
+  background-color: transparent;
+  border-bottom: 0 none;
+  float: left;
+  height: auto;
+  margin-right: 1.3em;
+  padding: 0;
+  width: 100%;
 }
 ul.listing-columns li .component a, ul.listing-columns li .component span {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 #content h1.documentFirstHeading {
-	padding-top: 0px;
+  padding-top: 0px;
 }
 .browser-info {
-    display: none;
+  display: none;
 }
 }
 
@@ -304,9 +302,21 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   float: left;
   width: 50%;
 }
+/* Top Header logo and navigation menu */
 #portal-logo {
   margin: 1em 0 1em 6px;
 }
+#portal-logo > img {
+  position: relative;
+}
+#navbar-wrapper {
+  float: none;
+}
+#themenu {
+  float: none;
+  width: 100%;
+}
+/* end */
 #attachment img {
   height: auto;
   width: 100%;
@@ -342,7 +352,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 .suggest-info {
   display: none;
   color: #888888;
-  font-family: "Open Sans","微軟正黑體",sans-serif;
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
   font-size: 11px;
 }
 #mini-searchbox {
@@ -353,7 +363,16 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100%;
   height: auto;
 }
+}
+
+/* Landscape phones and down */
+@media only screen and (max-width: 480px) {
+/* Top Header logo and navigation menu */
+#portal-logo {
+  margin: 1em 0 0.5em 6px;
+}
 #portal-logo > img {
+  width: 100%;
   position: relative;
 }
 #navbar-wrapper {
@@ -363,25 +382,28 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   float: none;
   width: 100%;
 }
-
+#portal-languageselector {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
-
-/* Landscape phones and down */
-@media only screen and (max-width: 480px) {
-.news-column {
-  width: 100%;
-}	
-.r-column {
-  width: 100%;
+.ct-search {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
+/* end */
 .topspace {
   margin-top: -50px;
+}
+.news-column {
+  width: 100%;
+}
+.r-column {
+  width: 100%;
 }
 .section-index_html #content .tile-edge {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .section-index_html .collection-item {
   padding: 8px 0 0;
 }
@@ -393,7 +415,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 #portal-breadcrumbs {
   margin-left: 0.8em;
-}		
+}
 #content {
   margin: 1em 1em 1.5em 0.8em;
 }
@@ -402,13 +424,13 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 .box {
   width: 95%;
-}	
+}
 #parent-fieldname-text {
   width: 100%;
 }
 #active_img {
   display: none;
-}	
+}
 .grid li {
   float: left;
   width: 100%;
@@ -416,7 +438,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 #page {
   width: 100%;
 }
-.s-banner  {
+.s-banner {
   margin-top: 5px;
 }
 #portal-columns {
@@ -436,32 +458,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 #footer-container .footColumn-last {
   display: none;
 }
-
 #footer-container .footColumn {
   margin-right: 30px;
-}
-#portal-logo > img {
-  position: relative;
-}
-#navbar-wrapper {
-  float: none;
-}
-#themenu {
-  float: none;
-  width: 100%;
-}
-#portal-logo > img {
-  width: 100%;
-}
-#portal-logo {
-  margin: 1em 0 0.5em 6px;
-}
-#portal-languageselector {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.ct-search {
-  margin-top: 0px;
-  margin-bottom: 10px;
 }
 }
