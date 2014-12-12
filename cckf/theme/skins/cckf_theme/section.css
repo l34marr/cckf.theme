@@ -67,7 +67,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-
   height: 228px;
 }
 .section-structure #banner {
@@ -75,7 +74,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-
   height: 228px;
 }
 .section-publication #banner {
@@ -83,7 +81,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-
   height: 228px;
 }
 .section-program #banner {
@@ -91,7 +88,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-
   height: 228px;
 }
 .section-cckf #resource {
@@ -106,7 +102,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
- 
   height: 228px;
 }
 .section-contact #banner {
@@ -114,9 +109,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  
   height: 228px;
 }
-.site-cckf #banner {
-  height: 80px;
-}  
+

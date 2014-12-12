@@ -1190,15 +1190,13 @@ ol, ul {
 	border-radius: 5px
 }
 #page {
-   float: left;
-    margin-right: 15px;
-	margin-bottom: 20px;
-    position: relative;
-    /*width: 48%;*/
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
 }
 .z-btn.z-back {
-
-    font-size: 16px;
-    font-weight: bold;
-
+  font-size: 16px;
+  font-weight: bold;
 }

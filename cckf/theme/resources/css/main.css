@@ -418,22 +418,31 @@ table {
 }
 /*  漢學資源 content block ============================================================================*/
 
-#sinology {
+.sinology {
   border-bottom: 1px solid #fff;
 }
-#sinology ul.ruled > li {
+.sinology ul.ruled > li {
   border-top: 0 solid #e6e6e6;
 }
-#sinology li {
+.sinology li {
   margin-bottom: 0;
 }
-#sinology .r-column {
+.sinology .r-column {
   padding: 0;
 }
 .r-column {
   box-sizing: border-box;
   display: block;
   float: left;
+}
+.sinology .head-container {
+    background: url("++theme++cckf.theme/img/pattern-2.jpg") repeat scroll 0 0 ;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+.sinology ul {
+    padding-top: 5px;
 }
 .resource-teaser td {
   vertical-align: top;
@@ -622,7 +631,7 @@ table {
 /*  漢學資源 獎助名單 ============================================================================*/
 .award-region {
   /*background-color: #8f8f8b;*/
-  border-bottom: 3px solid #999;
+  border-bottom: 2px solid #bbb;
   color: #000;
   font-weight: bold;
   height: 30px;
@@ -647,7 +656,7 @@ table {
   border-bottom: 2px dotted #bbb;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  font-size: 15px;
+
   letter-spacing: 0.05em;
   font-weight: normal;
 }
@@ -694,13 +703,14 @@ table {
   width: 25%;
 }
 .grid li > div {
-  background: none repeat scroll 0 0 #efece5;
-  border: 1px solid #fff;
-  box-shadow: 1px 1px 2px 0 #bbb;
-  margin-bottom: 0.2em;
-  margin-right: 0.5em;
-  padding: 1em 1em;
-  text-align: center;
+    background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 2px 0 #bbb;
+    height: 230px;
+    margin-bottom: 0.2em;
+    margin-right: 0.5em;
+    padding: 1em;
+    text-align: center;
 }
 .grid li a {
   color: #fff;
@@ -1121,7 +1131,7 @@ input[type="text"].ct-search-input {
   clear: both;
 }
 .topspace {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 table {
   border-collapse: collapse;
@@ -1147,7 +1157,7 @@ table {
   position: relative;
 }
 .new-teaser td {
-  vertical-align: middle;
+  vertical-align: top;
 }
 .new-teaser .title {
   margin: 0 0 0.28em;
@@ -1165,15 +1175,18 @@ table {
 }
 h1.small, h2.small, h3.small, h4.small, h5.small {
   background: url("++theme++cckf.theme/img/cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-  color: #555;
+  color: #222;
   font-size: 1em;
   font-weight: 600;
-  margin: 0.875em 0;
-  text-transform: uppercase;
+  margin: 0.3em 0;
+  padding-bottom: 1px;
   padding-left: 45px;
+  padding-top: 3px;
+  text-transform: uppercase;
 }
+
 .small {
-  font-size: 0.875em;
+  font-size: 13px;
 }
 .text-right {
   text-align: right;
@@ -1189,10 +1202,12 @@ h1.small, h2.small, h3.small, h4.small, h5.small {
 }
 a.disclosure {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRv%0AYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0%0AdHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0%2BDTwhRE9DVFlQ%0ARSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3Jn%0AL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI%2BDTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2Ul%0AMjAxIiB2aWV3Qm94PSIwIDAgMjcgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYw%0AMCIgdmVyc2lvbj0iMS4xIg0JeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxu%0Aczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2%0AZSINCXg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjdweCIgaGVpZ2h0PSIxNHB4Ig0%2BDQk8ZyBpZD0i%0ATGF5ZXIlMjAxIj4NCQk8cGF0aCBkPSJNIDExIDIgTCAxNiA3IEwgMTEgMTIgIiBzdHJva2U9IiM3%0ANjc2NzYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPg0JPC9nPg08L3N2Zz4%3D%0A") no-repeat scroll right 40% transparent;
-  color: #888;
+  color: #444;
   display: inline-block;
   font-style: italic;
   padding-right: 2em;
+  margin-right: 5px;
+  margin-top: 5px;
   text-decoration: none;
 }
 hr {

@@ -11,6 +11,7 @@
 header .sprite {
   background-position: left 120px
 }
+
 /* Top Header logo and navigation menu */
 #portal-languageselector {
   margin-top: 32px;
@@ -68,7 +69,8 @@ header .sprite {
 }
 .nav > li > .rootmenulink {
   background-color: #d9d8d5;
-  border-bottom: 1px solid #ececea;
+  background-image: url("++theme++cckf.theme/img/pattern.jpg");
+  border-bottom: 1px solid #ccc;
 }
 .nav > li > .parent {
   background: url("../img/downArrow.png") no-repeat scroll 95% 50% rgba(0, 0, 0, 0);
@@ -306,7 +308,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 
 /* Landscape phones and down */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
 /* Top Header logo and navigation menu */
 #portal-logo {
   margin: 1em 0 0.5em 6px;
