@@ -315,6 +315,18 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 #portletmanager-plone-leftcolumn {
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+#portletmanager-plone-rightcolumn {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+div.portletAssignments div.portletHeader {
+  background: none repeat scroll 0 0 #fcfcf7;
+  border: 1px solid #bbb;
+}
+.ploneSkin .mceIframeContainer {
+  background-color: #fff;
 }
 dl.portletCalendar dt {
   background: none repeat scroll 0 0 #bbb;
@@ -1016,6 +1028,7 @@ input[type="text"].cck-search-input {
   height: 30px;
   margin-top: 12px;
   z-index: 9999;
+  cursor: pointer;
 }
 .ct-search-input-wrap {
   position: absolute;
@@ -1292,7 +1305,7 @@ ul.links > li.alt > a {
   -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
   -webkit-overflow-scrolling: touch;
 }
-html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, b, u, i, center, ul, ol, li, dl, dt, dd, table, tr, th, td, thead, tbody, tfoot, caption, form, fieldset, legend, input, button, textarea, select, label, applet, object, iframe, audio, video, canvas, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, b, u, i, center, ul, ol, li, dl, dt, dd, table, tr, th, td, thead, tbody, tfoot, caption, form, fieldset, legend, button, textarea, select, label, applet, object, iframe, audio, video, canvas, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   border: 0;
   outline: 0;
   padding: 0;
@@ -1358,6 +1371,22 @@ strong {
   font-size: 13px;
   padding: 1rem;
 }
+.img-block {
+  background-color: #000;
+}
+
+.img-block > img {
+  opacity: 0.75;
+}
+.img-block > img:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 /* JavaScript disabled */
 
 html.no-js .list__item {
