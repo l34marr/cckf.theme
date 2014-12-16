@@ -284,7 +284,14 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   margin-top: 0px;
 }
 .subsection-facet #right-area, .subsection-facet #left-area {
-  width: 52% !important;
+  clear: both;
+  width: 100% !important;
+}
+.subsection-facet .right-area-js {
+    margin-right: 0 !important;
+}
+.subsection-facet .left-area-js {
+    margin-left: 0 !important;
 }
 .tileHeadline {
   font-weight: bold;
@@ -365,7 +372,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 98%;
 }
 .box {
-  width: 95%;
+  width: 45%;
 }
 #parent-fieldname-text {
   width: 100%;
@@ -393,6 +400,12 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 .subsection-facet #right-area, .subsection-facet #left-area {
   clear: both;
   width: 100% !important;
+}
+.subsection-facet .right-area-js {
+    margin-right: 0 !important;
+}
+.subsection-facet .left-area-js {
+    margin-left: 0 !important;
 }
 #footer-container .footColumn {
   margin-right: 0;
