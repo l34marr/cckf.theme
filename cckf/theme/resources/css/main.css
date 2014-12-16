@@ -391,7 +391,7 @@ dl.portletCalendar dt {
   margin: 0;
 }
 .dataItem {
-  border-bottom: 2px dotted #ddd;
+  border-bottom: 2px dotted #bbb;
   padding: 20px 0;
 }
 .dataItem h3 {
@@ -639,6 +639,52 @@ table {
   color: #222;
   font-size: 13px;
   width: 100%;
+}
+#content legend {
+    background: none repeat scroll 0 0 #b0a499;
+    box-shadow: 3px 3px 3px 0 #ccc;
+    color: #fff;
+    font-size: 100%;
+    padding: 0.2em 0.6em;
+    text-shadow: 1px 1px 1px #555555;	
+}
+#faceted-form fieldset {
+    background-image: url("++theme++cckf.theme/img/pattern.jpg");
+    font-size: 95%;
+	margin: 0 0 1em;
+}
+div.listingBar {
+    margin: 0 0 0 0;
+}
+label {
+    font-weight: normal;
+}
+.faceted-checkbox-more a {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 #ccc;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: right;
+}
+.faceted-right-column div.faceted-text-widget input[type="submit"] {
+    float: none;
+    margin-top: 10px;
+}
+.widget-fieldset ul li input {
+    margin-top: 4px;
+}
+.faceted-textwidget-place-all input {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.faceted-textwidget-place-current  input {
+    margin-right: 5px;
+    margin-top: 5px;
 }
 /*  漢學資源 獎助名單 ============================================================================*/
 .award-region {
