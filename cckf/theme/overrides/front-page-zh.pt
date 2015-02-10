@@ -32,7 +32,7 @@
     <link tal:replace="structure provider:plone.htmlhead.links" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">	
     <link rel="stylesheet" href="++theme++cckf.theme/css/screen.css">
-    
+
     <script src="++theme++cckf.theme/js/search.js"></script>
     <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
     <script type='text/javascript' src='http://font.arphic.com/FontSubsetOutput/1421291901118/A9CEEDB2D7580BC580679EDDD8FE8BF0/1421291901118.JS?5541868500'></script>
@@ -43,28 +43,27 @@
     <script src="++theme++cckf.theme/js/allinone/allinone_thumbnailsBanner.js" type="text/javascript"></script>
     <script src="++theme++cckf.theme/js/allinone/reflection.js" type="text/javascript"></script>
     <script>
-		jQuery(function() {
+    jQuery(function() {
 
-			jQuery('#allinone_thumbnailsBanner_cool').allinone_thumbnailsBanner({
-				skin: 'cool',
-				numberOfThumbsPerScreen:7.3,
-				width: 1920,
-				height: 620,
-				width100Proc:true,
-				thumbsReflection:0,
-				responsive:true,
-				origthumbsHolderWrapperH:138,
-				thumbsWrapperMarginTop:0,
-				defaultEffect: 'slideFromLeft',
-				showNavArrows: true,
-				showCircleTimer: false,
-				effectDuration:0.75
-			});		
-			
-			
-		});
+    jQuery('#allinone_thumbnailsBanner_cool').allinone_thumbnailsBanner({
+        skin: 'cool',
+        numberOfThumbsPerScreen:7.3,
+        width: 1920,
+        height: 620,
+        width100Proc:true,
+        thumbsReflection:0,
+        responsive:true,
+        origthumbsHolderWrapperH:138,
+        thumbsWrapperMarginTop:0,
+        defaultEffect: 'slideFromLeft',
+        showNavArrows: true,
+        showCircleTimer: false,
+        effectDuration:0.75
+        });
+
+    });
     </script>
-	
+
     <tal:comment replace="nothing">
       Various slots where you can insert elements in the header from a template.
     </tal:comment>
@@ -85,7 +84,8 @@
     classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view);
     cckfview python:context.restrictedTraverse('@@cckfview');
     c01 python:cckfview.getNews();
-    c02 python:cckfview.getEvent()"
+    c02 python:cckfview.getEvent();
+    root_url context/@@plone_portal_state/navigation_root_url"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -104,8 +104,8 @@
   <!-- Start allinone_Banner -->
   <div style="margin-bottom: 130px">
    <div id="allinone_thumbnailsBanner_cool" style="display:none;">
-    
-    <!-- slide images -->   
+
+    <!-- slide images -->
     <ul class="allinone_thumbnailsBanner_list">
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1" data-link="project" data-target="_self"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="#" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
@@ -114,7 +114,7 @@
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="resource" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/06.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="CCKF_library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
     </ul>
-    
+
     <!-- slide 1 text -->
     <div id="allinone_thumbnailsBanner_photoText1" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">專案動態</div>
@@ -125,21 +125,21 @@
     <div id="allinone_thumbnailsBanner_photoText2" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">補助案動態</div>
      <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">秉持嚴謹中立學術專業的標準<br />
-      鼓勵全球各地學者從事漢學研究</div>	  	  
+      鼓勵全球各地學者從事漢學研究</div>
     </div>
-    <!-- slide 3 text -->	
+    <!-- slide 3 text -->
     <div id="allinone_thumbnailsBanner_photoText3" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">研習營動態</div>
      <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">兩岸及全球年輕學者的交流平臺<br />
       知識激盪與視野開拓的學術饗宴</div>
     </div>
-    <!-- slide 4 text -->	
+    <!-- slide 4 text -->
     <div id="allinone_thumbnailsBanner_photoText4" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
      <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
       全球四中心服務三大洲</div>
     </div>
-    <!-- slide 5 text -->	
+    <!-- slide 5 text -->
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">漢學資源</div>
      <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">面向世界<br />
@@ -163,7 +163,10 @@
    <div id="news"  class="news-column span-2-3 ">
     <div class="head-container">
      <h3 class="small">最新消息</h3>
-     <div class="hide-small topright text-right"> <a class="disclosure small" href="#">更多消息</a> </div>
+     <div class="hide-small topright text-right">
+      <a class="disclosure small" href="#"
+       tal:attributes="href string:${root_url}/news/news">更多消息</a>
+     </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
     <ul class="ruled links links-hilite no-arrows">
@@ -191,12 +194,15 @@
     </ul>
    </div>
    <!-- End News --> 
-   
+
    <!-- Start Events -->
    <div id="activate"  class="news-column span-2-3 ">
     <div class="head-container">
      <h3 class="small">近期活動</h3>
-     <div class="hide-small topright text-right"> <a class="disclosure small" href="#">更多活動</a> </div>
+     <div class="hide-small topright text-right">
+      <a class="disclosure small" href="#"
+       tal:attributes="href string:${root_url}/news/events">更多活動</a>
+     </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
     <ul class="ruled links links-hilite no-arrows">
@@ -223,7 +229,7 @@
     </tal:events>
     </ul>
    </div>
-   <!-- End Events --> 
+   <!-- End Events -->
 
    <div id="portal-columns" class="row">
     <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
