@@ -157,8 +157,9 @@
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
-  <!-- Start News -->
   <div class="row topspace">
+
+   <!-- Start News -->
    <div id="news"  class="news-column span-2-3 ">
     <div class="head-container">
      <h3 class="small">最新消息</h3>
@@ -222,18 +223,34 @@
     </tal:events>
     </ul>
    </div>
-  <!-- End Events --> 
+   <!-- End Events --> 
 
    <div id="portal-columns" class="row">
-    <div class="cell width-full position-0" id="portal-column-content">
-     <div id="viewlet-below-content">
-      <div class="row"> <a href="http://140.109.160.133:8091/cckf/zh/@@manage-portlets" class="managePortletsFallback">管理資訊方框</a> </div>
-     </div>
+    <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
     </div>
+    <tal:notajax tal:condition="not:ajax_load">
+      <div id="portal-column-one" class="cell width-1:4 position-0"
+       metal:define-slot="column_one_slot"
+       tal:condition="sl"
+       tal:attributes="class classes/one">
+        <metal:portlets define-slot="portlets_one_slot">
+          <tal:block replace="structure provider:plone.leftcolumn" />
+        </metal:portlets>
+      </div>
+      <div id="portal-column-two" class="cell width-1:4 position-3:4"
+       metal:define-slot="column_two_slot"
+       tal:condition="sr"
+       tal:attributes="class classes/two">
+        <metal:portlets define-slot="portlets_two_slot">
+          <tal:block replace="structure provider:plone.rightcolumn" />
+        </metal:portlets>
+      </div>
+    </tal:notajax>
    </div>
-  </div>
 
-  </div>
+  </div><!-- topspace -->
+
+  </div><!-- 1180px -->
 
   <div class="visualClear"><!-- --></div>
 
@@ -242,8 +259,6 @@
    tal:condition="not:ajax_load">
     <div tal:replace="structure provider:plone.portalfooter" />
   </div>
-
-</div>
 
 <script type="text/javascript" src="++theme++cckf.theme/js/script.js"></script>
 
