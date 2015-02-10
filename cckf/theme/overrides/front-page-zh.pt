@@ -84,7 +84,8 @@
     body_class python:plone_view.bodyClass(template, view);
     classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view);
     cckfview python:context.restrictedTraverse('@@cckfview');
-    c01 python:cckfview.getNews()"
+    c01 python:cckfview.getNews();
+    c02 python:cckfview.getEvent()"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -165,41 +166,10 @@
     </div>
     <hr data-class-small="inverse" class="skinny">
     <ul class="ruled links links-hilite no-arrows">
-     <li> <a href="#">
-      <article class="new-teaser">
-       <table>
-        <tbody>
-         <tr>
-          <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/Hsiao-chun_Hung.jpg"> </div>
-           </div></td>
-          <td><header>
-            <h4 class="title">洪曉純博士和Mike Carson博士榮獲2014年總督人文獎(研究及出版類)</h4>
-            <time class="author">103年10月27日</time>
-           </header></td>
-         </tr>
-        </tbody>
-       </table>
-      </article>
-      </a> </li>
-     <li> <a href="#">
-      <article class="new-teaser">
-       <table>
-        <tbody>
-         <tr>
-          <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/eacs.jpg"> </div>
-           </div></td>
-          <td><header>
-            <h4 class="title">第二十屆「歐洲漢學學會」雙年會事件</h4>
-            <time class="author">103年7月30日</time>
-           </header></td>
-         </tr>
-        </tbody>
-       </table>
-      </article>
-      </a> </li>
-     <li> <a href="#">
+    <tal:news condition="c01"
+     tal:repeat="item c01">
+     <li> <a href="#"
+           tal:attributes="href string:${item/getURL};">
       <article class="new-teaser">
        <table>
         <tbody>
@@ -208,14 +178,15 @@
             <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
            </div></td>
           <td><header>
-            <h4 class="title">獎助辦法更新通知</h4>
-            <time class="author">103年6月20日</time>
+            <h4 class="title" tal:content="item/Title">Title</h4>
+            <time class="author" tal:content="python: item.Date[:10]">Date</time>
            </header></td>
          </tr>
         </tbody>
        </table>
       </article>
       </a> </li>
+    </tal:news>
     </ul>
    </div>
    <!-- End News --> 
@@ -228,7 +199,10 @@
     </div>
     <hr data-class-small="inverse" class="skinny">
     <ul class="ruled links links-hilite no-arrows">
-     <li> <a href="#">
+    <tal:events condition="c02"
+     tal:repeat="item c02">
+     <li> <a href="#"
+           tal:attributes="href string:${item/getURL};">
       <article class="new-teaser">
        <table>
         <tbody>
@@ -237,48 +211,15 @@
             <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
            </div></td>
           <td><header>
-            <h4 class="title">第二屆社會科學暑期高級講習班：「海峽兩岸公共治理中的國家與社會關係」報名訊息</h4>
-            <time class="author">102年6月3日</time>
+            <h4 class="title" tal:content="item/Title">Title</h4>
+            <time class="author" tal:content="python: item.Date[:10]">Date</time>
            </header></td>
          </tr>
         </tbody>
        </table>
       </article>
       </a> </li>
-     <li> <a href="#">
-      <article class="new-teaser">
-       <table>
-        <tbody>
-         <tr>
-          <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/camp.jpg"> </div>
-           </div></td>
-          <td><header>
-            <h4 class="title">「民國風雅：現代中國的古典詩學與文人傳統」學術研習營報名訊息</h4>
-            <time class="author">101年11月22日</time>
-           </header></td>
-         </tr>
-        </tbody>
-       </table>
-      </article>
-      </a> </li>
-     <li> <a href="#">
-      <article class="new-teaser">
-       <table>
-        <tbody>
-         <tr>
-          <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/e-study.jpg"> </div>
-           </div></td>
-          <td><header>
-            <h4 class="title">2012「e-考據與文史研究」研修班</h4>
-            <time class="author">101年8月20日</time>
-           </header></td>
-         </tr>
-        </tbody>
-       </table>
-      </article>
-      </a> </li>
+    </tal:events>
     </ul>
    </div>
   <!-- End Events --> 
