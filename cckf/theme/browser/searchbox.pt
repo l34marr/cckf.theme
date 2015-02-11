@@ -1,0 +1,36 @@
+<div id="ct-search" class="ct-search"
+ i18n:domain="plone"
+ tal:define="navigation_root_url view/navigation_root_url;
+             search_input_id view/search_input_id;">
+
+  <form id="searchform"
+   action="@@search"
+   tal:attributes="action string:${navigation_root_url}/@@search;
+                   id string:${search_input_id}_form;">
+
+  <div class="ct-search-input-wrap">
+
+  <input class="ct-search-input"
+   name="SearchableText"
+   type="text"
+   size="18"
+   value=""
+   title="Search Site"
+   placeholder="Search Site"
+   accesskey="4"
+   i18n:attributes="title title_search_site;
+                    placeholder title_search_site"
+   tal:attributes="value request/form/SearchableText|nothing;
+                   id search_input_id" />
+
+  <input class="ct-search-submit"
+   type="submit"
+   value="Search"
+   i18n:attributes="value label_search;" />
+
+  <span class="ct-icon-search"></span>
+
+  </div>
+  </form>
+
+</div>
