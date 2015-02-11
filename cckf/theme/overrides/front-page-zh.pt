@@ -108,47 +108,47 @@
     <!-- slide images -->
     <ul class="allinone_thumbnailsBanner_list">
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1" data-link="project" data-target="_self"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="#" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="subsidy_project" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3" data-link="camp" data-target="_self"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4" data-link="about/structure/sinology_center" data-target="_self"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="resource" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/06.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="CCKF_library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/06.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
     </ul>
 
     <!-- slide 1 text -->
     <div id="allinone_thumbnailsBanner_photoText1" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">專案動態</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">支持前瞻獨特的研究議題<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="project" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">專案動態</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="project" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">支持前瞻獨特的研究議題<br />
       強化與世界主要學術機構的合作關係</div>
     </div>
     <!-- slide 2 text -->
     <div id="allinone_thumbnailsBanner_photoText2" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">補助案動態</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">秉持嚴謹中立學術專業的標準<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="subsidy_project" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">補助案動態</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="subsidy_project" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">秉持嚴謹中立學術專業的標準<br />
       鼓勵全球各地學者從事漢學研究</div>
     </div>
     <!-- slide 3 text -->
     <div id="allinone_thumbnailsBanner_photoText3" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">研習營動態</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">兩岸及全球年輕學者的交流平臺<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="camp" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">研習營動態</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="camp" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">兩岸及全球年輕學者的交流平臺<br />
       知識激盪與視野開拓的學術饗宴</div>
     </div>
     <!-- slide 4 text -->
     <div id="allinone_thumbnailsBanner_photoText4" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="about/structure/sinology_center" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="about/structure/sinology_center" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
       全球四中心服務三大洲</div>
     </div>
     <!-- slide 5 text -->
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">漢學資源</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">面向世界<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="resource" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">漢學資源</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="resource" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">面向世界<br />
       提供國際學術界<br />完整典藏資料</div>
     </div>
     <!-- slide 6 text -->
     <div id="allinone_thumbnailsBanner_photoText6" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">蔣經國圖書館籌劃</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">中華民國第一座總統圖書館<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="library" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">蔣經國圖書館籌劃</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="library" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">中華民國第一座總統圖書館<br />
       兼具博物館與檔案館功能<br />館藏數位化<br />以服務全球漢學研究社群為宗旨</div>
     </div>
    </div>
@@ -165,7 +165,7 @@
      <h3 class="small">最新消息</h3>
      <div class="hide-small topright text-right">
       <a class="disclosure small" href="#"
-       tal:attributes="href string:${root_url}/news/news">更多消息</a>
+       tal:attributes="href string:${root_url}/news">更多消息</a>
      </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
@@ -201,7 +201,7 @@
      <h3 class="small">近期活動</h3>
      <div class="hide-small topright text-right">
       <a class="disclosure small" href="#"
-       tal:attributes="href string:${root_url}/news/events">更多活動</a>
+       tal:attributes="href string:${root_url}/events">更多活動</a>
      </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
