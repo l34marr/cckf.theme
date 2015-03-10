@@ -26,11 +26,11 @@
                              batch python:view.results(b_start=b_start);
                              site_properties context/portal_properties/site_properties;
                              use_view_action site_properties/typesUseViewActionInListings|python:();
-                             isAnon context/@@plone_portal_state/anonymous;
+                             isAnon portal_state/anonymous;
                              normalizeString nocall: context/plone_utils/normalizeString;
-                             toLocalizedTime nocall: context/@@plone/toLocalizedTime;
+                             toLocalizedTime nocall: plone_view/toLocalizedTime;
                              show_about python:not isAnon or site_properties.allowAnonymousViewAbout;
-                             navigation_root_url context/@@plone_portal_state/navigation_root_url;
+                             navigation_root_url portal_state/navigation_root_url;
                              pas_member context/@@pas_member;">
         <tal:listing condition="batch">
 
@@ -71,7 +71,7 @@
                                   i18n:translate="label_event_byline_onlyfrom">
                                  <abbr class="dtstart"
                                        tal:attributes="title python:item_start"
-                                       tal:content="python:toLocalizedTime(item_start,long_format=0)"
+                                       tal:content="python:toLocalizedTime(item_start,long_format=1)"
                                        i18n:name="start">from date</abbr>
                             </span>
                             <span tal:condition="python: item_type == 'Event' and item_samedate and not item_sametime"
@@ -94,11 +94,11 @@
                                   from
                                        <abbr class="dtstart"
                                        tal:attributes="title python:item_start"
-                                       tal:content="python:toLocalizedTime(item_start,long_format=0)"
+                                       tal:content="python:toLocalizedTime(item_start,long_format=1)"
                                        i18n:name="start">from date</abbr> to
                                  <abbr class="dtend"
                                        tal:attributes="title python:item_end"
-                                       tal:content="python:toLocalizedTime(item_end,long_format=0)"
+                                       tal:content="python:toLocalizedTime(item_end,long_format=1)"
                                        i18n:name="end">to date</abbr>
                             </span>
                              <span tal:condition="python: item_type == 'Event' and item.location"
@@ -109,13 +109,15 @@
                             </span>
                             <tal:byline condition="show_about">
 
-
-                                <tal:created condition="python: item_type != 'Event'">
-                                    
-                                    <span tal:replace="python:toLocalizedTime(item_created,long_format=0)">
+                                <tal:modified condition="python: item_type != 'Event'">
+                                    &mdash;
+                                    <tal:mod i18n:translate="box_last_modified">
+                                      last modified
+                                    </tal:mod>
+                                    <span tal:replace="python:toLocalizedTime(item_modified,long_format=1)">
                                       August 16, 2001 at 23:35:59
                                     </span>
-                                </tal:created>
+                                </tal:modified>
 
                                 <metal:description define-slot="description_slot">
                                     <tal:comment replace="nothing">
