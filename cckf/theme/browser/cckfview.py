@@ -86,6 +86,18 @@ class CCKFView(BrowserView):
                        sort_order='descending',
                        sort_limit=limit)[:limit]
 
+    def getEvent(self, lang='zh', limit=3):
+        """Get Items for FrontPage Event
+        """
+        catalog = getToolByName(self.context, 'portal_catalog')
+        path = '/cckf/' + lang + '/event'
+        return catalog(portal_type='Event',
+                       review_state='published',
+                       path=path,
+                       sort_on='created',
+                       sort_order='descending',
+                       sort_limit=limit)[:limit]
+
     def getSinology(self, lang='zh', classify='01'):
         """Get Items for Sinology HomePage
         """
