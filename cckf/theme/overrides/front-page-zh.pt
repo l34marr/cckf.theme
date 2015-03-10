@@ -160,7 +160,7 @@
   <div class="row topspace">
 
    <!-- Start News -->
-   <div id="news"  class="news-column span-2-3 ">
+   <div id="news" class="news-column span-2-3">
     <div class="head-container">
      <h3 class="small">最新消息</h3>
      <div class="hide-small topright text-right">
@@ -196,12 +196,12 @@
    <!-- End News --> 
 
    <!-- Start Events -->
-   <div id="activate"  class="news-column span-2-3 ">
+   <div id="event" class="news-column span-2-3">
     <div class="head-container">
      <h3 class="small">近期活動</h3>
      <div class="hide-small topright text-right">
       <a class="disclosure small" href="#"
-       tal:attributes="href string:${root_url}/events">更多活動</a>
+       tal:attributes="href string:${root_url}/event">更多活動</a>
      </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
