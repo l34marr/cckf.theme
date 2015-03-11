@@ -370,8 +370,8 @@
 }
 .accordionPro.stitch {
 	position: relative;
-	border: 0px solid #222222;
-	background: #222222;
+	border: 1px solid #eeeeee;
+	background: #dddddd;
 
 }
 .accordionPro.stitch:before {
