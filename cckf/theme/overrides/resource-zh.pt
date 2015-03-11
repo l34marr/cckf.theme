@@ -88,7 +88,16 @@ $(document).ready(function(){
     cckfview python:context.restrictedTraverse('@@cckfview');
     classes python:cckfview.getColumnsClasses(view);
     c01 python:cckfview.getSinology(classify='01');
-    c02 python:cckfview.getSinology(classify='02');"
+    c02 python:cckfview.getSinology(classify='02');
+    c03 python:cckfview.getSinology(classify='03');
+    c04 python:cckfview.getSinology(classify='04');
+    c05 python:cckfview.getSinology(classify='05');
+    c06 python:cckfview.getSinology(classify='06');
+    c07 python:cckfview.getSinology(classify='07');
+    c08 python:cckfview.getSinology(classify='08');
+    c09 python:cckfview.getSinology(classify='09');
+    c10 python:cckfview.getSinology(classify='10');
+    c11 python:cckfview.getSinology(classify='11');"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -424,43 +433,48 @@ $(document).ready(function(){
 
 <h2>最新資源列表</h2>
 
-<!-- Start 資源選介 section --> 
+<!-- Start #01 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">資源選介</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=01" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c01[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c01[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -470,32 +484,36 @@ $(document).ready(function(){
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c01[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
           </a> </li>
-        <li> <a href="#">
+        <li tal:define="item python:c01[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -506,248 +524,282 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 資源選介 section --> 
+<!-- End #01 -->
 
-<!-- Start 聯合目錄檢索 section --> 
+<!-- Start #02 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">聯合目錄檢索</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=02" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c02[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c02[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c02[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c02[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
-<!-- End 聯合目錄檢索 section --> 
+<!-- End #02 -->
 
-<!-- Start 數位圖書館、資料庫 section --> 
+<!-- Start #03 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">數位圖書館、資料庫</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=03" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c03[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c03[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c03[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c03[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
-<!-- End 數位圖書館、資料庫 section --> 
+<!-- End #03 -->
 
-<!-- Start 古籍文獻 section --> 
+<!-- Start #04 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">古籍文獻</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=04" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c04[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c04[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c04[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
           </a> </li>
-        <li> <a href="#">
+        <li tal:define="item python:c04[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -758,45 +810,50 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 古籍文獻 section --> 
+<!-- End #04 -->
 
-<!-- Start 宗教 section --> 
+<!-- Start #05 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">宗教</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=05" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c05[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c05[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -806,32 +863,36 @@ $(document).ready(function(){
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c05[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
           </a> </li>
-        <li> <a href="#">
+        <li tal:define="item python:c05[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -842,45 +903,50 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 宗教 section --> 
+<!-- End #05 -->
 
-<!-- Start 家譜族譜 section --> 
+<!-- Start #06 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">家譜族譜</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=06" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c06[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c06[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -890,81 +956,91 @@ $(document).ready(function(){
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c06[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c06[3].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
-<!-- End 家譜族譜 section --> 
+<!-- End #06 -->
 
-<!-- Start 人物傳記 section --> 
+<!-- Start #07 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">人物傳記</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=07" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c07[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li>
+         <a href="#">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -974,32 +1050,35 @@ $(document).ready(function(){
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li>
+         <a href="#">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li>
+         <a href="#">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1010,55 +1089,61 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 人物傳記 section --> 
+<!-- End #07 -->
 
-<!-- Start 期刊論文 section --> 
+<!-- Start #08 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">期刊論文</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=08" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c08[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c08[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
         <li> <a href="#">
           <article class="resource-teaser">
@@ -1067,8 +1152,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1082,8 +1167,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1094,71 +1179,79 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 期刊論文 section --> 
+<!-- End #08 -->
 
-<!-- Start 學位論文 section --> 
+<!-- Start #09 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">學位論文</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=09" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c09[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
           </a> </li>
-        <li> <a href="#">
+        <li tal:define="item python:c09[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c09[2].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
         <li> <a href="#">
           <article class="resource-teaser">
             <table>
@@ -1166,8 +1259,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1178,36 +1271,39 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 學位論文 section --> 
+<!-- End #09 -->
 
-<!-- Start 報刊索引 section --> 
+<!-- Start #10 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">報刊索引</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=10" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c10[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
         <li> <a href="#">
           <article class="resource-teaser">
             <table>
@@ -1215,8 +1311,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1226,7 +1322,7 @@ $(document).ready(function(){
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
         <li> <a href="#">
           <article class="resource-teaser">
@@ -1235,8 +1331,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1250,8 +1346,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1262,55 +1358,61 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 報刊索引 section --> 
+<!-- End #10 -->
 
-<!-- Start 網路數位圖書資源 section --> 
+<!-- Start #11 -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">網路數位圖書資源</h3>
       <div class="hide-small topright text-right">
-      <a href="#" class="disclosure small">更多資源</a>
+      <a href="facet#c1=sinology&c4=11" class="disclosure small">更多資源</a>
       </div>
     </div>
     <hr class="skinny" data-class-small="inverse">
-	
-    <div class="r-column span-2-3 ">	
+
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
-        <li> <a href="#">
+        <li tal:define="item python:c11[0].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
-        <li> <a href="#">
+         </a>
+        </li>
+        <li tal:define="item python:c11[1].getObject()">
+         <a href="#" tal:attributes="href item/absolute_url">
           <article class="resource-teaser">
             <table>
               <tbody>
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title"
+                       tal:content="item/Title">Title</h4>
+                      <h6 tal:content="item/Description">Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
             </table>
           </article>
-          </a> </li>
+         </a>
+        </li>
       </ul>
     </div>
 
-    <div class="r-column span-2-3 ">	
+    <div class="r-column span-2-3">
       <ul class="ruled links links-hilite no-arrows">
         <li> <a href="#">
           <article class="resource-teaser">
@@ -1319,8 +1421,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1334,8 +1436,8 @@ $(document).ready(function(){
                 <tr>
                   <td><div class="thumbnail image"> </div></td>
                   <td><header>
-                      <h4 class="title">中國家譜檔案館</h4>
-                      <h6>「中國家譜檔案館」是由河南省家譜研究會建設的以搜集各姓氏家譜資料為目的的一個專業性家譜研究機構....</h6>
+                      <h4 class="title">Title</h4>
+                      <h6>Description...</h6>
                     </header></td>
                 </tr>
               </tbody>
@@ -1346,7 +1448,7 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<!-- End 網路數位圖書資源 section --> 
+<!-- End #11 -->
 
               <div id="viewlet-below-content-body"
                tal:content="structure provider:plone.belowcontentbody"
