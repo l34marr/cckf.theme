@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cckf.theme\n"
-"POT-Creation-Date: 2014-11-21 13:54+0000\n"
-"PO-Revision-Date: 2014-11-21 21:55+0800\n"
+"POT-Creation-Date: 2015-03-11 02:01+0000\n"
+"PO-Revision-Date: 2015-03-11 10:02+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourcegorge.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,10 @@ msgstr ""
 #: ./browser/footer.pt:5
 msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
 msgstr "台北市敦化南路二段65號13樓／B"
+
+#: ./browser/sections.pt:26
+msgid "Activities"
+msgstr "最新動態"
 
 #: ./browser/footer.pt:23
 msgid "Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution"
@@ -41,10 +45,6 @@ msgstr "機構"
 #: ./browser/sections.pt:11
 msgid "Introduction"
 msgstr "基金會簡介"
-
-#: ./browser/sections.pt:26
-msgid "News"
-msgstr "最新動態"
 
 #: ./browser/sections.pt:16
 msgid "Programs"

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-09-05 08:39+0000\n"
+"POT-Creation-Date: 2015-03-11 02:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,87 +21,35 @@ msgstr ""
 msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
 msgstr ""
 
-#: ./browser/sections.pt:36
-msgid "American Regional Office"
-msgstr ""
-
-#: ./browser/sections.pt:98
-msgid "Annual Report"
-msgstr ""
-
-#: ./browser/sections.pt:13
-msgid "Background"
+#: ./browser/sections.pt:26
+msgid "Activities"
 msgstr ""
 
 #: ./browser/footer.pt:23
 msgid "Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution"
 msgstr ""
 
-#: ./browser/sections.pt:28
-msgid "Board of Directors"
-msgstr ""
-
-#: ./browser/sections.pt:116
-msgid "Bulletin"
-msgstr ""
-
-#: ./browser/sections.pt:124
-msgid "Contact Info"
+#: ./browser/sections.pt:30
+msgid "Contact"
 msgstr ""
 
 #: ./browser/footer.pt:6
 msgid "Copyright &copy; 2014"
 msgstr ""
 
-#: ./browser/sections.pt:78
-msgid "Faceted Query"
-msgstr ""
-
 #: ./browser/footer.pt:13
 msgid "Fax"
 msgstr ""
 
-#: ./browser/sections.pt:17
-msgid "Goals"
-msgstr ""
-
-#: ./browser/sections.pt:74
-msgid "Grant Allocations"
-msgstr ""
-
-#: ./browser/sections.pt:82
-msgid "Grant Maps"
-msgstr ""
-
-#: ./browser/sections.pt:70
-msgid "Grant Recipients"
-msgstr ""
-
-#: ./overrides/eea.facetednavigation.views.preview-item.pt:35
+#: ./overrides/eea.facetednavigation.views.preview-item.pt:40
 msgid "Institute"
 msgstr ""
 
-#: ./browser/sections.pt:8
+#: ./browser/sections.pt:11
 msgid "Introduction"
 msgstr ""
 
-#: ./browser/sections.pt:120
-msgid "Links"
-msgstr ""
-
-#: ./browser/sections.pt:102
-msgid "Newsletter"
-msgstr ""
-
-#: ./browser/sections.pt:23
-msgid "Organization"
-msgstr ""
-
-#: ./browser/sections.pt:44
-msgid "Overseas Centers"
-msgstr ""
-
-#: ./browser/sections.pt:49
+#: ./browser/sections.pt:16
 msgid "Programs"
 msgstr ""
 
@@ -109,47 +57,16 @@ msgstr ""
 msgid "Project"
 msgstr ""
 
-#: ./browser/sections.pt:93
-msgid "Publications"
-msgstr ""
-
-#: ./browser/sections.pt:40
-msgid "Regional Committees"
-msgstr ""
-
-#: ./browser/sections.pt:89
-msgid "Sinology"
-msgstr ""
-
-#: ./browser/sections.pt:32
-msgid "Taipei Headquarters"
+#: ./browser/sections.pt:21
+msgid "Resources"
 msgstr ""
 
 #: ./browser/footer.pt:12
 msgid "Tel"
 msgstr ""
 
-#: ./browser/sections.pt:58
-msgid "The American Region"
-msgstr ""
-
-#: ./browser/sections.pt:66
-msgid "The Asia-Pacific Region"
-msgstr ""
-
-#: ./browser/sections.pt:54
-msgid "The Domestic Region"
-msgstr ""
-
-#: ./browser/sections.pt:62
-msgid "The European Region"
-msgstr ""
-
-#: ./browser/sections.pt:106
-msgid "The First Decade"
-msgstr ""
-
-#: ./browser/sections.pt:110
-msgid "Video"
+#. Default: "Menu <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
+#: ./browser/sections.pt:4
+msgid "toggle_menu"
 msgstr ""
 
