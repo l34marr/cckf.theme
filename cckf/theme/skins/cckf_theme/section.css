@@ -1,3 +1,6 @@
+.section div.managePortletsLink, a.managePortletsFallback {
+  display: none;
+}
 .section-index_html #portal-columns {
   background: none;
   border: 0;
@@ -62,53 +65,120 @@
 .subsection-facet input#c6 {
   width: 80% !important;
 }
-.section-about #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-intro.jpg");
+.subsection-facet #faceted-form {
+    padding-top: 0;
+}
+
+
+.section-acl_users #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
+}
+.section-about #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
 }
 .section-structure #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
 }
 .section-publication #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
 }
 .section-program #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-sinology.jpg");
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
 }
-.section-cckf #resource {
-  height: 80px;
-}  
-
-.section-resource #banner {
-  /*height: 80px;*/
-} 
-.section-news #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-active.jpg");
+.section-project #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
+}
+.section-subsidy_project #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-camp #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-library #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-resource #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-activity #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-event #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+.section-news #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
 }
 .section-contact #banner {
-  background-image: url("http://140.109.160.133:8091/++theme++cckf.theme/img/banner-contact.jpg");
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 228px;
+  height: 170px;
 }
 
+.section-domestic  dt.portletHeader{
+  background: url("++theme++cckf.theme/img/icon-point.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
+  color: #444;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  line-height: normal;
+  padding: 0.42em 1em 0.42em 2.6em;
+}
+
+/* EEA Current Search Widget */
+.section-resource #c3_widget {
+  display: none !important;
+}

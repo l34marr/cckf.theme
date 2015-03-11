@@ -15,6 +15,9 @@ img.bg {
 #portal-personaltools {
   display: none;
 }
+#portal-top > div {
+    max-width: 1180px;
+}
 #top-banner {
   background: none repeat scroll 0 0 #9D242B;
   height: 10px;
@@ -26,6 +29,22 @@ img.bg {
   background: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+input[type="submit"], input[type="button"], .button, a.button:link, a.button:visited, .btn {
+    background: none repeat scroll 0 0 #99774f;
+    border: 1px solid #593724;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(100, 100, 100, 0.3);
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+input[type="button"], input[type="submit"], .button, a.button:link, a.button:visited {
+    cursor: pointer;
+}
+input {
+    margin: 5px 5px 5px 0;
+    padding: 5px;
 }
 /* homepage define ============================================================================*/
 .s-banner {
@@ -120,7 +139,7 @@ div.managePortletsLink, a.managePortletsFallback {
 .top-info {
   color: #444444;
   float: right;
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
   font-size: 14px;
   margin-top: 15px;
   padding-right: 10px;
@@ -128,7 +147,7 @@ div.managePortletsLink, a.managePortletsFallback {
 #portal-searchbox {
   clear: right;
   float: right;
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
   font-size: 80%;
   margin: 1.2em 0;
   text-align: left;
@@ -150,9 +169,10 @@ div.managePortletsLink, a.managePortletsFallback {
 
 #navbar-wrapper {
   /*background-color: #9D242B;*/
+  margin-right: 10px;
   float: right;
   height: 40px;
-  margin: 0 auto;/*max-width: 1160px;*/
+
 }
 #mini-searchbox {
   display: none;
@@ -188,6 +208,24 @@ div.managePortletsLink, a.managePortletsFallback {
   padding-bottom: 5px;
   padding-left: 17px;
 }
+#sidebar ul.menu {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+#sidebar ul.menu li a {
+    background-image: url("pic/menu-bullet.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    border-bottom: 0 solid #fff;
+    border-top: 1px solid #eee;
+    display: block;
+    padding: 2px 0 2px 13px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+#sidebar ul.menu li a:hover {
+    background-color:#eeeeee;
+}
+
 /* content define ============================================================================*/
 #main {
   background: none repeat scroll 0 0 #FDFDF5;
@@ -204,6 +242,7 @@ div.managePortletsLink, a.managePortletsFallback {
   margin-left: 0.25em;
 }
 #portal-breadcrumbs > span {
+  line-height: 1.5em;
   font-size: 12px;
 }
 #go-top {
@@ -212,17 +251,22 @@ div.managePortletsLink, a.managePortletsFallback {
   font-size: 0.9em;
   padding-left: 20px;
 }
+.organize > img {
+    width: 63%;
+}
 .image-inline {
   float: none;
   width: 100%;
   height: auto;
 }
 .tileHeadline {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .tileItem {
-  border-bottom: 2px dotted #dddddd;
+  border-bottom: 2px dotted #bbbbbb;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 .event.summary {
   background-color: #ebe7de;
@@ -247,14 +291,15 @@ div.managePortletsLink, a.managePortletsFallback {
   width: 100%;
 }
 #parent-fieldname-text {
-  width: 98%;
+  width: 100%;
 }
 /* footer define============================================================================*/
 #portal-footer > div {
-  margin: 2em auto;
-  max-width: 1200px;
+  margin: 0.8em auto;
+  max-width: 1180px;
 }
 #portal-footer {
+  font-family: "Open Sans", "微軟正黑體", sans-serif;
   border-top: 2px solid #9d242b;
   color: #333333;
   font-size: 100%;
@@ -270,9 +315,8 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 #footer-container .footColumn {
   text-align: left;
-  margin-right: 200px;
-  margin-left: 30px;
-  margin-top: 6px;
+  margin-right: 290px;
+  margin-left: 10px;
   float: left;
 }
 #footer-container .footColumn-last {
@@ -288,18 +332,21 @@ div.managePortletsLink, a.managePortletsFallback {
   padding-right: 0.3em;
 }
 #footer-container dd {
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
   letter-spacing: 0.02em;
-  padding: 0.5em 0 0;
+  padding: 0.1em 0 0 10px;
 }
 #footer-container dl dd {
   margin-left: 0;
   /*width: 300px;*/
   line-height: 1.5em;
 }
+.footMessage {
+  margin-top: 15px;
+}
+
 .browser-info {
   clear: both;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .suggest-info {
   color: #999;
@@ -377,9 +424,13 @@ dl.portletCalendar dt {
   width: 160px;
   height: 300px;
 }
+#photo ul li h4{
+  margin-bottom: 6px;
+}
 #photo ul li p {
   font-size: 12px;
   letter-spacing: 0.1em;
+  line-height: 1.3em;
 }
 #e-photo ul li p {
   font-size: 11px;
@@ -392,7 +443,7 @@ dl.portletCalendar dt {
 }
 .dataItem {
   border-bottom: 2px dotted #bbb;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 .dataItem h3 {
   color: #222;
@@ -403,6 +454,9 @@ dl.portletCalendar dt {
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+.snippet > p {
+    line-height: 1.7em;
 }
 table {
   border-collapse: collapse;
@@ -431,7 +485,7 @@ table {
 /*  漢學資源 content block ============================================================================*/
 
 .sinology {
-  border-bottom: 1px solid #fff;
+  border-bottom: 0px solid #fff;
 }
 .sinology ul.ruled > li {
   border-top: 0 solid #e6e6e6;
@@ -460,15 +514,15 @@ table {
   vertical-align: top;
 }
 .resource-teaser .thumbnail {
-  background: url("../img/icon-link.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/icon-link.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
   display: block;
   height: 1.6em;
   margin-right: 1em;
   width: 16px;
 }
 .resource-teaser h6 {
-  color: #555;
-  font-size: 0.9em;
+  color: #666;
+
 }
 /*  漢學資源 setting + isotope ============================================================================*/
 #sort-nav {
@@ -537,7 +591,7 @@ table {
 }
 .box-img {
   background-color: #FFFFFF;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #cccccc;
   margin-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
@@ -545,7 +599,7 @@ table {
   position: relative;
 }
 .box-img :after {
-  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(0, 0, 0, 0.5);
+  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(0, 0, 0, 0.3);
   content: '\A';
   position: absolute;
   width: 100%;
@@ -565,7 +619,7 @@ table {
 }
 .box-date {
   color: #bbb;
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
   font-size: 12px;
   margin-top: 5px;
   padding-left: 10px;
@@ -574,7 +628,7 @@ table {
 }
 .box-title {
   color: #666;
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -584,14 +638,13 @@ table {
 }
 .box-info {
   display: block;
-  background: url("../img/icon-link.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
+  background: url("++theme++cckf.theme/img/icon-link.png") no-repeat scroll 0px center rgba(0, 0, 0, 0);
   color: #222;
-  font-family: "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
   font-size: 12px;
   line-height: 1.5em;
   margin-bottom: 20px;
-  margin-right: 5px;
-  margin-top: 0;
+  height: 20px;
   letter-spacing: 0.04em;
   padding-left: 20px;
 }
@@ -688,22 +741,24 @@ label {
 }
 /*  漢學資源 獎助名單 ============================================================================*/
 .award-region {
-  /*background-color: #8f8f8b;*/
-  border-bottom: 2px solid #bbb;
+  background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 2px 0 #bbb;
   color: #000;
-  font-weight: bold;
-  height: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-top: 2px;
+  font-weight: normal;
+  height: 40px;
+  margin-bottom: 15px;
 }
 .area {
-  float: left;/*margin-left: 10px;*/
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 .dollor {
   float: right;
-  /*margin-right: 10px;*/
   font-weight: normal;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 .award-catagory > h2 {
   border-bottom: 2px solid #666;
@@ -758,17 +813,22 @@ label {
 }
 .grid li {
   float: left;
-  width: 25%;
+  width: 100%;
 }
 .grid li > div {
     background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
     border: 1px solid #fff;
     box-shadow: 1px 1px 2px 0 #bbb;
-    height: 230px;
+    height: 57px;
     margin-bottom: 0.2em;
     margin-right: 0.5em;
     padding: 1em;
     text-align: center;
+}
+.grid li > div p {
+    display: block;
+    float: left;
+    margin-right: 30px;
 }
 .grid li a {
   color: #fff;
@@ -880,7 +940,7 @@ a:hover span.play {
   clear: both;
 }
 .listbox {
-  border-bottom: 2px dotted #dddddd;
+  border-bottom: 2px dotted #bbbbbb;
   float: left;
   margin-bottom: 6px;
   padding-top: 12px;
@@ -891,7 +951,7 @@ a:hover span.play {
   height: auto !important;
   margin: 0 15px 0 0;
   overflow: hidden;
-  border: 1px solid #ddd;
+
 }
 #content ul {
   list-style-type: none;
@@ -1072,7 +1132,7 @@ input[type="text"].cck-search-input {
   float: right;
   width: 30px;
   height: 30px;
-  margin-top: 12px;
+  margin-top: 10px;
   z-index: 9999;
   cursor: pointer;
 }
@@ -1190,7 +1250,7 @@ input[type="text"].ct-search-input {
   clear: both;
 }
 .topspace {
-  margin-top: 45px;
+  margin-top: 0px;
 }
 table {
   border-collapse: collapse;
@@ -1214,6 +1274,9 @@ table {
 .new-teaser {
   min-height: 3.75em;
   position: relative;
+}
+.new-teaser h4 {
+  font-weight: normal;
 }
 .new-teaser td {
   vertical-align: top;
@@ -1263,7 +1326,6 @@ a.disclosure {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRv%0AYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0%0AdHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0%2BDTwhRE9DVFlQ%0ARSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3Jn%0AL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI%2BDTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2Ul%0AMjAxIiB2aWV3Qm94PSIwIDAgMjcgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYw%0AMCIgdmVyc2lvbj0iMS4xIg0JeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxu%0Aczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2%0AZSINCXg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjdweCIgaGVpZ2h0PSIxNHB4Ig0%2BDQk8ZyBpZD0i%0ATGF5ZXIlMjAxIj4NCQk8cGF0aCBkPSJNIDExIDIgTCAxNiA3IEwgMTEgMTIgIiBzdHJva2U9IiM3%0ANjc2NzYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPg0JPC9nPg08L3N2Zz4%3D%0A") no-repeat scroll right 40% transparent;
   color: #444;
   display: inline-block;
-  font-style: italic;
   padding-right: 2em;
   margin-right: 5px;
   margin-top: 5px;
@@ -1343,6 +1405,101 @@ ul.links > li.alt > a {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRv%0AYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0%0AdHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0%2BDTwhRE9DVFlQ%0ARSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3Jn%0AL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI%2BDTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2Ul%0AMjAxIiB2aWV3Qm94PSIwIDAgMjcgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYw%0AMCIgdmVyc2lvbj0iMS4xIg0JeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxu%0Aczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2%0AZSINCXg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjdweCIgaGVpZ2h0PSIxNHB4Ig0%2BDQk8ZyBpZD0i%0ATGF5ZXIlMjAxIj4NCQk8cGF0aCBkPSJNIDExIDIgTCAxNiA3IEwgMTEgMTIgIiBzdHJva2U9IiMw%0AMGI5ZTEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPg0JPC9nPg08L3N2Zz4%3D%0A") no-repeat scroll right 47% transparent;
   color: #07c5f2;
 }
+/* apply block define ============================================================================*/
+.apply-box {
+    margin-left: 14px;
+}
+div#apply {
+    background-color: #fff;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 210px auto;
+    border: 5px solid transparent;
+    clear: both;
+    color: #333;
+
+    font-size: 12px;
+    line-height: 130%;
+    margin: 12px 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    width: 100%px;
+}
+
+div#apply.orange {
+    background-color: #bb8f62;
+    background-position: center 3px;
+    border-color: #bb8f62;
+}
+div#apply > a.top {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 45px;
+    line-height: 42px;
+    text-align: center;
+    width: 100%;
+}
+div#apply > a.top:hover {
+    text-decoration: none;
+}
+
+div#apply > ul {
+    background-color: #fffffa;
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 10px;
+}
+div#apply > ul > li {
+    display: block;
+    margin: 0 !important;
+    padding: 3px 0 10px;
+}
+div#apply > ul > li > a {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+div#apply > ul > li > a > div {
+    color: #666;
+    float: none;
+}
+
+.post-tag {
+    color: #e91c17;
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 6px;
+    text-decoration: none;
+}
+#apply-container {
+    text-align: center;
+}
+.apply-button {
+    background: none repeat scroll 0 0 #aa3425;
+    border: 1px solid #81281d;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(100, 100, 100, 0.3);
+    color: #fff;
+    display: inline-block;
+    font-size: 26px;
+    padding: 15px 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+}
+#apply-container a{
+    color: #fff;
+}
+#apply-container a:link a:visited {
+    color: #fff;
+}
+
+#apply-container a:hover {
+    color: yellow;
+}
 /* homepage theme block define ============================================================================*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -1351,21 +1508,17 @@ ul.links > li.alt > a {
   -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
   -webkit-overflow-scrolling: touch;
 }
-html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, b, u, i, center, ul, ol, li, dl, dt, dd, table, tr, th, td, thead, tbody, tfoot, caption, form, fieldset, legend, button, textarea, select, label, applet, object, iframe, audio, video, canvas, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  border: 0;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-}
+
 strong {
   font-weight: bold;
 }
 .theme-container {
+  clear: both;
   width: 100%;
   max-width: 72rem; /* 1024 */
   line-height: 1.375rem; /* 22 */
   margin: 0 auto;
-  padding: 0.625rem; /* 10 */
+
 }
 .container, .container a {
   color: #cfd7db;
@@ -1374,11 +1527,12 @@ strong {
   color: #fff;
 }
 .theme-title {
+
   background-color: #19243c;
   height: 35px;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: normal;
   letter-spacing: 0.05em;
   padding-top: 5px;
   padding-left: 10px;
@@ -1404,10 +1558,7 @@ strong {
 .list__item__inner {
   width: 100%;
   color: #474d51;
-  background-color: #fff;
   overflow: hidden;
-  -webkit-box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 ); /* 2 5 */
-  box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 ); /* 2 5 */
 }
 .list__item img {
   width: 100%;
@@ -1415,7 +1566,7 @@ strong {
 }
 .list__item figcaption {
   font-size: 13px;
-  padding: 1rem;
+  padding-top: 0.5em;
 }
 .img-block {
   background-color: #000;
@@ -1502,4 +1653,148 @@ html.no-js .list__item img {
   float: none;
   margin-left: 0;
 }
+}
+/* end of homepage theme block define ============================================================================*/
+
+.blog-post {
+
+    margin-bottom: 40px;
+}
+.four.columns.alpha {
+    border: 6px solid #fff;
+    box-shadow: 1px 1px 4px 0 #cccccc;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-top: 0;
+    position: relative;
+    margin-right: 40px;
+    width: 300px;
+	height: 250px;
+}
+.six.columns.omega {
+    display: inline;
+    float: left;
+    width: 500px;
+}
+
+
+.clear, .clr {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+/* right porlet expand menu  ============================================================================*/
+
+.expandmenu{
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 50px auto;
+
+}
+
+.menu-item {
+  width: 100%;
+}
+
+/*Menu Header Styles*/
+.menu-item .expand {
+  background: url("++theme++cckf.theme/img/downArrow.png") no-repeat scroll 99% 6px rgba(0, 0, 0, 0);
+  border-bottom: 1px dotted rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px 7px 4px;
+}
+.menu-item .expand:hover {
+  background: url("++theme++cckf.theme/img/downArrow-2.png") no-repeat scroll 99% 6px rgba(0, 0, 0, 0);
+}
+
+.menu-item .expand a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu-item h4 {
+  border-bottom: 1px dotted rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px 7px 4px;
+}
+.menu-item h4:hover {
+
+}
+
+.menu-item h4 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+/*ul Styles*/
+.menu-item ul {
+  background: #fffffa;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+
+  /*Animation*/
+  -webkit-transition: height 1.2s ease;
+     -moz-transition: height 1.2s ease;
+       -o-transition: height 1.2s ease;
+      -ms-transition: height 1.2s ease;
+          transition: height 1.2s ease;
+}
+
+.menu-item:hover ul {
+  height: 160px;
+}
+
+.menu-item ul a {
+    background: url("++theme++cckf.theme/img/icon-point.png") no-repeat scroll 3px 5px transparent;
+    display: block;
+    font-size: 13px;
+    margin-left: 2px;
+    padding-left: 18px;
+    padding-top: 6px;
+    text-decoration: none;
+    width: 100%;
+}
+
+/*li Styles*/
+.menu-item li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item li:hover {
+  background: #eee;
+}
+
+/*First Item Styles*/
+.alpha p {
+	padding: 8px 12px;
+	color: #aaa;
+}
+
+.alpha p a {
+	color: #aaa;
+	font-style: italic;
+}
+
+.alpha p a:hover {
+	color: #ccc;
 }

@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1000px) {
+.organize > img {
+    width: 63%;
+}
 #page {
   width: 100%;
 }
@@ -176,9 +179,12 @@ div.position-1\:4 {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+.organize > img {
+    width: 70%;
+}
 .grid li {
   float: left;
-  width: 50%;
+  width: 100%;
 }
 .topspace {
   margin-top: 0px;
@@ -257,9 +263,15 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 
 /* Landscape phone to portrait tablet */
 @media only screen and (max-width: 767px) {
+.organize > img {
+    width: 70%;
+}
 .grid li {
   float: left;
-  width: 50%;
+  width: 100%;
+}
+.grid li > div p {
+    margin-right: 12px;
 }
 /* Top Header logo and navigation menu */
 #portal-logo {
@@ -315,10 +327,13 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 
 /* Landscape phones and down */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 640px) {
 /* Top Header logo and navigation menu */
+.organize > img {
+    width: 100%;
+}
 #portal-logo {
-  margin: 1em 0 0.5em 6px;
+  margin: 0.3em 0 0.5em 6px;
 }
 #portal-logo > img {
   width: 100%;
@@ -332,12 +347,12 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100%;
 }
 #portal-languageselector {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .ct-search {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* end */
 .topspace {
@@ -380,9 +395,12 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 #active_img {
   display: none;
 }
+.grid li > div {
+    height: 160px;
+}
 .grid li {
   float: left;
-  width: 100%;
+  width: 50%;
 }
 #page {
   width: 100%;

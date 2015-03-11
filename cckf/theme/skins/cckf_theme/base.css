@@ -18,15 +18,15 @@ dl.portlet li,
 div.portletStaticText li {
   margin-bottom: 0.25em;
   line-height: 1.5em;
-  display: list-item;
+  /*display: list-item;*/
 }
 
 /* Editor styles */
 #content .discreet,
 #sidebar .discreet {
-  color: #666;
-  font-size: 85%;
-  font-weight: normal;
+    color: #444444;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 #content .visualHighlight {
@@ -45,7 +45,7 @@ div.portletStaticText li {
   letter-spacing: -0.08em !important;
 }
 #content .callout {
-  background: #eee;
+  background: #fffff6;
   padding: 1em;
   border-left: 1em solid #ccc;
   clear: both;
@@ -60,9 +60,9 @@ div.portletStaticText li {
 
 #content img.tileImage,
 #content div.newsImageContainer {
-  float: right;
+  float: left;
   margin: 0 1em 0.5em 0;
-  display: none;
+
 }
 
 .eventDetails {
@@ -90,7 +90,8 @@ table.plain td,
 table.plain th,
 table.listing td,
 table.listing th {
-  padding: 0.5em 1em;
+  padding: 5px 10px 5px 5px;
+  /*padding: 0.5em 1em;*/
   vertical-align: top;
 }
 table.plain th,
@@ -290,6 +291,7 @@ dl.warning > dt,
 
 dl.error {
   border-color: red;
+  margin-left: 20px;
 }
 dl.error > dt,
 .error > .admonition-title {

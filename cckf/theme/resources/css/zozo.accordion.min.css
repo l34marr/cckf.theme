@@ -59,8 +59,6 @@ article, aside, figcaption, figure, footer, header, hgroup, nav, section {
 	background: #fefefa
 }
 .z-accordion.vertical {
-	font-family: "Open Sans","微軟正黑體",sans-serif;
-
 	line-height: 20px;
 	color: #333
 }
@@ -546,6 +544,7 @@ filter:progid:dximagetransform.Microsoft.gradient(gradienttype=0, startcolorstr=
 .z-accordion.white.vertical>.z-section>.z-header, .z-accordion.white.horizontal>.z-section>.z-header>.z-title {
 	color: #333;
 	text-shadow: 0 1px white;
+	background-image: url("++theme++cckf.theme/img/pattern.jpg");
 	background-color: #fff
 }
 .z-accordion.white.z-scrollable>.z-section.z-active .z-content::-webkit-scrollbar-thumb {

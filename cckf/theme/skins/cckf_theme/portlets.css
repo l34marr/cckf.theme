@@ -37,7 +37,8 @@ dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
   padding: 0.5em 0 0.5em 1em;
-  font-size: 13px;
+  font-size: 15px;
+  letter-spacing: 0.05em;
 }
 
 .blockedPortlet .portletHeader {
