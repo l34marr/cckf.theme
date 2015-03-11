@@ -22,6 +22,10 @@ class ICCKFView(Interface):
         """Returns Specific Items for Template.
         """
 
+    def getEvent():
+        """Returns Specific Items for Template.
+        """
+
     def getSinology():
         """Returns Specific Items for Template.
         """
