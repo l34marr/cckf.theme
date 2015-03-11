@@ -1,5 +1,7 @@
 from zope.i18n import translate
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import TitleViewlet
+from plone.app.layout.links.viewlets import FaviconViewlet
 
 
 class TitleViewlet(TitleViewlet):
@@ -12,4 +14,10 @@ class TitleViewlet(TitleViewlet):
                       domain='plone',
                       context=self.request,
                       default='CCKF'))
+
+
+class FaviconViewlet(FaviconViewlet):
+    """Custom Favicon
+    """
+    _template = ViewPageTemplateFile('favicon.pt')
 
