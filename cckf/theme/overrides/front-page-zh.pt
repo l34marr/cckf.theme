@@ -84,12 +84,12 @@
     classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view);
     cckfview python:context.restrictedTraverse('@@cckfview');
     c01 python:cckfview.getNews();
-    c02 python:cckfview.getEvent();
+    c02 python:cckfview.getActivity();
     root_url context/@@plone_portal_state/navigation_root_url"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
-<img src="++theme++cckf.theme/img/background.jpg" class="bg" />
+<div id="bg"> </div>
 
 <div id="visual-portal-wrapper">
 
@@ -195,13 +195,13 @@
    </div>
    <!-- End News --> 
 
-   <!-- Start Events -->
-   <div id="event" class="news-column span-2-3">
+   <!-- Start Activities -->
+   <div id="activity" class="news-column span-2-3">
     <div class="head-container">
      <h3 class="small">近期活動</h3>
      <div class="hide-small topright text-right">
       <a class="disclosure small" href="#"
-       tal:attributes="href string:${root_url}/event">更多活動</a>
+       tal:attributes="href string:${root_url}/activities">更多活動</a>
      </div>
     </div>
     <hr data-class-small="inverse" class="skinny">
@@ -229,7 +229,7 @@
     </tal:events>
     </ul>
    </div>
-   <!-- End Events -->
+   <!-- End Activities -->
 
    <div id="portal-columns" class="row">
     <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
