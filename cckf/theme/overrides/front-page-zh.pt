@@ -107,12 +107,12 @@
 
     <!-- slide images -->
     <ul class="allinone_thumbnailsBanner_list">
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1" data-link="project" data-target="_self"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="subsidy_project" data-target="_self"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3" data-link="camp" data-target="_self"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4" data-link="about/structure/sinology_center" data-target="_self"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="resource" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/06.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c1.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1" data-link="xp" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/01.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c2.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2" data-link="grants" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/02.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c3.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3" data-link="camps" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c4.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4" data-link="about/structure/overseas_center" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c5.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="sino" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c6.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
     </ul>
 
     <!-- slide 1 text -->
@@ -135,14 +135,14 @@
     </div>
     <!-- slide 4 text -->
     <div id="allinone_thumbnailsBanner_photoText4" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="about/structure/sinology_center" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="about/structure/sinology_center" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="about/structure/overseas_center" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="about/structure/overseas_center" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
       全球四中心服務三大洲</div>
     </div>
     <!-- slide 5 text -->
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="resource" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">漢學資源</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="resource" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">面向世界<br />
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="sino" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">漢學資源</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="sino" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">面向世界<br />
       提供國際學術界<br />完整典藏資料</div>
     </div>
     <!-- slide 6 text -->
