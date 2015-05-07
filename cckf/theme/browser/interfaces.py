@@ -22,7 +22,7 @@ class ICCKFView(Interface):
         """Returns Specific Items for Template.
         """
 
-    def getEvent():
+    def getActivity():
         """Returns Specific Items for Template.
         """
 

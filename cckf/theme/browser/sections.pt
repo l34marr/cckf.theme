@@ -10,22 +10,22 @@
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/about"
-     i18n:translate="">Introduction</a>
+     i18n:translate="">About the Foundation</a>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/program"
+     tal:attributes="href string:${root}/programs"
      i18n:translate="">Programs</a>
     </li>
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/resource"
-     i18n:translate="">Resources</a></li>
+     tal:attributes="href string:${root}/sino"
+     i18n:translate="">Resources in Chinese Studies</a></li>
     <li class="">
     <li class="">
     <a class="rootmenulink" href="#"
-     tal:attributes="href string:${root}/activity"
-     i18n:translate="">Activities</a></li>
+     tal:attributes="href string:${root}/events"
+     i18n:translate="">Events</a></li>
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/contact"
