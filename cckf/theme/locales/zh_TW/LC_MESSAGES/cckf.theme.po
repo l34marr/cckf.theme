@@ -19,7 +19,7 @@ msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
 msgstr "台北市敦化南路二段65號13樓／B"
 
 #: ./browser/sections.pt:26
-msgid "Activities"
+msgid "Events"
 msgstr "最新動態"
 
 #: ./browser/footer.pt:23
@@ -43,7 +43,7 @@ msgid "Institute"
 msgstr "機構"
 
 #: ./browser/sections.pt:11
-msgid "Introduction"
+msgid "About the Foundation"
 msgstr "基金會簡介"
 
 #: ./browser/sections.pt:16
@@ -55,7 +55,7 @@ msgid "Project"
 msgstr "計畫"
 
 #: ./browser/sections.pt:21
-msgid "Resources"
+msgid "Resources in Chinese Studies"
 msgstr "漢學資源"
 
 #: ./browser/footer.pt:12
