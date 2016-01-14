@@ -30,8 +30,7 @@
   <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
     <div tal:replace="structure provider:plone.htmlhead" />
     <link tal:replace="structure provider:plone.htmlhead.links" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">	
-    <link rel="stylesheet" href="++theme++cckf.theme/css/screen.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">
 
     <script src="++theme++cckf.theme/js/search.js"></script>
     <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
@@ -112,7 +111,7 @@
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c3.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3" data-link="camps" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/03.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c4.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4" data-link="about/structure/overseas_center" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/04.jpg" alt="" /></li>
      <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c5.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5" data-link="sino" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/05.jpg" alt="" /></li>
-     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c6.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="library" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
+     <li data-bottom-thumb="++theme++cckf.theme/img/allinone/thumbs/c6.jpg" data-text-id="#allinone_thumbnailsBanner_photoText6" data-link="ccklib" data-target="_blank"><img src="++theme++cckf.theme/img/allinone/06.jpg" alt="" /></li>
     </ul>
 
     <!-- slide 1 text -->
@@ -136,8 +135,8 @@
     <!-- slide 4 text -->
     <div id="allinone_thumbnailsBanner_photoText4" class="allinone_thumbnailsBanner_texts">
      <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="about/structure/overseas_center" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">海外漢學研究中心</div>
-     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="about/structure/overseas_center" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港捷克德國美國<br />
-      全球四中心服務三大洲</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="about/structure/overseas_center" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">香港、捷克、德國、美國<br />
+      全球四中心，服務三大洲</div>
     </div>
     <!-- slide 5 text -->
     <div id="allinone_thumbnailsBanner_photoText5" class="allinone_thumbnailsBanner_texts">
@@ -179,7 +178,15 @@
         <tbody>
          <tr>
           <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+            <div tal:define="obj item/getObject;
+                             i python:getattr(obj.aq_explicit, 'image', None)">
+            <img width="60" height="60" src=""
+             tal:condition="i"
+             tal:attributes="src string:${item/getURL}/@@images/image">
+            <img width="60" height="60" src=""
+             tal:condition="python: not i"
+             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+            </div>
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
@@ -215,7 +222,15 @@
         <tbody>
          <tr>
           <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+            <div tal:define="obj item/getObject;
+                             i python:getattr(obj.aq_explicit, 'image', None)">
+            <img width="60" height="60" src=""
+             tal:condition="i"
+             tal:attributes="src string:${item/getURL}/@@images/image">
+            <img width="60" height="60" src=""
+             tal:condition="python: not i"
+             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+            </div>
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>

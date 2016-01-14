@@ -30,8 +30,7 @@
   <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
     <div tal:replace="structure provider:plone.htmlhead" />
     <link tal:replace="structure provider:plone.htmlhead.links" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">	
-    <link rel="stylesheet" href="++theme++cckf.theme/css/screen.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">
 
     <script src="++theme++cckf.theme/js/search.js"></script>
     <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
@@ -83,8 +82,8 @@
     body_class python:plone_view.bodyClass(template, view);
     classes python:context.restrictedTraverse('@@cckfview').getColumnsClasses(view);
     cckfview python:context.restrictedTraverse('@@cckfview');
-    c01 python:cckfview.getNews();
-    c02 python:cckfview.getActivity();
+    c01 python:cckfview.getNews(lang='en');
+    c02 python:cckfview.getActivity(lang='en');
     root_url context/@@plone_portal_state/navigation_root_url"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
@@ -179,7 +178,15 @@
         <tbody>
          <tr>
           <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+            <div tal:define="obj item/getObject;
+                             i python:getattr(obj.aq_explicit, 'image', None)">
+            <img width="60" height="60" src=""
+             tal:condition="i"
+             tal:attributes="src string:${item/getURL}/@@images/image">
+            <img width="60" height="60" src=""
+             tal:condition="python: not i"
+             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+            </div>
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
@@ -215,7 +222,15 @@
         <tbody>
          <tr>
           <td><div class="thumbnail image">
-            <div> <img width="60" height="60" src="++theme++cckf.theme/img/post-icon.jpg"> </div>
+            <div tal:define="obj item/getObject;
+                             i python:getattr(obj.aq_explicit, 'image', None)">
+            <img width="60" height="60" src=""
+             tal:condition="i"
+             tal:attributes="src string:${item/getURL}/@@images/image">
+            <img width="60" height="60" src=""
+             tal:condition="python: not i"
+             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+            </div>
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
