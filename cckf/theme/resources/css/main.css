@@ -46,6 +46,28 @@ input {
     margin: 5px 5px 5px 0;
     padding: 5px;
 }
+.configlets > li {
+    display: block;
+}
+#content-core {
+    margin-bottom: 20px;
+}
+div.olMapViewport {
+    border-right: 1px solid #bbb;
+}
+#OpenLayers_Layer_Vector_47_svgRoot {
+    border: 1px solid #bbb;
+}
+#internallinkcontainer .list span {
+    margin-left: 0.5em;
+    margin-top: -0.4em;
+}
+.radioscrolllist .list {
+    margin-top: 1em;
+}
+#internalpath{
+    font-size: 13px;
+}
 /* homepage define ============================================================================*/
 .s-banner {
   margin-top: 20px;
@@ -139,7 +161,7 @@ div.managePortletsLink, a.managePortletsFallback {
 .top-info {
   color: #444444;
   float: right;
-  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-size: 14px;
   margin-top: 15px;
   padding-right: 10px;
@@ -147,7 +169,7 @@ div.managePortletsLink, a.managePortletsFallback {
 #portal-searchbox {
   clear: right;
   float: right;
-  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-size: 80%;
   margin: 1.2em 0;
   text-align: left;
@@ -252,7 +274,7 @@ div.managePortletsLink, a.managePortletsFallback {
   padding-left: 20px;
 }
 .organize > img {
-    width: 63%;
+    width: 65%;
 }
 .image-inline {
   float: none;
@@ -315,7 +337,7 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 #footer-container .footColumn {
   text-align: left;
-  margin-right: 290px;
+  margin-right: 245px;
   margin-left: 10px;
   float: left;
 }
@@ -408,7 +430,7 @@ dl.portletCalendar dt {
 #photo ul li {
   float: left;
   line-height: 1.5em;
-  margin: 2px 4px 20px 0;
+  margin: 2px 10px 20px 0;
   padding: 0;
   width: 160px;
   height: 250px;
@@ -419,10 +441,10 @@ dl.portletCalendar dt {
 #e-photo ul li {
   float: left;
   line-height: 1.5em;
-  margin: 2px 4px 20px 0;
+  margin: 2px 10px 20px 0;
   padding: 0;
   width: 160px;
-  height: 300px;
+  height: 280px;
 }
 #photo ul li h4{
   margin-bottom: 6px;
@@ -434,8 +456,8 @@ dl.portletCalendar dt {
 }
 #e-photo ul li p {
   font-size: 11px;
-  letter-spacing: 0.1em;
-  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  line-height: 1em;
   margin-top: 0.5em;
 }
 #photo p {
@@ -517,7 +539,7 @@ table {
   background: url("++theme++cckf.theme/img/icon-link.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
   display: block;
   height: 1.6em;
-  margin-right: 1em;
+  margin-right: 0.5em;
   width: 16px;
 }
 .resource-teaser h6 {
@@ -599,7 +621,7 @@ table {
   position: relative;
 }
 .box-img :after {
-  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(0, 0, 0, 0.3);
+  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
   content: '\A';
   position: absolute;
   width: 100%;
@@ -619,7 +641,7 @@ table {
 }
 .box-date {
   color: #bbb;
-  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-size: 12px;
   margin-top: 5px;
   padding-left: 10px;
@@ -628,7 +650,7 @@ table {
 }
 .box-title {
   color: #666;
-  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -637,10 +659,11 @@ table {
   padding-right: 10px;
 }
 .box-info {
+  clear: both;
   display: block;
   background: url("++theme++cckf.theme/img/icon-link.png") no-repeat scroll 0px center rgba(0, 0, 0, 0);
   color: #222;
-  font-family: "文鼎W標楷體M ", "Open Sans", "微軟正黑體", sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-size: 12px;
   line-height: 1.5em;
   margin-bottom: 20px;
@@ -739,6 +762,9 @@ label {
     margin-right: 5px;
     margin-top: 5px;
 }
+ #faceted-results >div{
+    padding: 0.8em;
+}
 /*  漢學資源 獎助名單 ============================================================================*/
 .award-region {
   background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
@@ -821,7 +847,7 @@ label {
     box-shadow: 1px 1px 2px 0 #bbb;
     height: 57px;
     margin-bottom: 0.2em;
-    margin-right: 0.5em;
+    margin-right: 0.7em;
     padding: 1em;
     text-align: center;
 }
@@ -886,7 +912,7 @@ label {
 .banner-box {
   display: inline-block;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .portletStaticText.portlet-static-banner {
   margin-bottom: 1.5em;
@@ -1276,6 +1302,7 @@ table {
   position: relative;
 }
 .new-teaser h4 {
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   font-weight: normal;
 }
 .new-teaser td {
@@ -1304,7 +1331,7 @@ h1.small, h2.small, h3.small, h4.small, h5.small {
   padding-bottom: 1px;
   padding-left: 45px;
   padding-top: 3px;
-  text-transform: uppercase;
+  letter-spacing: 0em;
 }
 
 .small {
@@ -1550,7 +1577,7 @@ strong {
 .list__item {
   width: 25%;
   float: left;
-  padding: 0.625rem; /* 10 */
+  padding: 0.4rem; /* 10 */
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1568,21 +1595,32 @@ strong {
   font-size: 13px;
   padding-top: 0.5em;
 }
-.img-block {
-  background-color: #000;
+
+.img-block{
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  position: relative;
+}
+.img-block :after {
+  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background:rgba(0,0,0,0.5);*/
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+
+}
+.img-block :hover:after {
+  opacity: 1;
 }
 
-.img-block > img {
-  opacity: 0.75;
-}
-.img-block > img:hover {
-  opacity: 1;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
 
 /* JavaScript disabled */
 

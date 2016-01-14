@@ -22,9 +22,10 @@ body {
   /*font-family: Georgia,"Open Sans","微軟正黑體","文鼎W黑體M",sans-serif;*/
   /*font-family: "文鼎W明體M","細明體","Times New Roman",Georgia,Serif;*/
   /*font-family: "Open Sans",Verdana,Arial,"新細明體","文鼎W明體M",sans-serif;*/
-  font-family: "Open Sans",Arial,"微軟正黑體","文鼎W黑體M",sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   background-color: #f3f3f1;
   color: #000;
+  overflow-x: hidden;
   /* width: 58em; margin: 1em auto; */
 }
 #bg {
@@ -86,9 +87,9 @@ img.bg {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
-  font-weight: bold;
-  letter-spacing: 0.05em;
+ /* font-family: "Open Sans",Arial,"文鼎W黑體M","微軟正黑體",sans-serif;*/
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
+  letter-spacing: 0em;
   color: #000;
   line-height: 1.5em;
 }
@@ -402,10 +403,12 @@ dl dt span.summary a {
 /* @group Content Area */
 
 #content {
+  /*font-family: "Open Sans",Arial,"文鼎W黑體M","微軟正黑體",sans-serif;*/
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   line-height: 1.5em;
   clear: both;
   font-size: 100%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   line-height: 1.8em;
   margin: 1em 1em 1.5em 1.3em;
 }
@@ -439,13 +442,13 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-  color: #183d67;
+  color: #124075;
   border-bottom: 0em solid #666666;
 }
 
 #content a:visited,
 dl.portlet a:visited {
-  color: #444444;
+  color: #0e3868;
   border-bottom: 0em solid #ccc;
 }
 #content a:hover,
@@ -504,7 +507,7 @@ dl.portlet a:hover {
 #content pre {
   background-color: #222;
   color: White;
-  font-family: "文鼎W標準楷體M", "Open Sans","微軟正黑體",sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體","文鼎W黑體M",sans-serif;
   padding: 1em;
   overflow-x: auto;
   font-size: 90%;
@@ -516,7 +519,7 @@ dl.portlet a:hover {
 }
 
 #content code {
-  font-family: "文鼎W標準楷體M", "Open Sans","微軟正黑體",sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體","文鼎W黑體M",sans-serif;
 }
 
 #content table {

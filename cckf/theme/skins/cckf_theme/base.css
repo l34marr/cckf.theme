@@ -30,7 +30,8 @@ div.portletStaticText li {
 }
 
 #content .visualHighlight {
-  background-color: #ffb;
+  /*background-color: #ffffe3;*/
+  color: red;
 }
 
 #content .pullquote {
@@ -90,7 +91,7 @@ table.plain td,
 table.plain th,
 table.listing td,
 table.listing th {
-  padding: 5px 10px 5px 5px;
+  padding: 10px 10px 10px 10px;
   /*padding: 0.5em 1em;*/
   vertical-align: top;
 }

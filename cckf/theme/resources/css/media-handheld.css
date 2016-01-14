@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1000px) {
+
+.apply-box {
+    width:378px;
+}
 .organize > img {
     width: 63%;
 }
@@ -178,7 +182,26 @@ div.position-1\:4 {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+.section-programs #center-and-left-area {
+    margin-right: -15em;
+}
+.section-programs #right-area, .section-programs #left-area {
+  width: 15em !important;
+}
+.section-programs #center-area {
+    margin-left: -15em;
+}
+.section-programs .right-area-js{
+    margin-right: 15em;
+}
+.section-programs .left-area-js {
+    margin-left: 15em;
+}
+
+#footer-container .footColumn {
+    margin-right: 100px;
+}
 .organize > img {
     width: 70%;
 }
@@ -218,7 +241,7 @@ div.position-1\:4 {
   clear: right;
   font-weight: bold;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .suggest-info {
   display: none;
@@ -263,6 +286,19 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 
 /* Landscape phone to portrait tablet */
 @media only screen and (max-width: 767px) {
+.section-programs #right-area, .section-programs #left-area {
+  clear: both;
+  width: 100% !important;
+}
+.section-programs .right-area-js {
+    margin-right: 0 !important;
+}
+.section-programs .left-area-js {
+    margin-left: 0 !important;
+}
+#footer-container .footColumn-last {
+    display: none;
+}
 .organize > img {
     width: 70%;
 }
@@ -270,9 +306,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   float: left;
   width: 100%;
 }
-.grid li > div p {
-    margin-right: 12px;
-}
+
 /* Top Header logo and navigation menu */
 #portal-logo {
   margin: 1em 0 1em 6px;
@@ -307,8 +341,8 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 .tileHeadline {
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .suggest-info {
   display: none;
@@ -384,7 +418,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   margin: 1em 1em 1.5em 0.8em;
 }
 .banner-box img {
-  width: 98%;
+  width: 100%;
 }
 .box {
   width: 45%;
@@ -396,7 +430,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   display: none;
 }
 .grid li > div {
-    height: 160px;
+    height: 220px;
 }
 .grid li {
   float: left;
@@ -415,6 +449,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   height: auto;
   width: 97%;
 }
+
 .subsection-facet #right-area, .subsection-facet #left-area {
   clear: both;
   width: 100% !important;

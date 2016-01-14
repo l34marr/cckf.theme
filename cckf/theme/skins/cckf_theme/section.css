@@ -69,7 +69,13 @@
     padding-top: 0;
 }
 
-
+.icons-on #banner {
+  background-image: url("++theme++cckf.theme/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
 .section-acl_users #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
@@ -98,56 +104,56 @@
   background-position: center top;
   height: 170px;
 }
-.section-program #banner {
+.section-programs #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-project #banner {
+.section-xp #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-subsidy_project #banner {
+.section-grants #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-camp #banner {
+.section-camps #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-library #banner {
+.section-ccklib #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-resource #banner {
+.section-sino #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-activity #banner {
+.section-activities #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   height: 170px;
 }
-.section-event #banner {
+.section-events #banner {
   background-image: url("++theme++cckf.theme/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
