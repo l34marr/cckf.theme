@@ -37,9 +37,9 @@
     <script type='text/javascript' src='http://font.arphic.com/FontSubsetOutput/1421291901118/A9CEEDB2D7580BC580679EDDD8FE8BF0/1421291901118.JS?5541868500'></script>
 
     <!-- for allinone_Banner  -->
-    <link href="++theme++cckf.theme/css/allinone_thumbnailsBanner.css" rel="stylesheet" type="text/css">
+    <link href="++theme++cckf.theme/css/allinone/thumbnailsBanner.css" rel="stylesheet" type="text/css">
     <script src="++theme++cckf.theme/js/allinone/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
-    <script src="++theme++cckf.theme/js/allinone/allinone_thumbnailsBanner.js" type="text/javascript"></script>
+    <script src="++theme++cckf.theme/js/allinone/thumbnailsBanner.js" type="text/javascript"></script>
     <script src="++theme++cckf.theme/js/allinone/reflection.js" type="text/javascript"></script>
     <script>
     jQuery(function() {
