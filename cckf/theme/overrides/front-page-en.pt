@@ -185,7 +185,7 @@
              tal:attributes="src string:${item/getURL}/@@images/image">
             <img width="60" height="60" src=""
              tal:condition="python: not i"
-             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+             tal:attributes="src string:${root_url}/++theme++cckf.theme/img/icon-lead.jpg">
             </div>
            </div></td>
           <td><header>
@@ -229,7 +229,7 @@
              tal:attributes="src string:${item/getURL}/@@images/image">
             <img width="60" height="60" src=""
              tal:condition="python: not i"
-             tal:attributes="src string:++theme++cckf.theme/img/post-icon.jpg">
+             tal:attributes="src string:${root_url}/++theme++cckf.theme/img/icon-lead.jpg">
             </div>
            </div></td>
           <td><header>

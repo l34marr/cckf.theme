@@ -1316,7 +1316,7 @@ table {
   color: #666;
 }
 .new-teaser .thumbnail {
-  background: url("++theme++cckf.theme/img/post-icon.jpg") no-repeat scroll 0 0 / 3.75em 3.75em transparent;
+  background: url("++theme++cckf.theme/img/icon-lead.jpg") no-repeat scroll 0 0 / 3.75em 3.75em transparent;
   display: block;
   height: 3.75em;
   margin-right: 1.375em;
