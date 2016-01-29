@@ -87,12 +87,12 @@ $(document).ready(function(){
     body_class python:plone_view.bodyClass(template, view);
     cckfview python:context.restrictedTraverse('@@cckfview');
     classes python:cckfview.getColumnsClasses(view);
-    c01 python:cckfview.getSinologyTiles(classify='01', lang='en');
-    c02 python:cckfview.getSinologyTiles(classify='02');"
+    c01 python:cckfview.getSinology(classify='01', lang='en');
+    c02 python:cckfview.getSinology(classify='02');"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
-<img src="++theme++cckf.theme/img/background.jpg" class="bg" />
+<div id="bg"> </div>
 
 <div id="visual-portal-wrapper">
 
@@ -103,9 +103,7 @@ $(document).ready(function(){
       <div tal:replace="structure provider:plone.portaltop" />
     </div>
   </div>
-
-  <div tal:replace="structure provider:cckf.navigation" />
-
+  <div id="banner"></div>
   <div style="margin: 0 auto; max-width: 1180px;">
 
   <div id="portal-columns" class="row">
@@ -167,7 +165,7 @@ $(document).ready(function(){
       <div>Resources</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sino/01.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Resources</figcaption>
         </figure>
       </div>
@@ -177,7 +175,7 @@ $(document).ready(function(){
       <div>Catalog search</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sino/02.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Catalog search</figcaption>
         </figure>
       </div>
@@ -187,7 +185,7 @@ $(document).ready(function(){
       <div>Digital Library, Database</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sino/03.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Digital Library, Database</figcaption>
         </figure>
       </div>
@@ -197,7 +195,7 @@ $(document).ready(function(){
       <div>Ancient Documents</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sino/04.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Ancient Documents</figcaption>
         </figure>
       </div>
@@ -207,7 +205,7 @@ $(document).ready(function(){
       <div>Religious</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sino/05.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Religious</figcaption>
         </figure>
       </div>
@@ -217,7 +215,7 @@ $(document).ready(function(){
       <div>Genealogy</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sino/06.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Genealogy</figcaption>
         </figure>
       </div>
@@ -227,7 +225,7 @@ $(document).ready(function(){
       <div>Biography</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sino/07.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Biography</figcaption>
         </figure>
       </div>
@@ -237,7 +235,7 @@ $(document).ready(function(){
       <div>Journals</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sino/08.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Journals</figcaption>
         </figure>
       </div>
@@ -247,7 +245,7 @@ $(document).ready(function(){
       <div>Papers</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sino/09.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Papers</figcaption>
         </figure>
       </div>
@@ -257,7 +255,7 @@ $(document).ready(function(){
       <div>Press Index</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sino/10.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Press Index</figcaption>
         </figure>
       </div>
@@ -267,7 +265,7 @@ $(document).ready(function(){
       <div>Digital library resources</div>
       </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sino/11.jpg" alt="image" /></a>
         <figcaption class="ap-caption">Digital library resources</figcaption>
         </figure>
       </div>

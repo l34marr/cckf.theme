@@ -42,8 +42,6 @@
     <script src="++theme++cckf.theme/js/jquery.accordionpro.min.js"></script>
     <script src="++theme++cckf.theme/js/isotope.js"></script>
     <script src="++theme++cckf.theme/js/search.js"></script>
-    <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1421291901118/A9CEEDB2D7580BC580679EDDD8FE8BF0/1421291901118.JS?5541868500'></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
     <meta name="generator" content="Plone - http://plone.org" />
   </tal:notajax>
@@ -199,7 +197,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sino/01.jpg" alt="image" /></a>
         <figcaption class="ap-caption">資源選介-簡短說明</figcaption>
         </figure>
       </div>
@@ -226,7 +224,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sino/02.jpg" alt="image" /></a>
         <figcaption class="ap-caption">聯合目錄檢索-簡短說明</figcaption>
         </figure>
       </div>
@@ -262,7 +260,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sino/03.jpg" alt="image" /></a>
         <figcaption class="ap-caption">數位圖書館、資料庫-簡短說明</figcaption>
         </figure>
       </div>
@@ -283,7 +281,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sino/04.jpg" alt="image" /></a>
         <figcaption class="ap-caption">古籍文獻-簡短說明</figcaption>
         </figure>
       </div>
@@ -298,7 +296,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sino/05.jpg" alt="image" /></a>
         <figcaption class="ap-caption">宗教-簡短說明</figcaption>
         </figure>
       </div>
@@ -319,7 +317,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sino/06.jpg" alt="image" /></a>
         <figcaption class="ap-caption">家譜族譜-簡短說明</figcaption>
         </figure>
       </div>
@@ -340,7 +338,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sino/07.jpg" alt="image" /></a>
         <figcaption class="ap-caption">人物傳記-簡短說明</figcaption>
         </figure>
       </div>
@@ -361,7 +359,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sino/08.jpg" alt="image" /></a>
         <figcaption class="ap-caption">期刊論文-簡短說明</figcaption>
         </figure>
       </div>
@@ -382,7 +380,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sino/09.jpg" alt="image" /></a>
         <figcaption class="ap-caption">學位論文-簡短說明</figcaption>
         </figure>
       </div>
@@ -403,7 +401,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sino/10.jpg" alt="image" /></a>
         <figcaption class="ap-caption">報刊索引-簡短說明</figcaption>
         </figure>
       </div>
@@ -436,7 +434,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sino/11.jpg" alt="image" /></a>
         <figcaption class="ap-caption">網路數位圖書資源-簡短說明</figcaption>
         </figure>
       </div>
