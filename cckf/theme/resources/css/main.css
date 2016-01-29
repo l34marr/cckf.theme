@@ -524,7 +524,7 @@ table {
   float: left;
 }
 .sinology .head-container {
-    background: url("++theme++cckf.theme/img/pattern-2.jpg") repeat scroll 0 0 ;
+    background: url("++theme++cckf.theme/img/pattern-grey.png") repeat scroll 0 0 ;
     padding-bottom: 1px;
     padding-left: 10px;
     padding-top: 1px;
@@ -725,7 +725,7 @@ table {
     text-shadow: 1px 1px 1px #555555;	
 }
 #faceted-form fieldset {
-    background-image: url("++theme++cckf.theme/img/pattern.jpg");
+    background-image: url("++theme++cckf.theme/img/pattern-silver.png");
     font-size: 95%;
 	margin: 0 0 1em;
 }
@@ -767,7 +767,7 @@ label {
 }
 /*  漢學資源 獎助名單 ============================================================================*/
 .award-region {
-  background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
+  background: url("++theme++cckf.theme/img/pattern-silver.png") repeat scroll 0 0 #efece5;
   border: 1px solid #fff;
   box-shadow: 1px 1px 2px 0 #bbb;
   color: #000;
@@ -842,7 +842,7 @@ label {
   width: 100%;
 }
 .grid li > div {
-    background: url("++theme++cckf.theme/img/pattern.jpg") repeat scroll 0 0 #efece5;
+    background: url("++theme++cckf.theme/img/pattern-silver.png") repeat scroll 0 0 #efece5;
     border: 1px solid #fff;
     box-shadow: 1px 1px 2px 0 #bbb;
     height: 57px;

@@ -526,7 +526,7 @@ filter:progid:dximagetransform.Microsoft.gradient(gradienttype=0, startcolorstr=
 }
 .z-accordion.gray.vertical>.z-section>.z-header, .z-accordion.gray.horizontal>.z-section>.z-header>.z-title {
 	background-color: #f7f5ef;
-    background-image: url("++theme++cckf.theme/img/pattern.jpg");
+    background-image: url("++theme++cckf.theme/img/pattern-silver.png");
 	
 	color: #222
 }
@@ -544,7 +544,7 @@ filter:progid:dximagetransform.Microsoft.gradient(gradienttype=0, startcolorstr=
 .z-accordion.white.vertical>.z-section>.z-header, .z-accordion.white.horizontal>.z-section>.z-header>.z-title {
 	color: #333;
 	text-shadow: 0 1px white;
-	background-image: url("++theme++cckf.theme/img/pattern.jpg");
+	background-image: url("++theme++cckf.theme/img/pattern-silver.png");
 	background-color: #fff
 }
 .z-accordion.white.z-scrollable>.z-section.z-active .z-content::-webkit-scrollbar-thumb {
