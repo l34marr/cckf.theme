@@ -621,7 +621,7 @@ table {
   position: relative;
 }
 .box-img :after {
-  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
+  background: url("++theme++cckf.theme/img/link-box.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
   content: '\A';
   position: absolute;
   width: 100%;
@@ -1604,7 +1604,7 @@ strong {
   position: relative;
 }
 .img-block :after {
-  background: url("++theme++cckf.theme/img/link.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
+  background: url("++theme++cckf.theme/img/link-box.png") no-repeat scroll center center rgba(255, 255, 255, 0.75);
   content: '\A';
   position: absolute;
   width: 100%;
