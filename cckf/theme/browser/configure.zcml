@@ -1,75 +1,83 @@
 <configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  i18n_domain="cckf.theme">
+ xmlns="http://namespaces.zope.org/zope"
+ xmlns:browser="http://namespaces.zope.org/browser"
+ i18n_domain="cckf.theme">
 
-  <!-- Zope 3 browser layer -->
-  <interface
-    name="CCKF Theme"
-    interface=".interfaces.IThemeSpecific"
-    type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+ <!-- Zope 3 browser layer -->
+ <interface
+  name="CCKF Theme"
+  interface=".interfaces.IThemeSpecific"
+  type="zope.publisher.interfaces.browser.IBrowserSkinType" />
 
-  <!-- special view -->
-  <browser:page
-    name="cckfview"
-    for="*"
-    class=".cckfview.CCKFView"
-    permission="zope.Public"
-    allowed_interface=".interfaces.ICCKFView" />
+ <!-- special view -->
+ <browser:page
+  name="cckfview"
+  for="*"
+  class=".cckfview.CCKFView"
+  permission="zope.Public"
+  allowed_interface=".interfaces.ICCKFView" />
 
-  <browser:viewlet
-    name="plone.htmlhead.title"
-    manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
-    class=".viewlets.TitleViewlet"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.htmlhead.title"
+  manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+  class=".viewlets.TitleViewlet"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.links.favicon"
-    manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
-    class=".viewlets.FaviconViewlet"
-    template="favicon.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.links.favicon"
+  manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+  class=".viewlets.FaviconViewlet"
+  template="favicon.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.global_sections"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
-    template="sections.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.global_sections"
+  manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+  class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+  template="sections.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.searchbox"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class="plone.app.layout.viewlets.common.SearchBoxViewlet"
-    template="searchbox.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.searchbox"
+  manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+  class="plone.app.layout.viewlets.common.SearchBoxViewlet"
+  template="searchbox.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.logo"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class="plone.app.layout.viewlets.common.LogoViewlet"
-    template="logo.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.logo"
+  manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+  class="plone.app.layout.viewlets.common.LogoViewlet"
+  template="logo.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.footer"
-    manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-    class="plone.app.layout.viewlets.common.FooterViewlet"
-    template="footer.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.footer"
+  manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+  class="plone.app.layout.viewlets.common.FooterViewlet"
+  template="footer.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
-  <browser:viewlet
-    name="plone.path_bar"
-    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-    class="plone.app.layout.viewlets.common.PathBarViewlet"
-    template="path_bar.pt"
-    permission="zope2.View"
-    layer=".interfaces.IThemeSpecific" />
+ <browser:viewlet
+  name="plone.path_bar"
+  manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+  class="plone.app.layout.viewlets.common.PathBarViewlet"
+  template="path_bar.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
+
+ <browser:page
+  name="summary_view"
+  for="plone.app.contenttypes.behaviors.collection.ISyndicatableCollection"
+  class="plone.app.contenttypes.browser.collection.CollectionView"
+  template="summary_view.pt"
+  permission="zope2.View"
+  layer=".interfaces.IThemeSpecific" />
 
 </configure>

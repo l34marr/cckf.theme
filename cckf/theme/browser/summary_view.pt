@@ -1,0 +1,74 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="here/main_template/macros/master"
+ i18n:domain="plone">
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block use-macro="context/standard_view/macros/content-core">
+
+  <metal:entries fill-slot="entries">
+  <metal:block use-macro="context/standard_view/macros/entries">
+  <metal:entry fill-slot="entry">
+
+    <div class="tileItem visualIEFloatFix"
+     tal:define="obj item/getObject;
+                 site_properties context/portal_properties/site_properties;
+                 types_listings site_properties/typesUseViewActionInListings;
+                 use_view_action types_listings|python:();">
+      <a href="#"
+       tal:attributes="href item/getURL">
+        <div style="float: left; margin: 0 1em 0.5em 0;">
+        <tal:img condition="python:getattr(obj.aq_explicit, 'image', None)">
+        <img src="" alt=""
+         tal:define="scales obj/@@images;
+                     scale python:scales.scale('image', 'summary')"
+         tal:replace="structure python:scale and scale.tag() or None" />
+        </tal:img>
+        <img src="" alt=""
+         tal:condition="python:not getattr(obj.aq_explicit, 'image', None)"
+         tal:attributes="src string:++theme++cckf.theme/img/default.png;" />
+        </div>
+      </a>
+
+      <h2 class="tileHeadline" metal:define-macro="listitem">
+          <a href="#"
+             class="summary url"
+             tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;"
+             tal:content="item/Title">
+              Item Title
+          </a>
+      </h2>
+
+        <div metal:use-macro="context/standard_view/macros/document_byline"></div>
+
+        <p class="tileBody" tal:condition="item_description">
+            <span class="description" tal:content="item_description">
+                description
+            </span>
+        </p>
+
+        <p class="tileFooter">
+            <a href=""
+               tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;"
+               i18n:translate="read_more">
+            Read More&hellip;
+            </a>
+        </p>
+
+        <div class="visualClear"><!-- --></div>
+    </div>
+
+  </metal:entry>
+  </metal:block>
+  </metal:entries>
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>
