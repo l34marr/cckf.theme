@@ -48,24 +48,24 @@
 }
 
 /* Faceted View */
-.subsection-facet #c1_widget,
-.subsection-facet span.documentByLine {
+.subsection-search #c1_widget,
+.subsection-search span.documentByLine {
   display: none !important;
 }
-.subsection-facet #right-area,
-.subsection-facet #left-area {
+.subsection-search #right-area,
+.subsection-search #left-area {
   width: 22% !important;
 }
-.subsection-facet .left-area-js {
+.subsection-search .left-area-js {
   margin-left: 17em !important;
 }
-.subsection-facet .right-area-js {
+.subsection-search .right-area-js {
   margin-right: 17em !important;
 }
-.subsection-facet input#c6 {
+.subsection-search input#c6 {
   width: 80% !important;
 }
-.subsection-facet #faceted-form {
+.subsection-search #faceted-form {
     padding-top: 0;
 }
 
