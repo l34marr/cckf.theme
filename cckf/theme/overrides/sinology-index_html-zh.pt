@@ -86,18 +86,7 @@ $(document).ready(function(){
     sr python:plone_view.have_portlets('plone.rightcolumn', view);
     body_class python:plone_view.bodyClass(template, view);
     cckfview python:context.restrictedTraverse('@@cckfview');
-    classes python:cckfview.getColumnsClasses(view);
-    c01 python:cckfview.getSinology(classify='01');
-    c02 python:cckfview.getSinology(classify='02');
-    c03 python:cckfview.getSinology(classify='03');
-    c04 python:cckfview.getSinology(classify='04');
-    c05 python:cckfview.getSinology(classify='05');
-    c06 python:cckfview.getSinology(classify='06');
-    c07 python:cckfview.getSinology(classify='07');
-    c08 python:cckfview.getSinology(classify='08');
-    c09 python:cckfview.getSinology(classify='09');
-    c10 python:cckfview.getSinology(classify='10');
-    c11 python:cckfview.getSinology(classify='11');"
+    classes python:cckfview.getColumnsClasses(view);"
  tal:attributes="class body_class;
     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -166,10 +155,6 @@ $(document).ready(function(){
                tal:content="structure provider:plone.abovecontentbody"
                tal:condition="not:ajax_load" />
 
-
-<p><!-- &nbsp; &nbsp; &nbsp; 漢學資源文字內容介紹..................配合漢學研究國際化以及政府向世界推廣「具有臺灣特色的中華文化」之施政方向，國家圖書館(以下簡稱國圖)在既有之岀版品交換及30年的漢學研究學術交流基礎上，自2012年起於海外設立「臺灣漢學資源中心」（Taiwan Resource Center for Chinese Studies，簡稱TRCCS），選擇國外重點大學或研究機構設置，加強與各國漢學研究單位合作，推動海內外漢學學術交流，傳布臺灣漢學學術成果，共同建置全球漢學研究資源與訊息平臺，促進中西文化交流的廣度與深度。 --></p>
-
-
 <!-- Start 漢學資源分類 --> 
 <div class="row">
   <div class="sinology" >
@@ -197,8 +182,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sino/01.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">資源選介-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -224,8 +209,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sino/02.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">聯合目錄檢索-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -260,8 +245,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sino/03.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">數位圖書館、資料庫-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -281,8 +266,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sino/04.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">古籍文獻-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -296,8 +281,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sino/05.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">宗教-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -317,8 +302,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sino/06.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">家譜族譜-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -338,8 +323,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sino/07.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">人物傳記-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -359,8 +344,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sino/08.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">期刊論文-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -380,8 +365,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sino/09.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">學位論文-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -401,8 +386,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sino/10.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">報刊索引-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -434,8 +419,8 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sino/11.jpg" alt="image" /></a>
-        <figcaption class="ap-caption">網路數位圖書資源-簡短說明</figcaption>
+        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
+        <figcaption class="ap-caption"></figcaption>
         </figure>
       </div>
     </li>
@@ -458,59 +443,35 @@ $(document).ready(function(){
     </div>
 
 <p></p>
-<p><!-- &nbsp; &nbsp; &nbsp; 漢學資源精選內容介紹..................配合漢學研究國際化以及政府向世界推廣「具有臺灣特色的中華文化」之施政方向，國家圖書館(以下簡稱國圖)在既有之岀版品交換及30年的漢學研究學術交流基礎上，自2012年起於海外設立「臺灣漢學資源中心」（Taiwan Resource Center for Chinese Studies，簡稱TRCCS），選擇國外重點大學或研究機構設置，加強與各國漢學研究單位合作，推動海內外漢學學術交流，傳布臺灣漢學學術成果，共同建置全球漢學研究資源與訊息平臺，促進中西文化交流的廣度與深度。 --></p>
 
   <!-- Start collection Block -->  
   <div class="theme-container">
   <ul class="list">
-    <li class="list__item">
+<tal:selected
+ define="path string:/cckf/zh/sino;
+         results python:context.portal_catalog({
+           'portal_type': 'sinology',
+           'path': path,});
+         selected python:['00029','00007','00015','00027','00010','00011','00042','00037'];"
+ repeat="item results">
+    <li class="list__item"
+     tal:condition="python:item.id in selected">
       <figure class="list__item__inner">
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/facet/00045"><img alt="" src="++theme++cckf.theme/img/temp/theme-a1.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/facet/00045"><span class="box-info">中華古籍善本國際聯合書目系統</span></a>
-      </figure>	   	
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">  
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/facet/00041"><img alt="" src="++theme++cckf.theme/img/temp/theme-a2.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/facet/00041"><span class="box-info">上海圖書館家譜數據庫</span></a>
+       <div class="img-block">
+       <a href="#" tal:attributes="href item/getPath">
+        <img alt="" src="#"
+         tal:define="obj item/getObject;
+                     scales obj/@@images;
+                     scale python:scales.scale('image', 'mini')"
+         tal:condition="obj/image|nothing"
+         tal:replace="structure python:scale and scale.tag() or None"></a>
+       </div>
+       <a title="" href="#"
+        tal:attributes="href item/getPath">
+        <span class="box-info" tal:content="item/Title">Title</span></a>
       </figure>
     </li>
-    <li class="list__item">
-      <figure class="list__item__inner">  
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/00029"><img alt="" src="++theme++cckf.theme/img/temp/theme-a3.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00029"><span class="box-info">傅斯年圖書館珍藏善本圖籍書目資料庫</span></a>
-      </figure>
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">   
-	    <div class="img-block"><a href="ttp://210.65.89.245:8080/cckf/zh/sino/00028"><img alt="" src="++theme++cckf.theme/img/temp/theme-a4.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00028"><span class="box-info">香港大學馮平山圖書館藏善本書錄</span></a>
-      </figure>
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/00027"><img alt="" src="++theme++cckf.theme/img/temp/theme-a5.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00027"><span class="box-info">北京大學數字圖書館古文獻資源庫</span></a>
-      </figure>	   	
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">  
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/00026"><img alt="" src="++theme++cckf.theme/img/temp/theme-a6.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00026"><span class="box-info">高校古文獻資源庫</span></a>
-      </figure>
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">  
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/00025"><img alt="" src="++theme++cckf.theme/img/temp/theme-a7.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00025"><span class="box-info">中國科學院國家科學圖書館古籍檢索系統</span></a>
-      </figure>
-    </li>
-    <li class="list__item">
-      <figure class="list__item__inner">   
-	    <div class="img-block"><a href="http://210.65.89.245:8080/cckf/zh/sino/00024"><img alt="" src="++theme++cckf.theme/img/temp/theme-a8.jpg"></a></div>
-        <a title="" href="http://210.65.89.245:8080/cckf/zh/sino/00024"><span class="box-info">浙江圖書館歷史文獻館藏目錄</span></a>
-      </figure>
-    </li>	
+</tal:selected>
   </ul>
 </div>
 <!-- End collection Block -->
