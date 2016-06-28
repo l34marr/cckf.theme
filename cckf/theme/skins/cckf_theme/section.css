@@ -184,6 +184,11 @@
   padding: 0.42em 1em 0.42em 2.6em;
 }
 
+/* Prev Next Listing Bar */
+.subsection-list .next {
+  display: none !important;
+}
+
 /* EEA Current Search Widget */
 .section-resource #c3_widget {
   display: none !important;
