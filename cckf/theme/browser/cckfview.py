@@ -94,7 +94,7 @@ class CCKFView(BrowserView):
         return catalog(portal_type='Event',
                        review_state='published',
                        path=path,
-                       sort_on='effective',
+                       sort_on='start',
                        sort_order='descending',
                        sort_limit=limit)[:limit]
 
