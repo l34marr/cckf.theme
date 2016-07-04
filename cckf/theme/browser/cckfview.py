@@ -82,7 +82,7 @@ class CCKFView(BrowserView):
         return catalog(portal_type='News Item',
                        review_state='published',
                        path=path,
-                       sort_on='effective',
+                       sort_on='created',
                        sort_order='descending',
                        sort_limit=limit)[:limit]
 
