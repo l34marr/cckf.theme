@@ -209,7 +209,7 @@ div.managePortletsLink, a.managePortletsFallback {
   list-style: none outside none;
 }
 * li {
-  display: inline;
+  display: block;
 }
 /* right side define ============================================================================*/
 
@@ -1589,6 +1589,7 @@ strong {
 }
 .list__item img {
   width: 100%;
+  height: 100%;
   display: block;
 }
 .list__item figcaption {
