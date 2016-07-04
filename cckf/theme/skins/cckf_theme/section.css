@@ -185,11 +185,16 @@
 }
 
 /* Prev Next Listing Bar */
-.subsection-list .next {
+.portaltype-collection .list-next,
+.portaltype-collection .list-previous {
   display: none !important;
 }
 
 /* EEA Current Search Widget */
 .section-resource #c3_widget {
   display: none !important;
+}
+.section-sino #content li,
+.section-programs #content li {
+  display: list-item !important;
 }
