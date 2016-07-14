@@ -466,7 +466,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 
 }
 .accordionPro.rounded .slide>font span {
-
+   letter-spacing: 0.08em;
 }
 .accordionPro.ie.stitch .slide.selected>font:after {
 	display: none

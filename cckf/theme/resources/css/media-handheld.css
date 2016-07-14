@@ -302,6 +302,10 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 .organize > img {
     width: 70%;
 }
+.grant-banner {
+  float: left;
+  width: 100%;
+}
 .grid li {
   float: left;
   width: 100%;
@@ -429,8 +433,13 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 #active_img {
   display: none;
 }
+.grant-banner {
+  height: 260px;
+  float: left;
+  width: 30.5%;
+}
 .grid li > div {
-    height: 220px;
+    height: 260px;
 }
 .grid li {
   float: left;
