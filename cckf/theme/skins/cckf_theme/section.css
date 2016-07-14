@@ -194,7 +194,3 @@
 .section-resource #c3_widget {
   display: none !important;
 }
-.section-sino #content li,
-.section-programs #content li {
-  display: list-item !important;
-}
