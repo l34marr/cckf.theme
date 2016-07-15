@@ -1,0 +1,46 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="cckf.theme">
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
+<tal:def
+ tal:define="data nocall:view/data;
+  toLocalizedTime nocall: context/@@plone/toLocalizedTime;
+  item_start python: str(data.start);
+  item_end python: str(data.end);
+  item_samedate python: item_start == item_end;">
+
+<div class="event" itemscope itemtype="http://data-vocabulary.org/Event">
+
+  <tal:eventsummary replace="structure context/@@event_summary"/>
+
+  <span class="documentByLine">
+    <span tal:condition="python: data.whole_day and data.open_end">
+     <span tal:replace="python: toLocalizedTime(data.end,long_format=0)" />
+    </span>
+    <span tal:condition="python: data.whole_day and not data.open_end">
+     <span tal:replace="python: toLocalizedTime(data.start,long_format=0)" />
+     <tal:eventsep i18n:translate="eventsep">to</tal:eventsep>
+     <span tal:replace="python: toLocalizedTime(data.end,long_format=0)" />
+    </span>
+  <tal:block condition="data/location">&mdash;</tal:block>
+  <span tal:replace="data/location" />
+  </span>
+  <tal:txt replace="structure data/text" />
+
+</div>
+
+<span class="visualClear" />
+
+</tal:def>
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>
