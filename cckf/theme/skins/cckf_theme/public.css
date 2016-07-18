@@ -409,7 +409,7 @@ dl dt span.summary a {
   clear: both;
   font-size: 100%;
   letter-spacing: 0.02em;
-  line-height: 1.8em;
+  line-height: 1.6em;
   margin: 1em 1em 1.5em 1.3em;
 }
 
@@ -432,7 +432,8 @@ body#content {
 #content dl,
 dl.portlet p,
 dl.portlet {
-  margin-bottom: 1em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
 
 #content ul,
@@ -501,7 +502,7 @@ dl.portlet a:hover {
 
 }
 #content-core dd {
-  margin: 0 0 1em 2em;
+  margin: 0 0 1em 1em;
 }
 
 #content pre {
