@@ -290,6 +290,12 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   clear: both;
   width: 100% !important;
 }
+.subsection-search #right-area, .subsection-search #left-area {
+    width: 100% !important;
+}
+.subsection-search .right-area-js {
+    margin-right: 0 !important;
+}
 .section-programs .right-area-js {
     margin-right: 0 !important;
 }
@@ -358,6 +364,9 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   display: none;
   padding: 8px 0 15px 15px;
 }
+.box {
+  width: 47%;
+}
 .box img {
   width: 100%;
   height: auto;
@@ -425,7 +434,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100%;
 }
 .box {
-  width: 45%;
+  width: 100%;
 }
 #parent-fieldname-text {
   width: 100%;
