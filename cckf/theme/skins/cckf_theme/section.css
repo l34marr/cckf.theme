@@ -54,7 +54,7 @@
 }
 .subsection-search #right-area,
 .subsection-search #left-area {
-  width: 22% !important;
+  width: 24.5% !important;
 }
 .subsection-search .left-area-js {
   margin-left: 17em !important;
@@ -175,13 +175,19 @@
   height: 170px;
 }
 
-.section-domestic  dt.portletHeader{
+.section-domestic dt.portletHeader{
   background: url("++theme++cckf.theme/img/icon-point.png") no-repeat scroll 2px center rgba(0, 0, 0, 0);
   color: #444;
   font-size: 16px;
   letter-spacing: 0.07em;
   line-height: normal;
   padding: 0.42em 1em 0.42em 2.6em;
+}
+
+.section-programs #content-core ul,
+.section-sino #content-core ul {
+    list-style-type: disc;
+    margin-left: 0.3em;
 }
 
 /* Prev Next Listing Bar */
