@@ -52,6 +52,9 @@ input {
 #content-core {
     margin-bottom: 20px;
 }
+#content dl {
+    margin-top: 0.3em;
+}
 div.olMapViewport {
     border-right: 1px solid #bbb;
 }
@@ -209,7 +212,7 @@ div.managePortletsLink, a.managePortletsFallback {
   list-style: none outside none;
 }
 * li {
-  display: block;
+  display: inline;
 }
 /* right side define ============================================================================*/
 
@@ -615,9 +618,7 @@ table {
   background-color: #FFFFFF;
   border: 1px solid #cccccc;
   margin-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
+  padding: 5px 5px 4px;
   position: relative;
 }
 .box-img :after {
@@ -722,12 +723,14 @@ table {
     color: #fff;
     font-size: 100%;
     padding: 0.2em 0.6em;
+    margin-bottom: -0.5em;
     text-shadow: 1px 1px 1px #555555;	
 }
+
 #faceted-form fieldset {
     background-image: url("++theme++cckf.theme/img/pattern-silver.png");
     font-size: 95%;
-	margin: 0 0 1em;
+    margin: 0 0 1em;
 }
 div.listingBar {
     margin: 0 0 0 0;
@@ -803,7 +806,7 @@ label {
   padding-bottom: 4px;
 }
 .award-item h5 {
-  background-color: #999;
+  background-color: #b0a499;
   color: #ffffff;
   float: left;
   font-size: 15px;
@@ -832,6 +835,24 @@ label {
   margin-bottom: 1em;
   overflow: hidden;
 }
+.grant-banner {
+  background: #efece5 url("++theme++cckf.theme/img/pattern-silver.png") repeat scroll 0 0;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 2px 0 #bbb;
+  height: 57px;
+  margin-bottom: 0.2em;
+  margin-right: 0.7em;
+  padding-left: 1em;
+  padding-top: 5px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+.grant-banner  p {
+  display: block;
+  float: left;
+  margin-right: 25px;
+}
 .grid {
   margin: 0 auto;
   max-width: 76em;
@@ -848,7 +869,8 @@ label {
     height: 57px;
     margin-bottom: 0.2em;
     margin-right: 0.7em;
-    padding: 1em;
+    padding-left: 1em;
+    padding-top: 5px;
     text-align: center;
 }
 .grid li > div p {
@@ -979,9 +1001,7 @@ a:hover span.play {
   overflow: hidden;
 
 }
-#content ul {
-  list-style-type: none;
-}
+
 .listbox ul.filelist {
   clear: none;
   float: left;
@@ -1539,13 +1559,16 @@ div#apply > ul > li > a > div {
 strong {
   font-weight: bold;
 }
+.mceContentBody ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
 .theme-container {
   clear: both;
   width: 100%;
   max-width: 72rem; /* 1024 */
   line-height: 1.375rem; /* 22 */
-  margin: 0 auto;
-
+  margin: 0 auto 0 0;
 }
 .container, .container a {
   color: #cfd7db;
