@@ -186,8 +186,12 @@
 
 .section-programs #content-core ul,
 .section-sino #content-core ul {
-    list-style-type: disc;
-    margin-left: 0.3em;
+  list-style-type: disc;
+  margin-left: 0.3em;
+}
+
+.section-sino #category {
+  margin-left: 0;
 }
 
 /* Prev Next Listing Bar */
