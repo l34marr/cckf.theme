@@ -169,27 +169,6 @@ $(document).ready(function(){
     <li>
       <font><span>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">介</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">選</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">源</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">資</div>
-      </div>
-        </span></font>
-      <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=01"><img src="++theme++cckf.theme/img/sinology/1.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
-        </figure>
-      </div>
-    </li>
-    <li>
-      <font><span>
-        <div id="vertical" class="tbrl" >
         <div class="vertical_text">索</div>
       </div>
         <div id="vertical" class="tbrl" >
@@ -209,25 +188,12 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=02"><img src="++theme++cckf.theme/img/sinology/2.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=01"><img src="++theme++cckf.theme/img/sino/01.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
     <li>
       <font><span>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">庫</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">料</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">資</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">、</div>
-      </div>
         <div id="vertical" class="tbrl" >
         <div class="vertical_text">館</div>
       </div>
@@ -245,8 +211,7 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=03"><img src="++theme++cckf.theme/img/sinology/3.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=02"><img src="++theme++cckf.theme/img/sino/02.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
@@ -266,107 +231,24 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=04"><img src="++theme++cckf.theme/img/sinology/4.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=03"><img src="++theme++cckf.theme/img/sino/03.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
     <li>
       <font><span>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">教</div>
+        <div class="vertical_text">庫</div>
       </div>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">宗</div>
+        <div class="vertical_text">料</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">資</div>
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=05"><img src="++theme++cckf.theme/img/sinology/5.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
-        </figure>
-      </div>
-    </li>
-    <li>
-      <font><span>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">譜</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">族</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">譜</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">家</div>
-      </div>
-        </span></font>
-      <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=06"><img src="++theme++cckf.theme/img/sinology/6.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
-        </figure>
-      </div>
-    </li>
-    <li>
-      <font><span>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">記</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">傳</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">物</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">人</div>
-      </div>
-        </span></font>
-      <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=07"><img src="++theme++cckf.theme/img/sinology/7.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
-        </figure>
-      </div>
-    </li>
-    <li>
-      <font><span>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">文</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">論</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">刊</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">期</div>
-      </div>
-        </span></font>
-      <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=08"><img src="++theme++cckf.theme/img/sinology/8.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
-        </figure>
-      </div>
-    </li>
-    <li>
-      <font><span>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">文</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">論</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">位</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">學</div>
-      </div>
-        </span></font>
-      <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=09"><img src="++theme++cckf.theme/img/sinology/9.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=04"><img src="++theme++cckf.theme/img/sino/04.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
@@ -386,41 +268,62 @@ $(document).ready(function(){
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=10"><img src="++theme++cckf.theme/img/sinology/10.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=05"><img src="++theme++cckf.theme/img/sino/05.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
     <li>
       <font><span>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">源</div>
+        <div class="vertical_text">文</div>
       </div>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">資</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">書</div>
-      </div>
-        <div id="vertical" class="tbrl" >
-        <div class="vertical_text">圖</div>
+        <div class="vertical_text">論</div>
       </div>
         <div id="vertical" class="tbrl" >
         <div class="vertical_text">位</div>
       </div>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">數</div>
+        <div class="vertical_text">學</div>
       </div>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">路</div>
+        <div class="vertical_text">、</div>
       </div>
         <div id="vertical" class="tbrl" >
-        <div class="vertical_text">網</div>
+        <div class="vertical_text">文</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">論</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">刊</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">期</div>
       </div>
         </span></font>
       <div>
-        <figure><a class="internal-link" href="facet#c1=sinology&c4=11"><img src="++theme++cckf.theme/img/sinology/11.jpg" alt="image" /></a>
-        <figcaption class="ap-caption"></figcaption>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=06"><img src="++theme++cckf.theme/img/sino/06.jpg" alt="image" /></a>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <font><span>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">構</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">機</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">術</div>
+      </div>
+        <div id="vertical" class="tbrl" >
+        <div class="vertical_text">學</div>
+      </div>
+        </span></font>
+      <div>
+        <figure><a class="internal-link" href="search#c1=Sinology&c4=07"><img src="++theme++cckf.theme/img/sino/07.jpg" alt="image" /></a>
         </figure>
       </div>
     </li>
@@ -438,7 +341,7 @@ $(document).ready(function(){
     <div class="head-container">
       <h3 class="small">漢學資源精選</h3>
       <div class="hide-small topright text-right">
-      <a href="facet#c1=sinology&c4=02" class="disclosure small">更多資源精選</a>
+      <a href="search#c1=Sinology&c4=08" class="disclosure small">更多資源精選</a>
       </div>
     </div>
 
@@ -450,9 +353,9 @@ $(document).ready(function(){
 <tal:selected
  define="path string:/cckf/zh/sino;
          results python:context.portal_catalog({
-           'portal_type': 'sinology',
+           'portal_type': 'Sinology',
            'path': path,});
-         selected python:['00029','00007','00015','00027','00010','00011','00042','00037'];"
+         selected python:['00001','00002','00003','00004','00005','00006','00007','00008'];"
  repeat="item results">
     <li class="list__item"
      tal:condition="python:item.id in selected">
@@ -462,7 +365,7 @@ $(document).ready(function(){
         <img alt="" src="#"
          tal:define="obj item/getObject;
                      scales obj/@@images;
-                     scale python:scales.scale('image', 'mini')"
+                     scale python:scales.scale('image', 'preview')"
          tal:condition="obj/image|nothing"
          tal:replace="structure python:scale and scale.tag() or None"></a>
        </div>
