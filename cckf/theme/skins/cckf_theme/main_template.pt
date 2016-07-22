@@ -33,7 +33,6 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300|Lora" type="text/css" rel="stylesheet">
     <script src="++theme++cckf.theme/js/search.js"></script>
     <script src="++theme++cckf.theme/js/zozo.accordion.min.js"></script>
-    <script type='text/javascript' src='http://font.arphic.com/FontSubsetOutput/1421291901118/A9CEEDB2D7580BC580679EDDD8FE8BF0/1421291901118.JS?5541868500'></script>
 
     <tal:comment replace="nothing">
       Various slots where you can insert elements in the header from a template.
