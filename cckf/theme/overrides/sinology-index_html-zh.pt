@@ -344,7 +344,7 @@ $(document).ready(function(){
 
 <p></p>
 
-  <!-- Start collection Block -->  
+  <!-- Start collection Block -->
   <div class="theme-container">
   <ul class="list">
 <tal:selected
@@ -378,9 +378,7 @@ $(document).ready(function(){
 
   </div>
 </div>
-<!-- End 漢學資源精選 --> 
-
-
+<!-- End Selected -->
 
               <div id="viewlet-below-content-body"
                tal:content="structure provider:plone.belowcontentbody"
