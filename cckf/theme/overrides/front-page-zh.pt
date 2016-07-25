@@ -45,18 +45,18 @@
 
     jQuery('#allinone_thumbnailsBanner_cool').allinone_thumbnailsBanner({
         skin: 'cool',
-        numberOfThumbsPerScreen:7.3,
+        numberOfThumbsPerScreen: 7.3,
         width: 1920,
         height: 620,
-        width100Proc:true,
-        thumbsReflection:0,
-        responsive:true,
-        origthumbsHolderWrapperH:138,
-        thumbsWrapperMarginTop:0,
+        width100Proc: true,
+        thumbsReflection: 0,
+        responsive: true,
+        origthumbsHolderWrapperH: 138,
+        thumbsWrapperMarginTop: 0,
         defaultEffect: 'slideFromLeft',
         showNavArrows: true,
         showCircleTimer: false,
-        effectDuration:0.75
+        effectDuration: 0.75
         });
 
     });
@@ -189,7 +189,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: item.Date[:10]">Date</time>
+            <time class="author" tal:content="python: str(item.created)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>
@@ -233,7 +233,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: item.Date[:10]">Date</time>
+            <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>
