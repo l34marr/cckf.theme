@@ -155,14 +155,14 @@ $(document).ready(function(){
                tal:content="structure provider:plone.abovecontentbody"
                tal:condition="not:ajax_load" />
 
-<!-- Start 漢學資源分類 --> 
+<!-- Start Classify -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">漢學資源分類</h3>
     </div>
 
-<!-- Start 竹簡幻燈片 --> 
+<!-- Start Slide -->
 <div class="container">
 <div id="one">
   <ol>
@@ -330,19 +330,16 @@ $(document).ready(function(){
   </ol>
 </div>
 </div>
-<!-- End 竹簡幻燈片 --> 
+<!-- End Slide -->
   </div>
 </div>
-<!-- End 漢學資源分類 --> 
+<!-- End Classify -->
 
-<!-- Start 漢學資源精選 --> 
+<!-- Start Selected -->
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
       <h3 class="small">漢學資源精選</h3>
-      <div class="hide-small topright text-right">
-      <a href="search#c1=Sinology&c4=08" class="disclosure small">更多資源精選</a>
-      </div>
     </div>
 
 <p></p>
