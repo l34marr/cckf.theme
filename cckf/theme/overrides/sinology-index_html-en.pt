@@ -159,7 +159,7 @@ $(document).ready(function(){
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
-      <h3 class="small">Sinology Classification</h3>
+      <h3 class="small">Types of Resources</h3>
     </div>
 
 <!-- Start Slide -->
@@ -174,7 +174,7 @@ $(document).ready(function(){
       </div>
     </li>
     <li>
-      <font><span>Digital&nbsp;&nbsp;Library</span></font>
+      <font><span>Digital&nbsp;&nbsp;Libraries</span></font>
       <div>
         <figure><a class="internal-link" href="../../zh/sino/search#c1=Sinology&c4=02"><img src="++theme++cckf.theme/img/sino/02.jpg" alt="image" /></a>
         </figure>
@@ -188,7 +188,7 @@ $(document).ready(function(){
       </div>
     </li>
     <li>
-      <font><span>Database</span></font>
+      <font><span>Databases</span></font>
       <div>
         <figure><a class="internal-link" href="../../zh/sino/search#c1=Sinology&c4=04"><img src="++theme++cckf.theme/img/sino/04.jpg" alt="image" /></a>
         </figure>
@@ -227,7 +227,7 @@ $(document).ready(function(){
 <div class="row">
   <div class="sinology" >
     <div class="head-container">
-      <h3 class="small">Selected</h3>
+      <h3 class="small">Selections</h3>
     </div>
 
 <p></p>
