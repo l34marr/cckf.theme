@@ -15,6 +15,16 @@
 </script>
 </metal:head>
 
+<metal:title fill-slot="content-title">
+<h1 class="documentFirstHeading" tal:content="context/Title">Title</h1>
+<span class="documentByLine"
+ tal:define="toLocalizedTime nocall: plone_view/toLocalizedTime;
+             item_created context/CreationDate"
+ tal:content="python:toLocalizedTime(item_created,long_format=0)">
+Date
+</span>
+</metal:title>
+
 <metal:content-core fill-slot="content-core">
     <metal:block define-macro="content-core"
           tal:define="templateId template/getId;
