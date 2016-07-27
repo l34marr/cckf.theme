@@ -19,9 +19,6 @@
 /* @group Basics */
 
 body {
-  /*font-family: Georgia,"Open Sans","微軟正黑體","文鼎W黑體M",sans-serif;*/
-  /*font-family: "文鼎W明體M","細明體","Times New Roman",Georgia,Serif;*/
-  /*font-family: "Open Sans",Verdana,Arial,"新細明體","文鼎W明體M",sans-serif;*/
   font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   background-color: #f3f3f1;
   color: #000;
@@ -87,7 +84,6 @@ img.bg {
 }
 
 h1, h2, h3, h4, h5, h6 {
- /* font-family: "Open Sans",Arial,"文鼎W黑體M","微軟正黑體",sans-serif;*/
   font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   letter-spacing: 0em;
   color: #000;
@@ -349,6 +345,7 @@ input.searchField {
   padding-left: 18px; 
 }
 #portal-breadcrumbs a {
+
   border-bottom: none;
   display: inline-block;
 }
@@ -403,7 +400,6 @@ dl dt span.summary a {
 /* @group Content Area */
 
 #content {
-  /*font-family: "Open Sans",Arial,"文鼎W黑體M","微軟正黑體",sans-serif;*/
   font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   line-height: 1.5em;
   clear: both;
@@ -508,7 +504,7 @@ dl.portlet a:hover {
 #content pre {
   background-color: #222;
   color: White;
-  font-family: "Open Sans",Arial,"微軟正黑體","文鼎W黑體M",sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
   padding: 1em;
   overflow-x: auto;
   font-size: 90%;
@@ -520,7 +516,7 @@ dl.portlet a:hover {
 }
 
 #content code {
-  font-family: "Open Sans",Arial,"微軟正黑體","文鼎W黑體M",sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
 }
 
 #content table {
@@ -534,7 +530,6 @@ dl.portlet a:hover {
   color: #444444;
   margin-left: 0;
   margin-bottom: 15px;
-  /*font: bold 1em "文鼎W明體M","Open Sans","微軟正黑體",sans-serif;*/
 }
 
 #content div.newsImageContainer a {
