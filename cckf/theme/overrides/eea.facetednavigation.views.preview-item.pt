@@ -44,5 +44,14 @@ title context/pretty_title_or_id|string:;
  tal:condition="description">
 <span tal:replace="description" />
 </div>
+<div style="display:inline-block; width:86px; vertical-align:top;"
+ tal:condition="context/director">
+<label class="fieldHead" i18n:translate="">Director</label>
+<span class="forText">:</span>
+</div>
+<div style="display:inline-block; width:80%; vertical-align:top;"
+ tal:condition="context/director">
+<span tal:replace="context/director" />
+</div>
 </div>
 </div>
