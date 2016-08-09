@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cckf.theme\n"
-"POT-Creation-Date: 2015-03-11 02:01+0000\n"
-"PO-Revision-Date: 2015-03-11 10:02+0800\n"
+"POT-Creation-Date: 2016-08-09 08:06+0000\n"
+"PO-Revision-Date: 2016-08-09 16:08+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourcegorge.net>\n"
 "MIME-Version: 1.0\n"
@@ -16,23 +16,35 @@ msgstr ""
 
 #: ./browser/footer.pt:5
 msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
-msgstr "台北市敦化南路二段65號13樓／B"
+msgstr "臺北市敦化南路二段65號13樓"
 
-#: ./browser/sections.pt:26
-msgid "Events"
-msgstr "最新動態"
+#: ./browser/sections.pt:11
+msgid "About the Foundation"
+msgstr "基金會簡介"
 
 #: ./browser/footer.pt:23
 msgid "Best Viewed with IE 9.0+ or Firefox, Chrome Browsers, 1024x768+ Resolution"
 msgstr "建議使用 IE 9.0 以上或新版 FireFox、Chrome 瀏覽器，最佳顯示解析度 1024x768 以上。"
 
+#: ./configure.zcml:19
+msgid "CCKF Theme"
+msgstr ""
+
+#: ./configure.zcml:19
+msgid "CCKF Theme Extension Profile."
+msgstr ""
+
 #: ./browser/sections.pt:30
 msgid "Contact"
 msgstr "連絡本會"
 
-#: ./browser/footer.pt:6
-msgid "Copyright &copy; 2014"
-msgstr "Copyright &copy; 2014 版權所有"
+#: ./overrides/eea.facetednavigation.views.preview-item.pt:49
+msgid "Director"
+msgstr "主持人"
+
+#: ./browser/sections.pt:26
+msgid "Events"
+msgstr "最新動態"
 
 #: ./browser/footer.pt:13
 msgid "Fax"
@@ -41,10 +53,6 @@ msgstr "傳真"
 #: ./overrides/eea.facetednavigation.views.preview-item.pt:40
 msgid "Institute"
 msgstr "機構"
-
-#: ./browser/sections.pt:11
-msgid "About the Foundation"
-msgstr "基金會簡介"
 
 #: ./browser/sections.pt:16
 msgid "Programs"
@@ -62,8 +70,12 @@ msgstr "漢學資源"
 msgid "Tel"
 msgstr "電話"
 
+#. Default: "to"
+#: ./overrides/plone.app.event.browser.event_view.pt:29
+msgid "eventsep"
+msgstr "至"
+
 #. Default: "Menu <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
 #: ./browser/sections.pt:4
 msgid "toggle_menu"
 msgstr "選單 <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
-
