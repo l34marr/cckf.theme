@@ -9,8 +9,8 @@
   <div class="footColumn">
     <dl class="footSection footMessage">
       <dt class="footSectionHeader"></dt>
-      <dd class="footSectionBody"><span i18n:translate="">Tel</span>: (02)2704-5333</dd>
-      <dd class="footSectionBody"><span i18n:translate="">Fax</span>: (02)2701-6762</dd>
+      <dd class="footSectionBody"><span i18n:translate="">Tel</span>: +886-2-2704-5333</dd>
+      <dd class="footSectionBody"><span i18n:translate="">Fax</span>: +886-2-2701-6762</dd>
       <dd class="footSectionBody">E-mail: <a href="mailto:cckf@ms1.hinet.net">cckf@ms1.hinet.net</a></dd>
     </dl>
   </div>
