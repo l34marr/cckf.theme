@@ -2,11 +2,11 @@
    for the remaining content. */
 
 body {
-  font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-  font-weight: bold;
+  font-family: "Open Sans",Arial,"微軟正黑體",sans-serif;
+  font-weight: normal;
   line-height: 125%;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -14,15 +14,28 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
   letter-spacing: -0.05em;
 }
+#content ol, dl.portlet ol, div.portletStaticText ol {
+    list-style-type: decimal;
+    margin-left: 2.2em;
+}
+.tileHeadline {
+    font-size: 1em;
+    font-weight: bold;
+}
 a {
   text-decoration: none;
-  border-bottom: 0.1em solid gray;
+  border-bottom: 0px solid gray;
   color: black;
+}
+#portal-breadcrumbs {
+    font-size: 12px;
 }
 #portal-column-content {
   width: 95%;
 }
-
+.tileItem {
+   clear: both;
+}
 .documentDescription {
   font-weight: bold;
 }
@@ -69,6 +82,11 @@ div.pageBreak {
 */
 
 /* Hide all the elements that are irrelevant for printing */
+#portal-header,
+#themenu,
+#portal-top,
+#portal-personaltools-wrapper,
+
 div.top,
 #portal-logo,
 #portal-siteactions,
@@ -76,7 +94,7 @@ div.top,
 #portal-searchbox,
 #portal-globalnav,
 #portal-personaltools,
-#portal-breadcrumbs,
+
 #edit-bar,
 #portal-column-one,
 #portal-column-two,
