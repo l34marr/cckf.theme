@@ -1860,3 +1860,8 @@ html.no-js .list__item img {
 .alpha p a:hover {
 	color: #ccc;
 }
+cite {
+  background: transparent url("++theme++cckf.theme/img/icon-chevron.png") no-repeat scroll 0 3px;
+  font-style: normal;
+  padding-left: 18px;
+}

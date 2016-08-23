@@ -190,6 +190,15 @@
   margin-left: 0.3em;
 }
 
+.section-programs article {
+  background: transparent url("++theme++cckf.theme/img/icon-chevron.png") no-repeat scroll 0 6px;
+  border-bottom: 2px dotted #bbb;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
 .section-sino #category {
   margin-left: 0;
 }
