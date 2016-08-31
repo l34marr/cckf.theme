@@ -72,7 +72,7 @@ div.position-15 { margin-left:  -5.125% }
    Not strictly necessary. */
 div.width-1\3a 2 { width:    47.75%; } /* .width-1:2 */
 div.width-1\3a 4 { width:    21.75%; } /* .width-1:4 */
-div.width-3\3a 4 { width:    75.75%; } /* .width-3:4 */
+div.width-3\3a 4 { width:    72%; } /* .width-3:4  75.75% to 72% by chris */
 div.width-full   { width:    100%  }
 div.position-1\3a 4 {margin-left:    -73.875%;} /* .position-1:4 */
 div.position-1\3a 2 {margin-left:    -48.875%;} /* .position-1:2 */
