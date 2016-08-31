@@ -40,7 +40,8 @@
       <h2 class="tileHeadline" metal:define-macro="listitem">
           <a href="#"
              class="summary url"
-             tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;"
+             tal:attributes="href python:(item_type in use_view_action and item_type != 'File') and item_url+'/view' or item_url;
+                             target python:item_type == 'File' and '_blank' or '_self';"
              tal:content="item/Title">
               Item Title
           </a>
@@ -73,7 +74,7 @@
          tal:content="item/Description">
           Description
         </p>
-
+<!--
         <p class="tileFooter">
             <a href=""
                tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;"
@@ -81,7 +82,7 @@
             Read More&hellip;
             </a>
         </p>
-
+-->
         <div class="visualClear"><!-- --></div>
     </div>
 
