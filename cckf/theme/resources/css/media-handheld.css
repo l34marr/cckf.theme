@@ -1,3 +1,11 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #eee;
+  }
+}
 @media only screen and (max-width: 1000px) {
 
 .apply-box {
@@ -24,8 +32,10 @@ header .sprite {
   margin-top: 32px;
 }
 .ct-search {
+  display: none;
   margin-top: 32px;
 }
+
 #navbar-wrapper {
   background-color: #9D242B;
   height: 40px;
@@ -183,6 +193,7 @@ div.position-1\:4 {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1024px) {
+
 .section-programs #center-and-left-area {
     margin-right: -15em;
 }
@@ -210,7 +221,7 @@ div.position-1\:4 {
   width: 100%;
 }
 .topspace {
-  margin-top: 0px;
+  margin-top: -50px;
 }
 /* Top Header logo and navigation menu */
 #portal-logo {
@@ -258,7 +269,9 @@ div.position-1\:4 {
   float: left;
   margin-bottom: 12px;
   margin-left: 12px;
+  width: 30%;
 }
+
 .box img {
   width: 100%;
   height: auto;
@@ -291,22 +304,22 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100% !important;
 }
 .subsection-search #right-area, .subsection-search #left-area {
-    width: 100% !important;
+  width: 100% !important;
 }
 .subsection-search .right-area-js {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 .section-programs .right-area-js {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 .section-programs .left-area-js {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 #footer-container .footColumn-last {
-    display: none;
+  display: none;
 }
 .organize > img {
-    width: 70%;
+  width: 70%;
 }
 .grant-banner {
   float: left;
@@ -337,17 +350,17 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100%;
 }
 .topspace {
-  margin-top: 0px;
+  margin-top: -60px;
 }
 .subsection-facet #right-area, .subsection-facet #left-area {
   clear: both;
   width: 100% !important;
 }
 .subsection-facet .right-area-js {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 .subsection-facet .left-area-js {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 .tileHeadline {
   font-weight: bold;
@@ -365,7 +378,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   padding: 8px 0 15px 15px;
 }
 .box {
-  width: 47%;
+  width: 30%;
 }
 .box img {
   width: 100%;
@@ -374,10 +387,11 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 
 /* Landscape phones and down */
+
 @media only screen and (max-width: 640px) {
 /* Top Header logo and navigation menu */
 .organize > img {
-    width: 100%;
+  width: 100%;
 }
 #portal-logo {
   margin: 0.3em 0 0.5em 6px;
@@ -401,9 +415,10 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   margin-top: 10px;
   margin-bottom: 0px;
 }
+
 /* end */
 .topspace {
-  margin-top: -50px;
+  margin-top: -80px;
 }
 .news-column {
   width: 100%;
@@ -426,7 +441,9 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 #portal-breadcrumbs {
   margin-left: 0.8em;
+  font-size: 12px;
 }
+
 #content {
   margin: 1em 1em 1.5em 0.8em;
 }
@@ -434,7 +451,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 100%;
 }
 .box {
-  width: 100%;
+  width: 45%;
 }
 #parent-fieldname-text {
   width: 100%;
@@ -448,7 +465,7 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 30.5%;
 }
 .grid li > div {
-    height: 260px;
+  height: 260px;
 }
 .grid li {
   float: left;
@@ -468,15 +485,23 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
   width: 97%;
 }
 
+
 .subsection-facet #right-area, .subsection-facet #left-area {
   clear: both;
   width: 100% !important;
 }
+.subsection-search .right-area-js {
+  margin-right: 0 !important;
+}
+.section-sino #center-and-left-area {
+  margin-right: 0em;
+}
+
 .subsection-facet .right-area-js {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 .subsection-facet .left-area-js {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 #footer-container .footColumn {
   margin-right: 0;
@@ -486,5 +511,12 @@ ul.listing-columns li .component a, ul.listing-columns li .component span {
 }
 #footer-container .footColumn {
   margin-right: 30px;
+}
+}
+@media only screen and (max-width: 400px) {
+.box {
+  width: 43%;
+}
+
 }
 }
