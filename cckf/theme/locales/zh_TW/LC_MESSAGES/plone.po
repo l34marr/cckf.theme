@@ -24,3 +24,6 @@ msgstr "分類"
 msgid "Text Search"
 msgstr "全文搜尋"
 
+msgid "Published:"
+msgstr "發佈日期:"
+

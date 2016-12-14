@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-08-09 08:06+0000\n"
+"POT-Creation-Date: 2016-09-07 04:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Domain: cckf.theme\n"
 
 #: ./browser/footer.pt:5
-msgid "13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC"
+msgid "13F.-B, No.65, Sec. 2, Tun Hwa S. Rd., Da'an Dist., Taipei"
 msgstr ""
 
 #: ./browser/sections.pt:11
@@ -73,9 +73,59 @@ msgstr ""
 msgid "Tel"
 msgstr ""
 
+#. Default: "The error has been logged as entry number ${entryid}."
+#: ./skins/cckf_theme/default_error_message.pt:69
+msgid "description_error_has_been_logged"
+msgstr ""
+
+#. Default: "If you need to report this to the ${site_admin}, please include this entry number in your message."
+#: ./skins/cckf_theme/default_error_message.pt:75
+msgid "description_include_error_in_admin_message"
+msgstr ""
+
+#. Default: "Here is the full error message:"
+#: ./skins/cckf_theme/default_error_message.pt:83
+msgid "description_site_admin_full_error"
+msgstr ""
+
+#. Default: "We apologize for the inconvenience, but the page you were trying to access is not at this address. You will be redirected to the homepage in 3 seconds."
+#: ./skins/cckf_theme/default_error_message.pt:42
+msgid "description_site_error"
+msgstr ""
+
+#. Default: "If you are certain you have the correct web address but are encountering an error, please contact the ${site_admin}."
+#: ./skins/cckf_theme/default_error_message.pt:99
+msgid "description_site_error_mail_site_admin"
+msgstr ""
+
+#. Default: "Thank you."
+#: ./skins/cckf_theme/default_error_message.pt:46
+msgid "description_site_error_thank_you"
+msgstr ""
+
 #. Default: "to"
 #: ./overrides/plone.app.event.browser.event_view.pt:29
 msgid "eventsep"
+msgstr ""
+
+#. Default: "We&#8217;re sorry, but there seems to be an error…"
+#: ./skins/cckf_theme/default_error_message.pt:59
+msgid "heading_site_error_sorry"
+msgstr ""
+
+#. Default: "This page does not seem to exist…"
+#: ./skins/cckf_theme/default_error_message.pt:36
+msgid "heading_site_there_seems_to_be_an_error"
+msgstr ""
+
+#. Default: "Site Administration"
+#: ./skins/cckf_theme/default_error_message.pt:76
+msgid "label_site_admin"
+msgstr ""
+
+#. Default: "Display traceback as text"
+#: ./skins/cckf_theme/default_error_message.pt:87
+msgid "label_traceback_as_text"
 msgstr ""
 
 #. Default: "Menu <span class=\"expandicon\"><img src=\"++theme++cckf.theme/img/menu-expand.png\"></span>"
