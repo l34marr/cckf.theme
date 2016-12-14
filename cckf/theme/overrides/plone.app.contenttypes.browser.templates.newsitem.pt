@@ -19,7 +19,7 @@
 <h1 class="documentFirstHeading" tal:content="context/Title">Title</h1>
 <span class="documentByLine"
  tal:define="toLocalizedTime nocall: plone_view/toLocalizedTime;
-             item_created context/CreationDate"
+             item_created context/effective"
  tal:content="python:toLocalizedTime(item_created,long_format=0)">
 Date
 </span>
