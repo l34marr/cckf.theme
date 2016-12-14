@@ -2,7 +2,7 @@
   <div class="footColumn">
     <dl class="footSection">
       <dt class="footSectionHeader"><img src="++theme++cckf.theme/img/title.png"></dt>
-      <dd class="footSectionBody" i18n:translate="">13F, 65 Tun Hua South Road, Section 2, Taipei, Taiwan 106, ROC</dd>
+      <dd class="footSectionBody" i18n:translate="">13F, 65, Section 2, Tun Hwa South Road, Taipei 106, Taiwan(R.O.C.)</dd>
       <dd class="footSectionBody">Copyright &copy; <tal:yr replace="view/year">2016</tal:yr></dd>
     </dl>
   </div>
