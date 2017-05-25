@@ -25,7 +25,7 @@
      <span tal:replace="python: toLocalizedTime(data.end,long_format=0)" />
     </span>
     <span tal:condition="python: data.whole_day and not data.open_end">
-     <span tal:replace="python: toLocalizedTime(data.start,long_format=0)" />
+     <span tal:replace="python: toLocalizedTime(data.start.isoformat()[0:10])" />
      <tal:eventsep i18n:translate="eventsep">to</tal:eventsep>
      <span tal:replace="python: toLocalizedTime(data.end,long_format=0)" />
     </span>
