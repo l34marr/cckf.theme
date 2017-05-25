@@ -189,7 +189,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: str(item.created)[:10].replace('/','-')">Date</time>
+            發佈日期: <time class="author" tal:content="python: str(item.effective)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>
@@ -233,7 +233,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
+            發佈日期: <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>

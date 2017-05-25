@@ -121,7 +121,7 @@
     </div>
     <!-- slide 2 text -->
     <div id="allinone_thumbnailsBanner_photoText2" class="allinone_thumbnailsBanner_texts">
-     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="subsidy_project" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">Grant and Fellowships</div>
+     <div class="allinone_thumbnailsBanner_text_line textElement32_cool_FullWidth" data-link="subsidy_project" data-initial-left="150" data-initial-top="230" data-final-left="220" data-final-top="230" data-duration="0.5" data-fade-start="0" data-delay="0.3">Grants and Fellowships</div>
      <div class="allinone_thumbnailsBanner_text_line textElement33_cool_FullWidth" data-link="subsidy_project" data-initial-left="220" data-initial-top="330" data-final-left="220" data-final-top="300" data-duration="1" data-fade-start="0" data-delay="0.5">Committed to academic excellence,<br />
       encouraging research<br /> in Chinese Studies worldwide</div>
     </div>
@@ -189,7 +189,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: str(item.created)[:10].replace('/','-')">Date</time>
+            Published: <time class="author" tal:content="python: str(item.effective)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>
@@ -233,7 +233,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
+            Published: <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
            </header></td>
          </tr>
         </tbody>
