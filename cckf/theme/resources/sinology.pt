@@ -48,7 +48,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   //isotope
-  var $container = $('#bcontent');
+  var $container = $('.bcontent');
 
   $container.imagesLoaded( function(){
     $container.isotope({
@@ -441,7 +441,7 @@ $(document).ready(function(){
   </ul>
 </div>
 <div class="visualClear"></div>
-<div  id="bcontent">
+<div class="bcontent">
   <div class="box 01">
     <div class="box-img"><a href="01/ccs"><img src="++theme++cckf.theme/img/sinology-album/01/ncl.jpg" alt="" /></a></div>
     <div class="box-info"><a href="01/ccs">漢學研究資訊中心 </a></div>

@@ -48,7 +48,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   //isotope
-  var $container = $('#bcontent');
+  var $container = $('.bcontent');
 
   $container.imagesLoaded( function(){
     $container.isotope({
