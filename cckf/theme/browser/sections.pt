@@ -6,7 +6,15 @@
      i18n:translate="toggle_menu">Menu
     <span class="expandicon"><img src="++theme++cckf.theme/img/menu-expand.png"></span></a>
     <ul class="nav" style="display: block;"
-     tal:define="root context/@@plone_portal_state/navigation_root_url;">
+     tal:define="root context/@@plone_portal_state/navigation_root_url;
+                 isAnon context/@@plone_portal_state/anonymous;">
+    <tal:edit condition="python: not isAnon">
+    <li class="">
+    <a class="rootmenulink" href="#"
+     tal:attributes="href string:${root}/folder_contents"
+     i18n:translate="">Manage Contents</a>
+    </li>
+    </tal:edit>
     <li class="">
     <a class="rootmenulink" href="#"
      tal:attributes="href string:${root}/about"
