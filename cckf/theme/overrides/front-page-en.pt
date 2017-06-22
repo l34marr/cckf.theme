@@ -155,7 +155,8 @@
 
   <div style="margin: 0 auto; max-width: 1180px;">
 
-  <div class="row topspace">
+  <div class="row topspace"
+   tal:define="toLocalizedTime nocall: context/@@plone/toLocalizedTime">
 
    <!-- Start News -->
    <div id="news" class="news-column span-2-3">
@@ -189,7 +190,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            Published: <time class="author" tal:content="python: str(item.effective)[:10].replace('/','-')">Date</time>
+            <span class="author">Published: <time tal:content="python: toLocalizedTime(str(item.effective)[:10])">Date</time></span>
            </header></td>
          </tr>
         </tbody>
@@ -233,7 +234,7 @@
            </div></td>
           <td><header>
             <h4 class="title" tal:content="item/Title">Title</h4>
-            Published: <time class="author" tal:content="python: str(item.start)[:10].replace('/','-')">Date</time>
+            <span class="author">Published: <time tal:content="python: toLocalizedTime(str(item.effective)[:10])">Date</time></span>
            </header></td>
          </tr>
         </tbody>
